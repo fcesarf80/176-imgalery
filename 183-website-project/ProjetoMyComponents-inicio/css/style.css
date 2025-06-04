@@ -33,6 +33,9 @@ article {
     padding-top: 1px;
     padding-bottom: 1px;
 }
+.underline {
+    text-decoration: red wavy underline;
+}
 .main-header {
     flex: 0 0 26rem;
     background-color: var(--secondary-color);
@@ -40,7 +43,7 @@ article {
 .main {
     background-color: var(--secondary-color-light);
     flex: 1 0;
-    padding: 6.5rem 6rem 7.5rem;
+    padding: 6.5rem 6rem 100vh;
 }
 a {
     color: inherit;
