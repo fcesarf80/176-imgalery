@@ -127,5 +127,16 @@ a {
 }
 
 .card_content {
-    padding: 1em;
+    padding: .1em 1em 1em ;
+}
+
+.card_content p,
+.card_title {
+    margin: 0;
+    padding: .1em;
+}
+
+.card_title {
+    font-size: 1.75em;
+    margin-bottom: .25em;
 }
