@@ -25,8 +25,8 @@
     </header>
     <main class="main">
         <h1>My Components</h1>
-        <article>
-       <h2 class="hightlight">Typography</h2>
+        <article class="hightlight">
+       <h2>Typography</h2>
        <p>A tipografia transmite nossas definições de tamanho e espaçamento e deve ser utilizada respeitando a hierarquia dos elementos na internet</p>
         </article>
         <section>
@@ -43,9 +43,9 @@
             </article>
             <article>
             <h4>Sobreescrito e subscrito</h4>
-            <p>Para utilizar o sobreescrito, deve-se usar a tag <b>sup</b> => < su p>2< /su p>:
+            <p>Para utilizar o sobreescrito, deve-se usar a tag <b>sup</b>, ex.: &lt;sup&gt;2&lt;/sup&gt;
                 <p> 3 <sup>2</sup> é igual a 9</p>
-            <p>Para utilizar o sobescrito, deve-se usar a tag <b>sub</b> => < su b>2< /su b>:
+            <p>Para utilizar o sobescrito, deve-se usar a tag <b>sub</b>, ex.: &lt;sub&gt;2&lt;/sub&gt;:
                 <p>A fómula da água é H<sub>2</sub>O.</p>
             </p>
             </article>
@@ -56,6 +56,64 @@
                     <a href="#html-dfn"><abbr title="HyperText Markup Language"> HTML</abbr></a>.
                 </p>
             <p>O <dfn id="html-dfn"> <abbr title="HyperText Markup Language"> HTML</abbr> </dfn> é a principal linguagem da web onde podemos incluir nosso conteúdo de forma semântica.</p>
+            </article>
+            <article>
+                <h4>Citações</h4>
+                <blockquote>
+                <p>O ruim não é ter trabalho. O ruim é ter de trabalhar</p> <cite>Sr Madruga</cite>
+                </blockquote>
+                <blockquote cite="http://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+                    O elemento HTML &lt;blockquote&gt; (ou Elemento HTML de citação de bloco) indica que o texto incluído é uma longa citação.
+                    <cite>MDN</cite>
+                </blockquote>
+
+                <p>Segundo o Seu Madruga, <q>A vingança nunca é plena, mata a alma e envenena</q>.</p>
+                <p>De acordo com o site da Mozilla,
+                    <q cite="http://www.mozilla.org/en-US/about/history/detais"> Firefox foi lançado em 2004 e se tornou um grande sucesso.</q>
+                </p>
+
+                O filme<cite>Escola do rock</cite> contém varias músicas antigas.
+            </article>
+
+            <article>
+                <h4>Coisas de computador</h4>
+
+            <p>A propriedade <code>background</code> do CSS serve para colocar uma imangen de fundo.</p>
+
+            <p>A tag &lt;pre&gt; &lt;/pre&gt; serve para pré-formatar um texto.
+            <pre>
+Este é um  
+        texto
+            pré-formatado:
+            </pre>
+            <pre>
+<code>article {
+         padding-top: 1px;
+         padding-bottom: 1px;
+}</code>
+    </pre>
+
+    <p>
+        Após executar o metodo <code>push()</code> obtivo o retorno <samp lang="en-us">undefined has not a push() function</samp>
+    </p>
+
+    <p cite="http://127.0.0.1:5500/183-website-project/ProjetoMyComponents-inicio/html/Typography.html">
+        Pressione as teclas <kbd>CTRL</kbd> + <kbd>C</kbd> para copiar</p>
+            </article>
+
+             <article>
+                <h4>Datas e horarios</h4>
+                
+                <p>o evento ocorrerá em <time datetime="2025-11-10"></time>10 de Novembro de 2025. </p>
+                <p>O evento ocorrerá em <time datetime="2025-11-10"></time>10/11/2025</time></p>
+                <p>O evento ocorrerá às <time datetime="2025-11-10T20:00:00"></time> 20h00 de 10 de Novembro de 2025</time></p>
+                <p>O evento ocorrerá às <time datetime="2025-11-10T20:00:00-03:00"></time> 20h00 de 10 de Novembro de 2025</time></p>
+
+                <h5 lang="en-us">JS Conference</h5>
+                <p>O evento inicirá exatamente às <time datetime="19:00">19h00</time></p>
+
+                <p>O evento ocorrerá à 20h00 do dia <del datetime="2025-11-05">10 de Novembro de 2025</del> <ins><time datetime="2025-11-11T20:00:00-03:00"> 11 de Novembro de 2025</time></ins>.</p>
+
             </article>
 
         </section>
