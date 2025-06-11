@@ -1,16 +1,65 @@
+//ex.3
+//Crie um programa que:
+//Solicite ao utilizadpr que digite um ùnico caractere.
+//Converta esse caractere (char)para seu valor numérico na tela ASCII.
+//Exiba o valor inteiro correspondente ao caractere digitado.
 #include <iostream>
 using namespace std;
 int main ()
 {
-    //ex m3.6
-    int n=5;
-    float x=1.2;
-    int xInt = (int) x;
-    cout<<"x="<<x<<endl;
-    cout<<"xInt="<<xInt<<endl;
-    
+    char tecla='a';
+    int AsciiTecla= (int) tecla;
+    cout<<"Tecla em ASCII= "<< AsciiTecla<<endl;
+
     return 0;
+
 }
+
+//ex.2
+// Crie um programa que:
+//peça ao utilizador dois números inteiros;
+//Divida um pelo outro normalmente e mostre o resultado
+//Use um cast para converter um dos números para float
+//antes da divisão e mostre o novo resultado.  
+// #include <iostream>
+// using namespace std;
+
+//     int main ()
+//     {
+//         int n1=5, n2=2;
+//         int result=n1/n2;
+//         float r=(float)n1/n2;
+//         cout<<"Resultado int= "<<result<<endl;
+//         cout<<"Resultado float= "<<r<<endl;
+
+//         return 0;
+
+//     }
+
+
+// #include <iostream> //ex m3.6
+// using namespace std;
+// int main ()
+// {
+//     //ex.1 m3.6
+//Escreva um programa que:
+//Declare duas variáveis int e float;
+//Atriba um valor interio à variável int e um valor decimal à float;
+//Converta explicitamente float para int;
+//Converta implicitamente int para float;
+//Imprima os valores antes e depois da converão: 
+//     int n=5;
+//     float x=1.2;
+//     int xInt = (int) x;
+//     cout<<"x="<<x<<endl;
+//     cout<<"xInt="<<xInt<<endl;
+
+//     float nF=n;
+//     cout<<"n="<<n<<endl;
+//     cout<<"nF="<<nF<<endl;
+    
+//     return 0;
+// }
 
 // int main() {
 //     int a = 5;
