@@ -1,10 +1,31 @@
+           
+#include <iostream>
+#include <string>
+int main(int argc, char** argv) 
+{
+    int myInt = -10;
+    std::cin>> myInt;
+    
+    if (myInt > 0){
+        std::cout<<"myInt eh positivo!\n";
+    }
+    else if (myInt < 0){
+        std::cout<<"myInt eh negativo\n";
+    }
+    else {
+        std::cout<<"myInt eh zero!\n";
+    }
+    system("pause");
 
+    return 0;
+}
+
+        /* Em C++, int argc, char** argv são parâmetros     opcionais da função main, que permite que o programa receba argumentos passados na linha de comando quando é executado. argc é um inteiro que indica o número de argumentos, enquanto argv é um array de strings (ponteiros para strings, daí o **), onde cada string representa um argumento individual. 
+*/
 
 //..............................................
 
-/*
-ex.1 m3.6
-Escreva um programa que:
+/* ex.1 m3.6_Escreva um programa que:
 Declare duas variáveis int e float;
 Atriba um valor interio à variável int e um valor decimal à float;
 Converta explicitamente float para int;
@@ -26,9 +47,8 @@ int main ()
     return 0;
 }
 */
-/*
-ex.2
-Crie um programa que:
+
+/*ex.2_ Crie um programa que:
 peça ao utilizador dois números inteiros;
 Divida um pelo outro normalmente e mostre o resultado
 Use um cast para converter um dos números para float
@@ -44,12 +64,13 @@ antes da divisão e mostre o novo resultado.
      cout<<"Resultado float= "<<r<<endl;
      return 0;
  }
-     */
-/*ex.3
-Crie um programa que:
+*/
+
+/*ex.3_Crie um programa que:
 Solicite ao utilizadpr que digite um ùnico caractere.
 Converta esse caractere (char)para seu valor numérico na tela ASCII.
 Exiba o valor inteiro correspondente ao caractere digitado.
+
     #include <iostream>
     using namespace std;
     int main ()
@@ -60,9 +81,8 @@ Exiba o valor inteiro correspondente ao caractere digitado.
     return 0;
     }
 */
-/*
 
-    int main()
+/*  int main()
     {
     int a = 5;
     float b = 4.9;
@@ -77,8 +97,8 @@ Exiba o valor inteiro correspondente ao caractere digitado.
     cout<<"A soma das variaveis 'a' e 'b' eh: "<<resul_c<<endl;
     cout<<"A soma das variaveis 'a' e 'b' convertida para inteiro eh: "<<resul_d<<endl;
 */
-/*
-    int x=16, y=3;
+
+/*  int x=16, y=3;
     int result= x/y;
     cout<<"Resultado int= "<<result<<endl; 
     float r=(float)x/y;
@@ -93,8 +113,7 @@ Exiba o valor inteiro correspondente ao caractere digitado.
 
 //Em C++, "cast" é traduzido para conversão de tipo ou conversão explícita. Refere-se à alteração do tipo de um objeto ou valor de um tipo para outro..
 
-/*
-Exercício de C++:Faça um programa que pede 2 valores, em seguida exiba operações de comparação.
+/*Exercício de C++:Faça um programa que pede 2 valores, em seguida exiba operações de comparação.
 #include <iostream>
 using namespace std;
 int main ()
