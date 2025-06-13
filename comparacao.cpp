@@ -3,10 +3,17 @@
 #include <string>
 int main(int argc, char** argv) 
 {
+    while (true) {
     int myInt = -10;
+    std::cout<<"Digite um numero: ";
     std::cin>> myInt;
     
-    if (myInt > 0){
+    if (myInt==123) {
+    break;
+    }
+    if (x > 0){
+        std::cout<<"X é posistivo!\n";
+    } (myInt > 0){
         std::cout<<"myInt eh positivo!\n";
     }
     else if (myInt < 0){
@@ -18,6 +25,7 @@ int main(int argc, char** argv)
     system("pause");
 
     return 0;
+}
 }
 
         /* Em C++, int argc, char** argv são parâmetros     opcionais da função main, que permite que o programa receba argumentos passados na linha de comando quando é executado. argc é um inteiro que indica o número de argumentos, enquanto argv é um array de strings (ponteiros para strings, daí o **), onde cada string representa um argumento individual. 
