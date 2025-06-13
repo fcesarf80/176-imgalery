@@ -6,14 +6,28 @@
  #include <string>
  int main(int argc, char** argv)
  {
+    while (true) {
     int x = -10;
 
-    if (x >= 0) {
+    std::cout << "Digite um numero: ";
+    std::cin >> x;
+    
+    if (x == 111) {
+        break;
+    }
+
+    if (x > 0) {
         std::cout << "X eh positivo!\n";
     }
-    else {
-        std::cout << "X eh menor do que zero!\n";
+     else if (x < 0){
+        std::cout << "X eh negativo!\n";
     }
+    else {
+        std::cout << "X eh zero!\n";
+    }
+
+    }
+   
     
     system("pause");
 
