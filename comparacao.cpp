@@ -6,17 +6,15 @@
  #include <string>
  int main(int argc, char** argv)
  {
-    int myInt = 0;
+    int x = -10;
 
-    myInt = 10;
-    myInt = 20;
-    myInt = 10 + 20;
- 
-    myInt += 10;
-    myInt -= 5 + myInt;
-    myInt *=10;
+    if (x >= 0) {
+        std::cout << "X eh positivo!\n";
+    }
+    else {
+        std::cout << "X eh menor do que zero!\n";
+    }
     
-   std::cout << myInt << "\n";
     system("pause");
 
     return 0;
