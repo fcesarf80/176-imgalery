@@ -1,3 +1,31 @@
+//Operadores logicos
+#include<iostream>
+#include<stdlib.h>
+using namespace std;
+
+    int main () {
+        std::cout<<"Digite um numero no intervalo de 45 ate 72"<<endl;
+
+        int i = 0;
+        std::cin>> i;
+
+        if(i >=45 && i<=72) {
+            std::cout<<"Obrigado por informar o numero "<<" no intervalo solicitado"<<endl;
+
+                if(i == 45 || i == 72) {
+                std::cout<<"O valor de i eh igual de algum extremo"<<endl; }
+
+         }
+         else {
+                std::cout<<"o numero digitado nao esta no intervalo solicitado"<<endl;
+            }
+
+        system("pause");
+        return 0;
+    }
+
+
+/*
 //EXTRUTURA DE SELECAO MULTIPLA
 #include<iostream>
 #include<stdlib.h>
@@ -29,6 +57,8 @@ int main() {
 system("pause");
 	return 0;
 }
+*/
+
 
 /*
 //EXTRUTURA ELSE
