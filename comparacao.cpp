@@ -1,7 +1,28 @@
  
- 
+ #include <iostream>
+#include <stdlib.h>
+
+using namespace std;
+
+int main()
+{
+	int x, y;
+	x = 9;
+	y = 3;
+
+	std::cout <<"O valor de x eh: "<<x<<" e o valor de y eh: "<<y<<"."<<endl;
+	std::cout <<"A soma entre x e y eh: "<<x + y<<"."<<endl;
+	std::cout<<"A subtracao entre x e y eh: "<<x - y<<"."<<endl;
+	std::cout<<"A multiplicacao entre x e y eh: "<<x * y<<"."<<endl;
+	std::cout<<"A divisao entre x e y eh: "<<x / y<<"."<<endl;
+
+	system("pause");
+
+		return 0;
+}
 
 
+/*
 
  #include <iostream>
 using namespace std;
@@ -27,7 +48,7 @@ int main ()
 
 }
 
-
+*/
 /*
 #include <iostream>
 using namespace std;
