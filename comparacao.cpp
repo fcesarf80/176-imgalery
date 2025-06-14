@@ -1,3 +1,36 @@
+//EXTRUTURA DE SELECAO MULTIPLA
+#include<iostream>
+#include<stdlib.h>
+using namespace std;
+
+int main() {
+	
+	double nota1, nota2, nota3, nota4;
+	std::cout<<"Digite a sua primeira nota do semestre:>>> "<<endl;
+	std::cin>>nota2;
+	std::cout<<"Digite a sua segunda nota do semestre:>>> "<<endl;
+	std::cin>>nota3;
+	std::cout<<"Digite a sua terceira nota do semestre:>>> "<<endl;
+	std::cin>>nota4;
+	std::cout<<"Digite a sua quarta nota do semestre:>>> "<<endl;
+	std::cin>>nota4;
+
+	double soma = nota1 + nota2 + nota3 + nota4;
+		soma = (soma / 4);
+
+	std:cout<<"A sua media no semestre foi: "<<soma<<endl<<endl;
+
+	if(soma >= 7){
+		std::cout<<"Parabens! Voce foi aprovado!"<<endl;
+	
+	} else {
+	   std::cout<<"Eita voce foi reprovado"<<endl;
+    }
+system("pause");
+	return 0;
+}
+
+/*
 //EXTRUTURA ELSE
 #include<iostream>
 #include<stdlib.h>
@@ -27,7 +60,7 @@ int main() {
 }
 
 
-
+*/
 /*
 //CONDICOES EXTRUTURA IF
 #include<iostream>
