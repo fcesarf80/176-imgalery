@@ -1,7 +1,55 @@
  
  
+
+
+
+ #include <iostream>
+using namespace std;
+
+int main () 
+{
+	cout<<"Informe um numero: "<<endl;
+	int num1 = 0;
+	
+	cout<<"Informe outro numero: "<<endl;
+	int num2 = 0;
+	cin>>num2;
+
+	cout<<"Os números digitados foram: "
+		<<num1
+		<<" e "
+		<<num2
+		<<endl;
+
+		system("pause");
+
+		return 0;
+
+}
+
+
+/*
+#include <iostream>
+using namespace std;
+int main() {
+    
+    int varInt = 100;
+    char c = 'r';
+    double pFlutuante = 5.99;
+
+    std::cout<<"O valor da variavel varInt eh: "<<varInt<<endl;
+    std::cout<<"O valor da variavel c eh: "<<c<<endl;
+    std::cout<<"O valor da variavel pFlutuante eh: "<<pFlutuante<<endl;
+    std::cout<<endl;
+    std::cout<<"Memoria da variavel varInt: "<<sizeof(varInt)<<"bytes"<<endl;
+    std::cout<<"Memoria da variavel c: "<<sizeof(c)<<"bytes"<<endl;
+    std::cout<<"Memoria da variavel pFlutuante: "<<sizeof(pFlutuante)<<"bytes"<<endl;
+
+    return 0;
+}*/
+
  
- 
+ /*
  #include <iostream>
  #include <stdlib.h>
  #include <string>
@@ -19,7 +67,7 @@
     
     system("pause");
     return 0;
- }
+ }*/
  
  
  
