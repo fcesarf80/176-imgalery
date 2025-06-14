@@ -1,3 +1,34 @@
+//EXTRUTURA ELSE
+#include<iostream>
+#include<stdlib.h>
+using namespace std;
+
+int main() {
+    int valor = 0;
+	    std::cout<<"Digite um numero qualquer: "<<endl;
+	    std::cin>>valor;
+
+	if(valor > 50) {
+	     std::cout<<"O valor digitado eh maior do que 50"<<endl;
+ 	} else {
+	     std::cout<<"o valor digitado eh menor do que 50"<<endl;
+	}
+
+	std::cout<<"i eh diferente de i2?"<<endl;
+
+	if(valor!=12){
+	    std::cout<<"SIM! i eh diferente de i2"<<endl;
+    }
+	
+
+
+    system("pause");
+	return 0;
+}
+
+
+
+/*
 //CONDICOES EXTRUTURA IF
 #include<iostream>
 #include<stdlib.h>
@@ -8,7 +39,7 @@ int main()
 	int i = 5, i2 = 10;
 	if(i ==i2)
 
-	std::cout<<"A variável i eh igual a variável i2<<endl";
+	std::cout<<"A variavel i eh igual a variavel i2"<<endl";
 
 	std::cout<<"i eh diferente de i2?"<<endl;
 	if(i !=12)
@@ -21,7 +52,7 @@ system("pause");
 	return 0;
 }
 
-
+*/
 
 /*
 //RESTO DA DIVISAO
