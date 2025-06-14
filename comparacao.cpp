@@ -1,4 +1,47 @@
- 
+#include<iostream>
+#include<stdlib.h>
+
+using namespace std;
+
+int main() 
+{
+	int num1, num2, soma, sub, multi, div, resto;
+
+	std::cout<<"Seja bem vindo a nossa primeira calculadora"<<endl;
+	std::cout<<"Digite o primeiro  numero: "<<endl;
+	std::cin>>num1;
+	std::cout<<"Digite o segundo numero: "<<endl;
+	std::cin>>num2;
+
+	soma  = num1 + num2;
+	sub   = num1 - num2;
+	multi = num1 * num2;
+	div   = num1 / num2;
+	resto = num1 % num2;
+
+	std::cout<<"A soma eh: "<<soma<<endl;
+	std::cout<<"A subtracao eh: "<<sub<<endl;
+	std::cout<<"O produto eh: "<<multi<<endl;
+	std::cout<<"A divisao eh: "<<div<<endl;
+	std::cout<<"O resto da divisao eh: "<<resto<<endl;
+
+	//ou pode-se utilizar menos linhas e deixar o codgo mais elegante:
+
+	std::cout<<"A soma eh: "<<num1 + num2<<endl;
+	std::cout<<"A subtracao eh: "<<num1 - num2<<endl;
+	std::cout<<"O produto eh: "<<num1 * num2<<endl;
+	std::cout<<"A divisao eh: "<<num1 / num2<<endl;
+	std::cout<<"O resto da divisao eh: "<<num1 % num2<<endl;
+
+
+
+	system("pause");
+	return 0;
+}
+
+
+
+/* 
  #include <iostream>
 #include <stdlib.h>
 
@@ -20,7 +63,7 @@ int main()
 
 		return 0;
 }
-
+*/
 
 /*
 
