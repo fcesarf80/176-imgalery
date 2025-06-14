@@ -1,3 +1,29 @@
+//CONDICOES EXTRUTURA IF
+#include<iostream>
+#include<stdlib.h>
+using namespace std;
+
+int main() 
+{
+	int i = 5, i2 = 10;
+	if(i ==i2)
+
+	std::cout<<"A variável i eh igual a variável i2<<endl";
+
+	std::cout<<"i eh diferente de i2?"<<endl;
+	if(i !=12)
+	std::cout<<"SIM! i eh diferente de i2"<<endl;
+	
+	
+
+
+system("pause");
+	return 0;
+}
+
+
+
+/*
 //RESTO DA DIVISAO
 #include<iostream>
 #include<stdlib.h>
@@ -19,7 +45,7 @@ int main()
 	system("pause");
 	return 0;
 }
-
+*/
 
 
 /*
