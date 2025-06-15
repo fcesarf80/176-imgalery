@@ -1,3 +1,18 @@
+//Operadores de atribuicao simples
+//iteracao
+#include<iostream>
+#include<stdlib.h>
+using namespace
+
+    int main(){
+
+
+      system("pause");
+        return 0;  
+    }
+
+
+/*
 //Operadores logicos
 #include<iostream>
 #include<stdlib.h>
@@ -23,7 +38,7 @@ using namespace std;
         system("pause");
         return 0;
     }
-
+*/
 
 /*
 //EXTRUTURA DE SELECAO MULTIPLA
