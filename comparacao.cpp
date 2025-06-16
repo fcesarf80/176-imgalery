@@ -2,7 +2,7 @@
 
 //     01) Desenvolva um programa q escreve na tela a frase Vou aprender a programar na
 // Linguagem C
-#include<iostream>
+/*#include<iostream>
 #include<stdlib.h>
 
    int main()
@@ -15,20 +15,53 @@
     system("pause");
     return 0;
 }
+*/
+
+// 02) Altere o programa do exercício 01 para que cada palavra da frase Vou aprender a
+// programar na Linguagem C++ apareca em linhas diferentes.
+// Obs: a) Use primeiramente comando std::endl para quebrar linha/pular uma linha.
+// b) Depois substitua o comando std::endl; pelo caractere de escape nova linha \n New Line
+
+#include<iostream>
+#include<stdlib.h>
+#include<iomanip>
+
+    int main()
+    {
+        std::cout<<std::endl;
+        std::cout<<"Vou \n";
+        std::cout<<std::setw(5)\n;
+        std::cout<<"aprender \n";
+       // std::cout<<std::setw(12)<<std::endl;
+       // std::cout<<"a \n";
+       // std::cout<<std::(14)\n;
+
+       // std::cout<<"programar \n";
+       // std::cout<<std::(16)
+
+       // std::cout<<"na \n";
+       // std::cout<<std::(18)\n;
+
+       // std::cout<<"linguagem \n";
+       // std::cout::std::(19)\n;
+
+       // std::cout<<"C++.\n";
+       // std::cout<<std::endl;
+
+        system("pause");
+        return 0;
+    }
+
+  std::cout << "Esta é a primeira linha.\n";
+  std::cout << "Esta é a segunda linha.\n";
+  std::cout << "E esta é a terceira.\n";
+  return 0;
 
 
 
-// 02) Altere o programa do exercício 01 para que cada palavra da frase V ou aprender a
-// programar na L inguagem C apar eça em linhas diferentes da seguinte forma:
-// V
-// ou
-// aprender
-// a
-// programar
-// na
-// L inguagem C
-// Obs: a) U se primeiramente comando std::endl p a ra quebra de linha(pular uma linha ENTER
-// b) Depois substit ua o comando std::endl pelo cara ctere de escape nova linh a n New Line
+
+
+
 // 03) No Código do exercício 02) utilize os atalhos do Visual Studio Community 2017 para:
 // 
 // Criar um comentário de uma linha de código com // colocando seu nome completo e
