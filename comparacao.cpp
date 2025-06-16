@@ -25,39 +25,18 @@
 #include<iostream>
 #include<stdlib.h>
 #include<iomanip>
-
+ 
     int main()
     {
-        std::cout<<std::endl;
-        std::cout<<"Vou \n";
-        std::cout<<std::setw(5)\n;
-        std::cout<<"aprender \n";
-       // std::cout<<std::setw(12)<<std::endl;
-       // std::cout<<"a \n";
-       // std::cout<<std::(14)\n;
-
-       // std::cout<<"programar \n";
-       // std::cout<<std::(16)
-
-       // std::cout<<"na \n";
-       // std::cout<<std::(18)\n;
-
-       // std::cout<<"linguagem \n";
-       // std::cout::std::(19)\n;
-
-       // std::cout<<"C++.\n";
-       // std::cout<<std::endl;
+       std::cout<<std::endl;
+       std::cout<<std::setw(15)<<"Eu\n"<<std::setw(19)<<"vou\n"<<std::setw(25)<<"aprender\n"<<std::setw(27)<<"a\n";
+       std::cout<<std::setw(31)<<"programar\n"<<std::setw(32)<<"na\n"<<std::setw(35)<<"linguagem\n"<<std::setw(37)<<"C++\n";
+       std::cout<<std::setw(32)<<"na\n"<<std::setw(30)<<"Tecnisign\n"<<std::setw(25)<<"e\n"<<std::setw(22)<<"me\n";
+       std::cout<<std::setw(20)<<"tornar\n"<<std::setw(15)<<"um\n"<<"programador\n"<<std::setw(13)<<std::endl;;
 
         system("pause");
         return 0;
     }
-
-  std::cout << "Esta é a primeira linha.\n";
-  std::cout << "Esta é a segunda linha.\n";
-  std::cout << "E esta é a terceira.\n";
-  return 0;
-
-
 
 
 
