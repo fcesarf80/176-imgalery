@@ -1,4 +1,40 @@
 #include <iostream>
+#include <iomanip> //necessário p/ uso do set precision
+
+int main()
+{
+	setlocale(LC_ALL, "portuguese");
+	float N1, N2, N3;
+    float Media = 0.0;
+	char Result;
+	do  // Cria loop até que Result seja S, para sair do loop
+	{
+		std::cout<<std::endl;
+        std::cout << "Digite o primeiro número: ";
+		std::cin >> N1;
+		std::cout << "Digite o segundo número: ";
+		std::cin >> N2;
+		std::cout << "Digite o terceiro número: ";
+		std::cin >> N3;
+        std::cout<<std::endl;
+
+		Media = (N1 + N2 + N3) / 3;
+
+		//std::cout << "Números digitados: " << N1 << ", " << N2 << " e " << N3 << "\n";
+		std::cout << "A média dos números ( " << N1 << ", " << N2 << " e " << N3 <<" ) é " << std::fixed << std::setprecision(2) << Media << "\n";
+		std::cout << "\n" <<"Deseja calcular outra média aritmética? (S) ou (N): ";
+		std::cin >> Result;
+	} while (Result == 'S' || Result == 's'); //Sai do loop apenas se o || for false, ou seja se Result for != de S/s.
+											 //Lembre que || só será false, se //todas as sentenças forem false.
+        std::cout << "\n" << "Saindo do programa..."<< std::endl;
+        system("Pause");
+        return 0;
+}	
+	
+
+
+/*
+#include <iostream>
 
 int main()
 {
@@ -18,7 +54,7 @@ int main()
 	system("pause");
 	return 0;
 }
-
+*/
 // #include <iostream>
  
 // int main()
