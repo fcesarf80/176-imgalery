@@ -2,30 +2,29 @@
 
 //     01) Desenvolva um programa q escreve na tela a frase Vou aprender a programar na
 // Linguagem C
-/*#include<iostream>
+#include<iostream>
 #include<stdlib.h>
 
-   int main()
-{
-	std::cout<<std::endl;
+    
+
+   int main() {
+	system("color 47");
+    std::cout<<std::endl;
     std::cout << "Vou aprender a programar na Linguagem C"<<std::endl;
     std::cout<<std::endl;
-
-
     system("pause");
     return 0;
 }
 */
+// Obs: a) Use primeiramente comando std::endl para quebrar linha/pular uma linha.
+// b) Depois substitua o comando std::endl; pelo caractere de escape nova linha \n New Line
+/*
 
 // 02) Altere o programa do exercício 01 para que cada palavra da frase Vou aprender a
 // programar na Linguagem C++ apareca em linhas diferentes.
-// Obs: a) Use primeiramente comando std::endl para quebrar linha/pular uma linha.
-// b) Depois substitua o comando std::endl; pelo caractere de escape nova linha \n New Line
-
 #include<iostream>
 #include<stdlib.h>
-#include<iomanip>
- 
+#include<iomanip> 
     int main()
     {
        std::cout<<std::endl;
@@ -38,31 +37,6 @@
         return 0;
     }
 
-
-
-
-// 03) No Código do exercício 02) utilize os atalhos do Visual Studio Community 2017 para:
-// 
-// Criar um comentário de uma linha de código com // colocando seu nome completo e
-// dat a de criação do programa.
-// 
-// Criar um comentário de várias linhas de código /**/ explicando e descrevendo o que
-// faz e qual objetivo d este programa
-// 
-// Aumentar e Diminuir o texto de seu Código F onte
-// 
-// Copiar sem selecionar a Linha de Código o nde está localizado o comando std:: cout e
-// depois colar esta linha abaixo da mesma para que apareçam duas frases repetidas.
-// 
-// Compile o Código utilizando o Atalho do Visual Studio
-// 
-// Execute o Código utilizando o Atalho do Visual Studio
-// 04) Utilizand o o comando System(COLOR CorFundoCorTexto) e altere a cor de exi bição da
-// fonte no terminal de saí da para uma cor de sua preferência.
-// Obs: Veja a seguir a lista de cores possíveis
-    //...........................................................
-
-/*
 //Operadores logicos
 #include<iostream>
 #include<stdlib.h>
