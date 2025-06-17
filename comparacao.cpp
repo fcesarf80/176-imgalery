@@ -1,21 +1,78 @@
+#include <iostream>
 
+int main()
+{
+	setlocale(LC_ALL, "portuguese");
+	float Num1, Num2, Num3;
+	float Media = 0.0;
+	std::cout << "Digite o 1 numero: ";
+	std::cin >> Num1;
+	std::cout << "Digite o 2° número: ";
+	std::cin >> Num2;
+	std::cout << "Digite o 3° número: ";
+	std::cin >> Num3;
+
+	Media = (Num1 + Num2 + Num3) / 3;
+	std::cout << "Numeros digitados: " << Num1 << ", " << Num2 << " e " << Num3 << "." << "\n";
+	std::cout << "Média dos números: " << Media << "\n";
+	system("pause");
+	return 0;
+}
+
+// #include <iostream>
+ 
+// int main()
+// {
+// 	int Numero;
+// 	char Caractere = 'A';
+//         Numero = Caractere;
+//         std::cout << "Valor Numero: " << Numero;
+ 
+//         system("PAUSE");
+//         return 0;
+// }
+
+
+// #include <iostream>
+// #include <locale.h>
+// #include <tchar.h> // Necessário para _T()
+
+// int main() {
+//   // Define a localidade para português
+//   if (_tsetlocale(LC_ALL, _T("Portuguese")) != NULL) {
+//     std::wcout << L"Localidade definida para português." << std::endl;
+//   } else {
+//     std::wcerr << L"Erro ao definir a localidade para português." << std::endl;
+//   }
+
+//   // Agora você pode usar caracteres acentuados em suas strings
+//   std::wcout << L"Olá, mundo com acentos!" << std::endl;
+//   std::wcout << L"Acento agudo: á, é, í, ó, ú" << std::endl;
+//   std::wcout << L"Acento grave: à, è, ì, ò, ù" << std::endl;
+//   std::wcout << L"Acento circumflexo: â, ê, î, ô, û" << std::endl;
+//   std::wcout << L"Til: ã, õ" << std::endl;
+//   std::wcout << L"Trema: ä, ë, ï, ö, ü" << std::endl;
+//   std::wcout << L"Ç" << std::endl;
+
+//   return 0;
+// }
 
 //     01) Desenvolva um programa q escreve na tela a frase Vou aprender a programar na
 // Linguagem C
-#include<iostream>
-#include<stdlib.h>
+// #include<iostream>
+// #include<stdlib.h>
 
     
 
-   int main() {
-	system("color 47");
-    std::cout<<std::endl;
-    std::cout << "Vou aprender a programar na Linguagem C"<<std::endl;
-    std::cout<<std::endl;
-    system("pause");
-    return 0;
-}
-*/
+//    int main() {
+// 	system("color 47");
+//     std::cout<<std::endl;
+//     std::cout << "Vou aprender a programar na Linguagem C"<<std::endl;
+//     std::cout<<std::endl;
+//     system("pause");
+//     return 0;
+// }
+// */
 // Obs: a) Use primeiramente comando std::endl para quebrar linha/pular uma linha.
 // b) Depois substitua o comando std::endl; pelo caractere de escape nova linha \n New Line
 /*
