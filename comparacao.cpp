@@ -1,3 +1,96 @@
+
+
+/*
+#include <iostream>
+#include <string>
+
+int main()
+{
+    bool bFezSol, bCar, bCarroPronto, bSalarioDepositado, bAcesso;
+    std::string SenhaAcesso = "cmaismais", SenhaDigitada;
+
+    std::cout << "Digite a senha de acesso: ";
+    std::cin >> SenhaDigitada;// Se a senha digitada pelo usúario e armazenada na variável SenhaDigitada for igual a senha de acesso, as instruções após o if seráo executadas pois a condição foi verdadeira true 1
+    if (SenhaDigitada == SenhaAcesso)
+        {
+            std::cout << "\nAcesso Permitido!" << "\n"; //aqui aproveitamos para indicar que o acesso foi concedido através de outra variável boleana
+            bAcesso = true;
+            system("pause");
+        }//Se a condição for falça, então as instruções do else serão executadas
+        else
+            {
+                std::cout << "\n Acesso Negago!!!" << "\n";
+                system("pause");
+                exit(0);//sai do programa, força o fechamento da aplicação
+            }
+
+}
+
+*/
+
+/*#include<iostream>
+#include<iomanip>
+#include<locale.h>
+
+int main()
+{
+	setlocale(LC_ALL, ("portuguese"));
+	char Reply;
+	double Number;
+	bool ResultadoLogico, ResultadoLogico2;
+		do
+		{
+            std::cout << "Digite um número: ";
+            std::cin >> Number;
+            std::cout << "True = 1 e False = 0" << "\n";
+            ResultadoLogico = ((Number > 100) && (Number !=0));
+            std::cout << "O Resultado lógico da expressão ((Number > 100) && (Number !=0)) é: " << ResultadoLogico << std::endl;
+            ResultadoLogico2 = ((Number == 100) || (Number > 200)) && (Number < 1000);
+            std::cout << "O Resultado lógico da expressão ((Number == 100) || (Number > 200)) && (Number < 1000) é: " << ResultadoLogico2 << std::endl;
+
+			std::cout << "\n Deseja calcular comparar outros valores? (S) ou (N): ";
+			std::cin >> Reply;
+
+		} while (Reply == 'S' || Reply == 's');
+
+	std::cout << "\n" << "Saindo do programa... " << std::endl;
+
+	system("pause");
+	
+	return 0;
+}
+*/
+/*
+#include<iostream>
+#include<iomanip>
+#include<locale.h>
+
+int main()
+{
+	setlocale(LC_ALL, ("portuguese"));
+	char Reply;
+	double Number;
+	bool MaiorQue100;
+		do
+		{
+            std::cout << "Digite um número: ";
+            std::cin >> Number;
+            std::cout << "True = 1 e False = 0" << "\n";
+            MaiorQue100 = (Number > 100);
+            std::cout << "O Resultado lógico que verifica se o némero digitado é maior que 100 é: " << MaiorQue100	<< std::endl;
+			std::cout << "\n Deseja calcular comparar outros valores? (S) ou (N): ";
+			std::cin >> Reply;
+		} while (Reply == 'S' || Reply == 's');
+
+	std::cout << "\n" << "Saindo do programa... " << std::endl;
+
+	system("pause");
+	
+	return 0;
+}
+*/
+
+/*
 #include <iostream>
 #include <iomanip> //necessário p/ uso do set precision
 
@@ -28,7 +121,7 @@ int main()
         system("Pause");
         return 0;
 }	
-	
+*/
 
 
 /*
