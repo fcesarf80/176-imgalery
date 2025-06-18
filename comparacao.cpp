@@ -4,8 +4,7 @@
 int main()
 {
 	setlocale(LC_ALL, "portuguese");
-	float N1, N2, N3;
-    float Media = 0.0;
+	float N1, N2, N3, Media = 0.0;
 	char Result;
 	do  // Cria loop até que Result seja S, para sair do loop
 	{
