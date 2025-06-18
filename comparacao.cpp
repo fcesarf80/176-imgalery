@@ -23,8 +23,7 @@ int main()
 		std::cout << "A média dos números ( " << N1 << ", " << N2 << " e " << N3 <<" ) é " << std::fixed << std::setprecision(2) << Media << "\n";
 		std::cout << "\n" <<"Deseja calcular outra média aritmética? (S) ou (N): ";
 		std::cin >> Result;
-	} while (Result == 'S' || Result == 's'); //Sai do loop apenas se o || for false, ou seja se Result for != de S/s.
-											 //Lembre que || só será false, se //todas as sentenças forem false.
+	} while (Result == 'S' || Result == 's'); //Sai do loop apenas se o || for false, ou seja se Result for != de S/s. Lembrando que || só será false, se //todas as sentenças forem false.
         std::cout << "\n" << "Saindo do programa..."<< std::endl;
         system("Pause");
         return 0;
