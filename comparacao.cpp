@@ -1,3 +1,7 @@
+//atividade6
+
+
+
 #include <iostream>
 using namespace std;
 
