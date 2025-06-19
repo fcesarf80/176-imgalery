@@ -1,4 +1,4 @@
-#include <iostream>
+/*#include <iostream>
 #include<iomanip>
 #include <string>
 #include<locale.h>
@@ -58,7 +58,7 @@ int main()
 	    return 0;
 }    
 
-
+*/
 
 /*
 #include <iostream>
@@ -687,22 +687,35 @@ Exiba o valor inteiro correspondente ao caractere digitado.
 
 //Em C++, "cast" é traduzido para conversão de tipo ou conversão explícita. Refere-se à alteração do tipo de um objeto ou valor de um tipo para outro..
 
-/*Exercício de C++:Faça um programa que pede 2 valores, em seguida exiba operações de comparação.
+//Exercício de C++:Faça um programa que pede 2 valores, em seguida exiba operações de comparação.
 #include <iostream>
-using namespace std;
+#include <iomanip>
+
 int main ()
-    {
+{
+    setlocale(LC_ALL, "portuguese");
     int vl1, vl2;
-    std::cout<<"Insira o 1° valor: ";
-    std::cin>>vl1;
-    std::cout<<"Insira o 2° valor: ";
-    std::cin>>vl2;
-    std::cout<<vl1<<" > " <<vl2<<" : "<<(vl1>vl2) <<endl; 
-    std::cout<<vl1<<" < " <<vl2<<" : "<<(vl1<vl2) <<endl;
-    std::cout<<vl1<<" >= "<<vl2<<" : "<<(vl1>=vl2)<<endl;
-    std::cout<<vl1<<" <= "<<vl2<<" : "<<(vl1<=vl2)<<endl;
-    std::cout<<vl1<<" == "<<vl2<<" : "<<(vl1==vl2)<<endl;
-    std::cout<<vl1<<" != "<<vl2<<" : "<<(vl1!=vl2)<<endl;
-    return 0;
+    char Result; //Reply
+    do
+    {
+        std::cout << "Insira o 1° valor: ";
+        std::cin >> vl1;
+        std::cout << "Insira o 2° valor: ";
+        std::cin >> vl2;
+        std::cout << vl1 << " > " << vl2 <<" : " << (vl1>vl2) <<std::endl; 
+        std::cout << vl1 << " < " << vl2 <<" : " << (vl1<vl2) <<std::endl;
+        std::cout << vl1 << " >= " << vl2 <<" : " << (vl1>=vl2) <<std::endl;
+        std::cout << vl1 << " <= " << vl2 <<" : " << (vl1<=vl2) <<std::endl;
+        std::cout << vl1 << " == " << vl2 <<" : " << (vl1==vl2) <<std::endl;
+        std::cout << vl1 << " != " << vl2 <<" : " << (vl1!=vl2) <<std::endl;
+
+        std::cout << "\n" <<"Deseja verificar outras números? (S) ou (N): ";
+		std::cin >> Result;
+        
+    } while (Result == 'S' || Result == 's');
+
+        std::cout << "\n" << "Saindo do programa..."<< std::endl;
+        system("Pause");
+        return 0;
+    
     }
-*/
