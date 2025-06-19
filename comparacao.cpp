@@ -1,3 +1,62 @@
+#include <iostream>
+#include<iomanip>
+#include <string>
+#include<locale.h>
+
+int main()
+{
+    setlocale(LC_ALL, "portuguese");
+    char Reply;
+    bool bFezSol, bCar, bCarroPronto, bSalarioDepositado, bAcesso;
+    std::string SenhaAcesso = "cmaismais", SenhaDigitada;
+    do
+    {
+        std::cout << "Digite sua senha de acesso: ";
+        std::cin >> SenhaDigitada;// Se a senha digitada pelo usúario e armazenada na variável SenhaDigitada for igual a senha de acesso, as instruções após o if seráo executadas pois a condição foi verdadeira true 1
+        if (SenhaDigitada == SenhaAcesso)
+            {
+                std::cout << "\nAcesso Permitido!" << "\n"; //aqui aproveitamos para indicar que o acesso foi concedido através de outra variável boleana
+                bAcesso = true;
+                //system("pause");
+            }//Se a condição for falça, então as instruções do else serão executadas
+            if (SenhaDigitada != SenhaAcesso)
+            {
+                std::cout << "\n Login ou senha de acesso errado!!! << \n";
+                std::cout << "Quer tentar novamente? (S) ou (N): ";
+                std::cin >> Reply;
+            } while (Reply == 'S' || Reply == 's');
+
+        std::cout << "\n Deseja calcular comparar outros valores? (S) ou (N): ";
+			std::cin >> Reply;
+
+		} while (Reply == 'S' || Reply == 's');
+
+	std::cout << "\n" << "Saindo do programa... " << std::endl;
+
+	system("pause");
+
+
+
+
+            {
+                std::cout << "\n Acesso Negago!!!" << "\n";
+                system("pause");
+                exit(0);//sai do programa, força o fechamento da aplicação
+            }
+    bFezSol = bCarroPronto = bSalarioDepositado = true;
+    //if (bAcesso == true)
+    {
+        if (bFezSol && bCarroPronto && bSalarioDepositado)
+        {
+            std::cout << "Vai das praia!!!" << std::endl;
+        }
+        else
+        {
+            std::cout << "Não vai dar praia!!!" << "\n";
+        }
+    }
+    system("pause");
+}
 
 
 /*
