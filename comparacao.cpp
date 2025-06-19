@@ -1,3 +1,113 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    //M2.1 ciclo while
+    //While(teste logico igual True) {comandos}
+/*
+    int x=0;
+    while (x<=3){
+        cout<<"x="<<x<<endl;
+        x++;
+    
+    }
+        //M5.2 ciclo for 
+        //for(int i = 0; i < 5; i++) {comandos}
+
+        for (int i= 0; i < 10; i=i+2)
+        {
+            cout<<i<<" ";
+        }
+        //decrementar
+          for (int i= 10; i >=0; i=i-2)
+        {
+            cout<<i<<" ";
+        }
+
+        //M5.3 do...while (condicao)
+        //do {comandos} while (teste lógico igua a true)
+
+        cout<<endl;
+
+        int y=0;
+        do{
+            cout<<"y="<<y<<endl;
+            y++;
+        }
+        while(y<1);
+
+        
+        // atividade 2 
+        cout<<"Atividade 2"<<endl;
+        for (int f=1; f<=100; f++){
+            cout<<f<<" ";
+        }
+
+cout<<endl;
+
+        for (int f=100; f<=1; f--){
+            cout<<f<<" ";
+        }
+
+cout<<endl;
+
+        for (int f=100; f>=1; f=f-3){
+            cout<<f<<" ";
+        }
+
+cout<<endl;
+//atividade 3
+int k=1;
+do{
+    cout<<k<< " ";
+    k++; //k=k+5 para imprimir de 5 em 5 (trocar aqui)
+
+}while(k<=100);
+*/
+
+//Atividade 4
+
+int soma=0, somaMenos10=0,somaMaior10=0, contaMenos10, contaMenos10;
+int nota;
+int N;
+
+cout<<"quantos alunos são?"
+cin>>N;
+
+int i=1;
+
+
+while(i<=N){
+    cout<<"introduza a nota do alunos"<<i<<": ";
+    cin>>nota;
+    soma=soma+nota;
+    i++;
+
+}
+
+
+...............................
+
+while(i<=N)
+
+..............................
+float media=(float)soma/soma/N;
+cout<<"A media das notas="<<media<<endl;
+
+
+
+
+    return 0;
+}
+
+
+
+// .....................................
+
+
+// ...........................
+
 /*#include <iostream>
 #include<iomanip>
 #include <string>
