@@ -1,12 +1,29 @@
-//atividade6
+// //atividade6
+// int n, multiplo;
+
+// cout<<"introduza um valor inteiro:"
+// ccin>>n;
+// cout<<"introduza um valor multiplo:"
+// ccin>>multiplo;
+
+// int=i=1;
+// do{
+    
+//     if(i % multiplo == 0){
+//             cout<<i<<" ";
+//     }
+//     i++;
+    
+
+// }while(i<=n);
 
 
 
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-int main()
-{
+// int main()
+// {
     //M2.1 ciclo while
     //While(teste logico igual True) {comandos}
 /*
@@ -72,38 +89,38 @@ do{
 
 //Atividade 4
 
-int soma=0, somaMenos10=0,somaMaior10=0, contaMenos10, contaMenos10;
-int nota;
-int N;
+// int soma=0, somaMenos10=0,somaMaior10=0, contaMenos10, contaMenos10;
+// int nota;
+// int N;
 
-cout<<"quantos alunos são?"
-cin>>N;
+// cout<<"quantos alunos são?"
+// cin>>N;
 
-int i=1;
-
-
-while(i<=N){
-    cout<<"introduza a nota do alunos"<<i<<": ";
-    cin>>nota;
-    soma=soma+nota;
-    i++;
-
-}
+// int i=1;
 
 
-...............................
+// while(i<=N){
+//     cout<<"introduza a nota do alunos"<<i<<": ";
+//     cin>>nota;
+//     soma=soma+nota;
+//     i++;
 
-while(i<=N)
-
-..............................
-float media=(float)soma/soma/N;
-cout<<"A media das notas="<<media<<endl;
-
-
+// }
 
 
-    return 0;
-}
+// ...............................
+
+// while(i<=N)
+
+// ..............................
+// float media=(float)soma/soma/N;
+// cout<<"A media das notas="<<media<<endl;
+
+
+
+
+//     return 0;
+// }
 
 
 
@@ -764,19 +781,35 @@ antes da divisão e mostre o novo resultado.
 
 //     int main ()
 //     {
-//         setlocale (LC_ALL, "portuguese");
-//         int T1, AsciiTecla = (int) T1;
-//         char Reply;
+//       setlocale (LC_ALL, "portuguese");
+//       int T1, AsciiTecla = (int) T1;
+//       char letra = 'A';//Isso atribui o caractere 'A' à variável letra
+//       char numero = 65;//Isso tbm atribui o caractere 'A' à variável numero.
+//       char proximaLetra = letra + 1;
+//       int numeroInteiro = 66;
+//       char letraConvertida = static_cast<char>(numeroInteiro);
+//       char Reply;
+        
+
+//        //Operação com caracteres: Você pode realizar operações aritméticas em caracteres, pois eles são armazenados como números. Por exemplo, você pode adicionar 1 a um caractere p/ obter o próximo caractere na tabela ASCII:
+//             //char proximaLetra = letra + 1;
+//             //Conversão deinteiro para caractere usando
+//             //static_cast<char>(numeroInteiro)
 
 //         do
 //         {
-//             int AsciiTecla = T1;
-//             std::cout << "Digite uma tecla: "<<std::endl;
-//             std::cin >> T1;
-//             std::cout << "\nTecla em ASCII: " << AsciiTecla <<std::endl;
+//             std::cout << "Letra: " << letra << std::endl;
+//             std::cout << "Número: " << numero << std::endl;
+//             std::cout << "Proxima letra: " << proximaLetra << std::endl;
+//             std::cout <<  "Letra convertida: " << letraConvertida << std::endl;
 
-//             std::cout << "\n" <<"Deseja verificar outra tecla? (S) ou (N): ";
-// 		    std::cin >> Reply;
+//             // int AsciiTecla = T1;
+//             // std::cout << "Digite uma tecla: "<<std::endl;
+//             // std::cin >> T1;
+//             // std::cout << "\nTecla em ASCII: " << AsciiTecla <<std::endl;
+
+//             // std::cout << "\n" <<"Deseja verificar outra tecla? (S) ou (N): ";
+// 		    // std::cin >> Reply;
 
 //         } while (Reply == 'S' || Reply == 's');
 
@@ -786,50 +819,82 @@ antes da divisão e mostre o novo resultado.
 //         return 0;
     
 // }
-
 //    *******************************************************************************************
-/*
-    #include <iostream>
-    #include <iomanip>
+//    *******************************************************************************************
+#include <iostream>
+#include <iomanip>
+using namespace std;
 
-    int main ()
-    {
-        setlocale (LC_ALL, "portuguese");
-        int a;
-        float b;
-        char Reply;
+//variable declaration - a char variable takes a single character as input
+//     Em C++, (int)c significa a conversão explícita (cast) do valor da variável c para o tipo inteiro (int). Isso força o valor de c a ser tratado como um número inteiro, mesmo que ele originalmente tenha outro tipo. 
+// Explicação detalhada:
+// int: Em C++, int é um tipo de dado que representa números inteiros, ou seja, números sem casas decimais.
+// c: Representa uma variável de qualquer tipo.
+// (int): Esta é a notação para "casting" ou conversão de tipo. O termo entre parênteses indica o tipo para o qual você deseja converter o valor.
 
-        do
-        {
-            std::cout << "Digite um número inteiro: "<<std::endl;
-            std::cin >> a;
-            std::cout << "Digite um número décimal: "<<std::endl;
-            std::cin >> b;
-            std::cout<<std::endl;
+int main()
+{
+    setlocale (LC_ALL, "portuguese"); 
+    char a;
+    char Reply;
 
-            float resul_a = static_cast<float>(a);
-            int resul_b = static_cast<int>(b);    
-            float resul_c = a + b;// Operação sem conversão    
-            int resul_d = static_cast<int>(resul_a) + b;//Conversão explícita
-            std::cout<<"O valor da váriavel 'a' do tip inteiro é: "<<a<<"\n";
-            std::cout<<"O valor da váriavel 'b' do tip float é: "<<b<<"\n";
-            std::cout<<"O valor de 'a' convertido para float é: "<<resul_a<<"\n";
-            std::cout<<"O valor de 'b' convertido para inteiro é: "<<resul_b<<"\n";
-            std::cout<<"A soma das váriaveis 'a' e 'b' é: "<<resul_c<<"\n";
-            std::cout<<"A soma das váriaveis 'a' e 'b' convertida para inteiro é: "<<resul_d<<"\n";
+      do
+      {
+        cout << "===== Program to Find the ASCII value of a character ===== \n\n";
+        cout << "Enter a character : ";
+        cin >> a;
+        cout << "\nThe ASCII value of the entered character is : " << (int)a<< "\n\n";
 
-            std::cout << "\n" <<"Deseja verificar outras números? (S) ou (N): "<<"\n";
-		    std::cin >> Reply;
-            std::cout<<std::endl;
+        cout << "\n" <<"Would you like to check another value? (S) ou (N): "<<"\n";
+	 	cin >> Reply;
+        cout<<endl;
+
+      } while (Reply == 'S' || Reply == 's');
+
+         cout << "\n" << "End check..."<< endl;
+         system("Pause");
+         return 0;
+
+    return 0;
+}
+      
+
+   
         
-        } while (Reply == 'S' || Reply == 's');
+         
+//    *******************************************************************************************  
+    // {   int a;
+    //     float b;
+    //     do
+    //     {
 
-        std::cout << "\n" << "Saindo do programa..."<< std::endl;
-        system("Pause");
-        return 0;
+    //         std::cout << "Digite um número décimal: "<<std::endl;
+    //         std::cin >> b;
+    //         std::cout<<std::endl;
 
-    }
-*/
+    //         float resul_a = static_cast<float>(a);
+    //         int resul_b = static_cast<int>(b);    
+    //         float resul_c = a + b;// Operação sem conversão    
+    //         int resul_d = static_cast<int>(resul_a) + b;//Conversão explícita
+    //         std::cout<<"O valor da váriavel 'a' do tip inteiro é: "<<a<<"\n";
+    //         std::cout<<"O valor da váriavel 'b' do tip float é: "<<b<<"\n";
+    //         std::cout<<"O valor de 'a' convertido para float é: "<<resul_a<<"\n";
+    //         std::cout<<"O valor de 'b' convertido para inteiro é: "<<resul_b<<"\n";
+    //         std::cout<<"A soma das váriaveis 'a' e 'b' é: "<<resul_c<<"\n";
+    //         std::cout<<"A soma das váriaveis 'a' e 'b' convertida para inteiro é: "<<resul_d<<"\n";
+
+    //         std::cout << "\n" <<"Deseja verificar outras números? (S) ou (N): "<<"\n";
+	// 	    std::cin >> Reply;
+    //         std::cout<<std::endl;
+        
+    //     } while (Reply == 'S' || Reply == 's');
+
+    //     std::cout << "\n" << "Saindo do programa..."<< std::endl;
+    //     system("Pause");
+    //     return 0;
+
+    // }
+
 //    *******************************************************************************************
 
 
