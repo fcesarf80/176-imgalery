@@ -17,7 +17,7 @@
 
 // }while(i<=n);
 
-
+//    ******************************************************************************************* 
 
 // #include <iostream>
 // using namespace std;
@@ -58,7 +58,7 @@
         }
         while(y<1);
 
-        
+//    *******************************************************************************************         
         // atividade 2 
         cout<<"Atividade 2"<<endl;
         for (int f=1; f<=100; f++){
@@ -78,6 +78,8 @@ cout<<endl;
         }
 
 cout<<endl;
+
+//    ******************************************************************************************* 
 //atividade 3
 int k=1;
 do{
@@ -86,7 +88,7 @@ do{
 
 }while(k<=100);
 */
-
+//    ******************************************************************************************* 
 //Atividade 4
 
 // int soma=0, somaMenos10=0,somaMaior10=0, contaMenos10, contaMenos10;
@@ -124,7 +126,7 @@ do{
 
 
 
-// .....................................
+//    ******************************************************************************************* 
 
 
 // ...........................
@@ -188,7 +190,7 @@ int main()
 	
 	    return 0;
 }    
-
+//    ******************************************************************************************* 
 */
 
 /*
@@ -216,7 +218,7 @@ int main()
             }
 
 }
-
+//    ******************************************************************************************* 
 */
 
 /*#include<iostream>
@@ -250,7 +252,9 @@ int main()
 	
 	return 0;
 }
+
 */
+//    ******************************************************************************************* 
 /*
 #include<iostream>
 #include<iomanip>
@@ -280,7 +284,7 @@ int main()
 	return 0;
 }
 */
-
+//    ******************************************************************************************* 
 /*
 #include <iostream>
 #include <iomanip> //necessário p/ uso do set precision
@@ -313,7 +317,7 @@ int main()
         return 0;
 }	
 */
-
+//    ******************************************************************************************* 
 
 /*
 #include <iostream>
@@ -337,6 +341,8 @@ int main()
 	return 0;
 }
 */
+//    ******************************************************************************************* 
+
 // #include <iostream>
  
 // int main()
@@ -350,7 +356,7 @@ int main()
 //         return 0;
 // }
 
-
+//    ******************************************************************************************* 
 // #include <iostream>
 // #include <locale.h>
 // #include <tchar.h> // Necessário para _T()
@@ -375,6 +381,8 @@ int main()
 //   return 0;
 // }
 
+//    ******************************************************************************************* 
+
 //     01) Desenvolva um programa q escreve na tela a frase Vou aprender a programar na
 // Linguagem C
 // #include<iostream>
@@ -394,7 +402,7 @@ int main()
 // Obs: a) Use primeiramente comando std::endl para quebrar linha/pular uma linha.
 // b) Depois substitua o comando std::endl; pelo caractere de escape nova linha \n New Line
 /*
-
+//    ******************************************************************************************* 
 // 02) Altere o programa do exercício 01 para que cada palavra da frase Vou aprender a
 // programar na Linguagem C++ apareca em linhas diferentes.
 #include<iostream>
@@ -411,7 +419,7 @@ int main()
         system("pause");
         return 0;
     }
-
+//    ******************************************************************************************* 
 //Operadores logicos
 #include<iostream>
 #include<stdlib.h>
@@ -438,7 +446,7 @@ using namespace std;
         return 0;
     }
 */
-
+//    ******************************************************************************************* 
 /*
 //EXTRUTURA DE SELECAO MULTIPLA
 #include<iostream>
@@ -473,7 +481,7 @@ system("pause");
 }
 */
 
-
+//    ******************************************************************************************* 
 /*
 //EXTRUTURA ELSE
 #include<iostream>
@@ -505,6 +513,8 @@ int main() {
 
 
 */
+
+//    ******************************************************************************************* 
 /*
 //CONDICOES EXTRUTURA IF
 #include<iostream>
@@ -530,7 +540,7 @@ system("pause");
 }
 
 */
-
+//    ******************************************************************************************* 
 /*
 //RESTO DA DIVISAO
 #include<iostream>
@@ -555,7 +565,7 @@ int main()
 }
 */
 
-
+//    ******************************************************************************************* 
 /*
 #include<iostream>
 #include<stdlib.h>
@@ -598,7 +608,7 @@ int main()
 	return 0;
 }
 */
-
+//    ******************************************************************************************* 
 
 /* 
  #include <iostream>
@@ -623,7 +633,7 @@ int main()
 		return 0;
 }
 */
-
+//    ******************************************************************************************* 
 /*
 
  #include <iostream>
@@ -651,6 +661,8 @@ int main ()
 }
 
 */
+
+//    ******************************************************************************************* 
 /*
 #include <iostream>
 using namespace std;
@@ -671,7 +683,7 @@ int main() {
     return 0;
 }*/
 
- 
+ //    ******************************************************************************************* 
  /*
  #include <iostream>
  #include <stdlib.h>
@@ -692,7 +704,7 @@ int main() {
     return 0;
  }*/
  
- 
+ //    ******************************************************************************************* 
  
  
  /*          
@@ -724,11 +736,13 @@ int main(int argc, char** argv)
     return 0;
 }*/
 
+//    ******************************************************************************************* 
+
 
         /* Em C++, int argc, char** argv são parâmetros     opcionais da função main, que permite que o programa receba argumentos passados na linha de comando quando é executado. argc é um inteiro que indica o número de argumentos, enquanto argv é um array de strings (ponteiros para strings, daí o **), onde cada string representa um argumento individual. 
 */
 
-//..............................................
+//    ******************************************************************************************* 
 
 /* ex.1 m3.6_Escreva um programa que:
 Declare duas variáveis int e float;
@@ -752,6 +766,8 @@ int main ()
     return 0;
 }
 */
+//    ******************************************************************************************* 
+
 
 /*ex.2_ Crie um programa que:
 peça ao utilizador dois números inteiros;
@@ -770,6 +786,7 @@ antes da divisão e mostre o novo resultado.
      return 0;
  }
 */
+//    ******************************************************************************************* 
 
 // ex.3_Crie um programa que:
 // Solicite ao utilizadpr que digite um ùnico caractere.
@@ -791,42 +808,43 @@ antes da divisão e mostre o novo resultado.
 //       char Reply;
         
 
-//        //Operação com caracteres: Você pode realizar operações aritméticas em caracteres, pois eles são armazenados como números. Por exemplo, você pode adicionar 1 a um caractere p/ obter o próximo caractere na tabela ASCII:
-//             //char proximaLetra = letra + 1;
-//             //Conversão deinteiro para caractere usando
-//             //static_cast<char>(numeroInteiro)
+       //Operação com caracteres: Você pode realizar operações aritméticas em caracteres, pois eles são armazenados como números. Por exemplo, você pode adicionar 1 a um caractere p/ obter o próximo caractere na tabela ASCII:
+            //char proximaLetra = letra + 1;
+            //Conversão deinteiro para caractere usando
+            //static_cast<char>(numeroInteiro)
 
-//         do
-//         {
-//             std::cout << "Letra: " << letra << std::endl;
-//             std::cout << "Número: " << numero << std::endl;
-//             std::cout << "Proxima letra: " << proximaLetra << std::endl;
-//             std::cout <<  "Letra convertida: " << letraConvertida << std::endl;
+        do
+        {
+            std::cout << "Letra: " << letra << std::endl;
+            std::cout << "Número: " << numero << std::endl;
+            std::cout << "Proxima letra: " << proximaLetra << std::endl;
+            std::cout <<  "Letra convertida: " << letraConvertida << std::endl;
 
-//             // int AsciiTecla = T1;
-//             // std::cout << "Digite uma tecla: "<<std::endl;
-//             // std::cin >> T1;
-//             // std::cout << "\nTecla em ASCII: " << AsciiTecla <<std::endl;
+            // int AsciiTecla = T1;
+            // std::cout << "Digite uma tecla: "<<std::endl;
+            // std::cin >> T1;
+            // std::cout << "\nTecla em ASCII: " << AsciiTecla <<std::endl;
 
-//             // std::cout << "\n" <<"Deseja verificar outra tecla? (S) ou (N): ";
-// 		    // std::cin >> Reply;
+            // std::cout << "\n" <<"Deseja verificar outra tecla? (S) ou (N): ";
+		    // std::cin >> Reply;
 
-//         } while (Reply == 'S' || Reply == 's');
+        } while (Reply == 'S' || Reply == 's');
 
-//         std::cout << "\n" << "Saindo do programa..."<< std::endl;
-//         system("Pause");
+        std::cout << "\n" << "Saindo do programa..."<< std::endl;
+        system("Pause");
 
-//         return 0;
+        return 0;
     
-// }
+}
 //    *******************************************************************************************
 //    *******************************************************************************************
+/*
+//Program to Find the ASCII value of a character
 #include <iostream>
 #include <iomanip>
 using namespace std;
 
-//variable declaration - a char variable takes a single character as input
-//     Em C++, (int)c significa a conversão explícita (cast) do valor da variável c para o tipo inteiro (int). Isso força o valor de c a ser tratado como um número inteiro, mesmo que ele originalmente tenha outro tipo. 
+// Em C++, (int)c significa a conversão explícita (cast) do valor da variável c para o tipo inteiro (int). Isso força o valor de c a ser tratado como um número inteiro, mesmo que ele originalmente tenha outro tipo. 
 // Explicação detalhada:
 // int: Em C++, int é um tipo de dado que representa números inteiros, ou seja, números sem casas decimais.
 // c: Representa uma variável de qualquer tipo.
@@ -835,8 +853,7 @@ using namespace std;
 int main()
 {
     setlocale (LC_ALL, "portuguese"); 
-    char a;
-    char Reply;
+    char a, Reply;
 
       do
       {
@@ -853,15 +870,10 @@ int main()
 
          cout << "\n" << "End check..."<< endl;
          system("Pause");
-         return 0;
 
     return 0;
-}
-      
-
-   
-        
-         
+}       
+        */ 
 //    *******************************************************************************************  
     // {   int a;
     //     float b;
@@ -939,12 +951,11 @@ int main()
     return 0;
     }
 */
-
+//    *******************************************************************************************
+/*
 //Em C++, "cast" é traduzido para conversão de tipo ou conversão explícita. Refere-se à alteração do tipo de um objeto ou valor de um tipo para outro..
-
 //Exercício de C++:Faça um programa que pede 2 valores, em seguida exiba operações de comparação.
 
-/*
 #include <iostream>
 #include <iomanip>
 
