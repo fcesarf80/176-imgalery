@@ -633,34 +633,7 @@ int main()
 		return 0;
 }
 */
-//    ******************************************************************************************* 
-/*
 
- #include <iostream>
-using namespace std;
-
-int main () 
-{
-	cout<<"Informe um numero: "<<endl;
-	int num1 = 0;
-	
-	cout<<"Informe outro numero: "<<endl;
-	int num2 = 0;
-	cin>>num2;
-
-	cout<<"Os números digitados foram: "
-		<<num1
-		<<" e "
-		<<num2
-		<<endl;
-
-		system("pause");
-
-		return 0;
-
-}
-
-*/
 
 //    ******************************************************************************************* 
 /*
@@ -704,38 +677,6 @@ int main() {
     return 0;
  }*/
  
- //    ******************************************************************************************* 
- 
- 
- /*          
-#include <iostream>
-#include <string>
-int main(int argc, char** argv) 
-{
-    while (true) {
-    int myInt = -10;
-    std::cout<<"Digite um numero: ";
-    std::cin>> myInt;
-    
-    if (myInt==123) {
-    break;
-    }
-    if (x > 0){
-        std::cout<<"X é posistivo!\n";
-    } (myInt > 0){
-        std::cout<<"myInt eh positivo!\n";
-    }
-    else if (myInt < 0){
-        std::cout<<"myInt eh negativo\n";
-    }
-    else {
-        std::cout<<"myInt eh zero!\n";
-    }
-    system("pause");
-
-    return 0;
-}*/
-
 //    ******************************************************************************************* 
 
 
@@ -765,27 +706,7 @@ int main ()
     cout<<"nF="<<nF<<endl;    
     return 0;
 }
-*/
-//    ******************************************************************************************* 
 
-
-/*ex.2_ Crie um programa que:
-peça ao utilizador dois números inteiros;
-Divida um pelo outro normalmente e mostre o resultado
-Use um cast para converter um dos números para float
-antes da divisão e mostre o novo resultado.  
- #include <iostream>
- using namespace std;
- int main ()
- {
-     int n1=5, n2=2;
-     int result=n1/n2;
-     float r=(float)n1/n2;
-     cout<<"Resultado int= "<<result<<endl;
-     cout<<"Resultado float= "<<r<<endl;
-     return 0;
- }
-*/
 //    ******************************************************************************************* 
 
 // ex.3_Crie um programa que:
@@ -813,31 +734,102 @@ antes da divisão e mostre o novo resultado.
             //Conversão deinteiro para caractere usando
             //static_cast<char>(numeroInteiro)
 
-        do
-        {
-            std::cout << "Letra: " << letra << std::endl;
-            std::cout << "Número: " << numero << std::endl;
-            std::cout << "Proxima letra: " << proximaLetra << std::endl;
-            std::cout <<  "Letra convertida: " << letraConvertida << std::endl;
+//         do
+//         {
+//             std::cout << "Letra: " << letra << std::endl;
+//             std::cout << "Número: " << numero << std::endl;
+//             std::cout << "Proxima letra: " << proximaLetra << std::endl;
+//             std::cout <<  "Letra convertida: " << letraConvertida << std::endl;
 
-            // int AsciiTecla = T1;
-            // std::cout << "Digite uma tecla: "<<std::endl;
-            // std::cin >> T1;
-            // std::cout << "\nTecla em ASCII: " << AsciiTecla <<std::endl;
+//             // int AsciiTecla = T1;
+//             // std::cout << "Digite uma tecla: "<<std::endl;
+//             // std::cin >> T1;
+//             // std::cout << "\nTecla em ASCII: " << AsciiTecla <<std::endl;
 
-            // std::cout << "\n" <<"Deseja verificar outra tecla? (S) ou (N): ";
-		    // std::cin >> Reply;
+//             // std::cout << "\n" <<"Deseja verificar outra tecla? (S) ou (N): ";
+// 		    // std::cin >> Reply;
 
-        } while (Reply == 'S' || Reply == 's');
+//         } while (Reply == 'S' || Reply == 's');
 
-        std::cout << "\n" << "Saindo do programa..."<< std::endl;
-        system("Pause");
+//         std::cout << "\n" << "Saindo do programa..."<< std::endl;
+//         system("Pause");
 
-        return 0;
+//         return 0;
     
-}
+// }
+
 //    *******************************************************************************************
 //    *******************************************************************************************
+//    *******************************************************************************************
+//    *******************************************************************************************
+*/
+//    ******************************************************************************************* 
+
+                        //>>>>>>>>>>>>>>>>>>>esse programa deu erro<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+           
+                        // #include <iostream>
+                        // #include <string>
+                        // int main(int argc, char** argv) 
+                        // {
+                        //     while (true) 
+                        //     int myInt = -10;
+                        //     std::cout<<"Digite um numero: ";
+                        //     std::cin>> myInt;
+     
+                        //     if (myInt==123) 
+                        //     break;
+    
+                        //                                 if (x > 0)
+                        //                                 { std::cout<<"X é posistivo!\n"; };
+                        //                                 if (myInt > 0)
+                        //                                 {  std::cout<<"myInt eh positivo!\n";   };
+                        //                                   else if (myInt < 0)
+                        //                                   {  std::cout<<"myInt eh negativo\n";     };
+                        //             else { std::cout<<"myInt eh zero!\n";  };
+                        //     ;
+                        //     system("pause");
+
+                        //     return 0;
+
+                        // }
+
+                         //>>>>>>>>>>>>>>>>>>>esse programa deu erro<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+                        // ex.2_ Crie um programa que: peça ao utilizador dois números inteiros, em seguida, divida um pelo outro normalmente e mostre o resultado. Use um cast para converter um dos números para float, antes da divisão e mostre o novo resultado.  
+                        /*#include <iostream>
+                        #include <iomanip>
+                        #include<locale.h>
+ 
+                        int main ()
+                         {
+                             setlocale(LC_ALL, "portuguese");
+                             int n1, n2;
+                             int result = n1+n2;
+                             float r=(float)n1-n2;
+                             char Reply;
+
+                             do
+                             {
+                                std::cout << "Digite o 1° número: \n";
+                                std::cin >> n1;
+                                std::cout << "Digite o 2° número: \n";
+                                std::cin >> n2;
+
+                                std::cout << "Resultado int= " << result << std::endl;
+                                std::cout << "Resultado float= " << r << std::endl;
+        
+                                std::cout << "\n" <<"Deseja verificar outra tecla? (S) ou (N): ";
+                                std::cin >> Reply;
+
+                             } while (Reply == 'S' || Reply == 's');
+                               std::cout << "\n" << "Saindo do programa..." << std::endl;
+                               system("Pause");
+                            
+                               return 0;
+                         }
+                        */
 /*
 //Program to Find the ASCII value of a character
 #include <iostream>
@@ -910,7 +902,7 @@ int main()
 //    *******************************************************************************************
 
 
-/*      int main ()
+    // int main ()
 
     // setlocale(LC_ALL, "portuguese");
     // int vl1, vl2;
@@ -937,20 +929,56 @@ int main()
     //     system("Pause");
     //     return 0;
     
-    //                     }*/
+    //                     }
+    //....................................................................................................
 
-/*  int x=16, y=3;
-    int result= x/y;
-    cout<<"Resultado int= "<<result<<endl; 
-    float r=(float)x/y;
-    cout<<"Resultado float= "<<r<<endl;
-    //C++ static_cast
-    char c='a';
-    int i=static_cast<int>(c);
-    cout<<"i = "<<i<<endl;
-    return 0;
-    }
-*/
+    #include <iostream>
+
+int main() {
+  float numFloat;
+  int i = static_cast<int>(numFloat);                                                             //  (   ERRADO   )
+  
+
+        std::cout << "===== Program to convert data: EXPLICIT CONVERSION ===== \n\n";
+
+        std::cout << "Enter the decimal number you want to convert: ";
+        std::cin >> numFloat;
+
+        std::cout << "\nThe original number is: " << numFloat << std::endl;
+        std::cout << "\nThe decimal number converted to integer is: " << (int)i << std::endl;
+     
+  return 0;
+}
+
+  //  ....................................................................................................
+
+
+//     CONVENÇÃO EXPLICITA - static_cast.
+// #include <iostream>
+// #include <iomanip>
+// using namespace std;
+
+// int main ()
+// {                                                                                        //  (   ERRADO   )
+//     int x=16, y=3;
+//     int result= x/y;
+//     cout<<"Resultado int= "<<result<<endl; 
+//     float r=(float)x/y;
+//     cout<<"Resultado float= "<<r<<endl;
+
+//C++ static_cast
+// Em C++, (int)c significa a conversão explícita (cast) do valor da variável c para o tipo inteiro (int).
+// Isso força o valor de c a ser tratado como um número inteiro, mesmo que ele originalmente tenha outro tipo. 
+// Explicação detalhada:
+// int: Em C++, int é um tipo de dado que representa números inteiros, ou seja, números sem casas decimais.
+// c: Representa uma variável de qualquer tipo.
+// (int): Esta é a notação para "casting" ou conversão de tipo. O termo entre parênteses indica o tipo para o qual você deseja converter o valor.
+//     char c='a';
+//     int i=static_cast<int>(c);
+//     cout<<"i = "<<i<<endl;
+//     return 0;
+// }
+
 //    *******************************************************************************************
 /*
 //Em C++, "cast" é traduzido para conversão de tipo ou conversão explícita. Refere-se à alteração do tipo de um objeto ou valor de um tipo para outro..
@@ -966,7 +994,7 @@ int main ()
     char Result; //Reply
     do
     {
-        std::cout << "Insira o 1° valor: ";
+        std::cout << "Insira o 1° valor: ";                                                     ( RESOLVIDO )
         std::cin >> vl1;
         std::cout << "Insira o 2° valor: ";
         std::cin >> vl2;
@@ -988,3 +1016,31 @@ int main ()
     
     }
         */
+       //    ******************************************************************************************* 
+/*
+
+ #include <iostream>
+using namespace std;
+
+int main () 
+{
+	cout<<"Informe um numero: "<<endl;
+	int num1 = 0;
+	
+	cout<<"Informe outro numero: "<<endl;                                                         ( RESOLVIDO )
+	int num2 = 0;
+	cin>>num2;
+
+	cout<<"Os números digitados foram: "
+		<<num1
+		<<" e "
+		<<num2
+		<<endl;
+
+		system("pause");
+
+		return 0;
+
+}
+
+*/
