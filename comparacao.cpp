@@ -1,4 +1,77 @@
-atividade6
+//Atividade 3.4
+//Escreva um programa em C++ que: a) Declare duas variáveis: • Uma do tipo int, chamada a, e atribua um valor inteiro a ela. • Outra do tipo float, chamada b, e atribua um valor decimal a ela. b) Converta (cast) a variável a para float e exiba o resultado. c) Converta (cast) a variável b para int e exiba o resultado. d) Faça uma operação matemática envolvendo as duas variáveis sem conversão e outra com conversão explícita, comparando os resultados.
+
+#include <iostream>
+#include <tchar.h> // Biblioteca C++ para acentuação Pt-Br.
+
+
+
+
+
+//**************************************************************************
+//**************************************************************************
+//**************************************************************************
+
+/*#include <iostream>
+using namespace std;
+int n, n1, n2;
+int Soma(int n1, int n2);
+int Sutracao(int n1, int n2);
+int Multiplicacao(int n1, int n2);
+int Divisao(int n1, int n2);
+int Potencia(int n1, int n2);
+int RaizQuadrada(int n1, int n2);
+
+int Soma(int n2, int n2)
+{
+    return n1 + n2;
+}
+int Sutracao(int n1, int n2);
+{
+    return n1 - 2;
+}
+int Multiplicacao(int n1, int n2)
+{
+    return n1 * n2;
+}
+int Divisao(int n1, int n2)
+{
+    return (float)n1 / (float)n2;
+}
+int Potencia(int n1, int n2)
+{
+    return pow(n1, n2);
+}
+int RaizQuadrada(int n1, int n2)
+{
+    return sqrt(n);
+}
+
+
+std::cout << "\nDigite o 1° número: ";
+std::cin >> n1;
+std::cout << "\nDigite o 2° número: ";
+std::cout >> n2;
+
+std::cout << "n\Resultado operadores Matemáticos\n ";
+std::cout << "\nSoma: " << Soma(n1, n2);
+std::cout << "\nSubtração: " << Subtração(n1, n2);
+std::cout << "\nMultiplicação: " << Multiplicação(n1, n2);
+std::cout << "\nDivisão: " << Divisão(n1, n2);
+std::cout << "\nPotenciação: " << Potencia(n1, n2);
+std::cout << "\nRaiz quadrada do 1° número é " << RaizQuadrada(n1);
+std::cout << "\nRaiz quadrada do 2° número é " << RaizQuadrada(n2);
+
+system("pause");
+return 0;
+*/
+
+//******************************************************************
+//******************************************************************
+//******************************************************************
+
+
+// atividade6
 // int n, multiplo;
 
 // cout<<"introduza um valor inteiro:"
@@ -17,7 +90,7 @@ atividade6
 
 // }while(i<=n);
 
-    ******************************************************************************************* 
+ //  ******************************************************************************************* 
 
 // #include <iostream>
 // using namespace std;
@@ -932,23 +1005,23 @@ int main()
     //                     }
     //....................................................................................................
 
-    #include <iostream>
+//     #include <iostream>
 
-int main() {
-  float numFloat;
-  int i = static_cast<int>(numFloat);                                                             //  (   ERRADO   )
+// int main() {
+//   float numFloat;
+//   int i = static_cast<int>(numFloat);                                                             //  (   ERRADO   )
   
 
-        std::cout << "===== Program to convert data: EXPLICIT CONVERSION ===== \n\n";
+//         std::cout << "===== Program to convert data: EXPLICIT CONVERSION ===== \n\n";
 
-        std::cout << "Enter the decimal number you want to convert: ";
-        std::cin >> numFloat;
+//         std::cout << "Enter the decimal number you want to convert: ";
+//         std::cin >> numFloat;
 
-        std::cout << "\nThe original number is: " << numFloat << std::endl;
-        std::cout << "\nThe decimal number converted to integer is: " << (int)i << std::endl;
+//         std::cout << "\nThe original number is: " << numFloat << std::endl;
+//         std::cout << "\nThe decimal number converted to integer is: " << (int)i << std::endl;
      
-  return 0;
-}
+//   return 0;
+// }
 
   //  ....................................................................................................
 
