@@ -1,8 +1,33 @@
 //Atividade 3.4
-//Escreva um programa em C++ que: a) Declare duas variáveis: • Uma do tipo int, chamada a, e atribua um valor inteiro a ela. • Outra do tipo float, chamada b, e atribua um valor decimal a ela. b) Converta (cast) a variável a para float e exiba o resultado. c) Converta (cast) a variável b para int e exiba o resultado. d) Faça uma operação matemática envolvendo as duas variáveis sem conversão e outra com conversão explícita, comparando os resultados.
+//Escreva um programa em C que: a) Declare duas variáveis: • Uma do tipo int, chamada a, e atribua um valor inteiro a ela. • Outra do tipo float, chamada b, e atribua um valor decimal a ela. b) Converta (cast) a variável a para float e exiba o resultado. c) Converta (cast) a variável b para int e exiba o resultado. d) Faça uma operação matemática envolvendo as duas variáveis sem conversão e outra com conversão explícita, comparando os resultados.
 
 #include <iostream>
-#include <tchar.h> // Biblioteca C++ para acentuação Pt-Br.
+#include <tchar.h> // Biblioteca C++ p/ acentuação Pt-Br.
+
+int main()
+{
+    setlocale (LC_ALL, "portuguese");
+    const float phi = 1.6180;
+    const int integerPhi = (int)phi; //conversão no estilo C 
+    
+    
+    std::cout << "O valor de Phi convertido para inteiro é: "  << integerPhi << std::endl;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
