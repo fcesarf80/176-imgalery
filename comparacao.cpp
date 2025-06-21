@@ -1,19 +1,61 @@
-//Atividade 3.4
-//Escreva um programa em C que: a) Declare duas variáveis: • Uma do tipo int, chamada a, e atribua um valor inteiro a ela. • Outra do tipo float, chamada b, e atribua um valor decimal a ela. b) Converta (cast) a variável a para float e exiba o resultado. c) Converta (cast) a variável b para int e exiba o resultado. d) Faça uma operação matemática envolvendo as duas variáveis sem conversão e outra com conversão explícita, comparando os resultados.
 
 #include <iostream>
+#include <string>
 #include <tchar.h> // Biblioteca C++ p/ acentuação Pt-Br.
 
 int main()
 {
     setlocale (LC_ALL, "portuguese");
-    const float phi = 1.6180;
-    const int integerPhi = (int)phi; //conversão no estilo C 
+    char operador, reply;
+    double num1, num2, resultado;
+    do
+    {
+      std::cout << "\nDigite o 1° número: ";
+      std::cin >> num1;
     
-    
-    std::cout << "O valor de Phi convertido para inteiro é: "  << integerPhi << std::endl;
-}
+      std::cout << "\nDigite o operador (+, -, *, /): ";
+      std::cin >> operador;
+      std::cout << "\nDigite o 2° número: ";
+      std::cin >> num2;
 
+        
+        switch (operador)
+        {
+            case '+': 
+                resultado = num1 + num2;
+                std::cout << "\nResultado: " << resultado << std::endl;
+                break;
+            case '-':
+                resultado = num1 - num2;
+                std::cout << "\nResultado: " << resultado << std::endl;
+                break;
+            case '*':
+                resultado = num1 * num2;
+                std::cout << "\nResultado: " << resultado << std::endl;
+                break;
+            case '/':
+                if (num2 != 0) {
+                    resultado = num1 / num2;
+                    std::cout << "\nResultado: " << resultado << std::endl;
+                } else {
+                    std::cout << "\nErro: Divisão por zero!" << std::endl;
+               }
+                break;
+            default:
+                std::cout << "\nOperador inválido!" << std::endl;
+        }
+  
+      std::cout<< "Deseja verificar outras números? (S) ou (N): ";
+      std::cin >> reply;
+        
+    } while (reply == 'S' || reply == 's');
+
+      std::cout << "\n" << "Saindo do programa..."<< std::endl;
+      system("Pause");
+      return 0;
+    
+    
+}
 
 
 
@@ -1138,7 +1180,50 @@ int main ()
 		system("pause");
 
 		return 0;
-
 }
 
+*/
+/*
+//Compiled successfully!
+#include <iostream>
+#include <tchar.h> // Biblioteca C++ p/ acentuação Pt-Br.
+
+int main()                                                       //Compiled successfully!
+{
+    setlocale (LC_ALL, "portuguese");
+
+    const float phi = 1.6180;
+    const int integerPhi = (int)phi; //conversão no estilo C 
+    std::cout << "O valor de Phi convertido para inteiro é: "  << integerPhi << std::endl;
+}
+*/
+
+/*
+//Atividade 3.4
+//Escreva um programa em C que: a) Declare duas variáveis: • Uma do tipo int, chamada a e atribua um valor inteiro a ela. • Outra do tipo float, chamada b, e atribua um valor decimal a ela. b) Converta (cast) a variável a para float e exiba o resultado. c) Converta (cast) a variável b para int e exiba o resultado. d) Faça uma operação matemática envolvendo as duas variáveis sem conversão e outra com conversão explícita, comparando os resultados.
+
+#include <iostream>
+#include <tchar.h> // Biblioteca C++ p/ acentuação Pt-Br.
+
+int main()
+{
+    setlocale (LC_ALL, "portuguese");
+    //Declaração das variáveis:
+    int a = 4;
+    float b = 5.8;
+    // Conversão no estilo C
+    float a_float = (float)a;
+    int b_int = (int)b;
+    //Operações
+    float result1 = a + b;
+    int result2 = a + (int)b;
+
+    std::cout << "\n a) O valor da 1° variável 'a' do tipo integer é: " << a << "\n e o valor da 2° variável 'b' do tipo float é: " << b;
+    std::cout << "\n\n b) O valor da variável 'a' no tipo float é: " << a_float << "\n e o valor da variável 'b' no tipo inteiro é: " << b_int << std::endl;
+    std::cout << "\n c) A operação sem conversão é: " << "a + b = " << result1 << std::endl;
+    std::cout << " e a operação com conversão: " << "a + (int)b = " << result2 << std::endl;
+    std::cout << std::endl;
+
+    return 0;
+}
 */
