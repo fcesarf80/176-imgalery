@@ -1,31 +1,24 @@
-#include <iomanip> 
 #include <iostream>
+#include<iomanip>
 using namespace std;
-int main ()
- {                                           
-    double nD;
-    char nC;
-    cout << "\n Digite um caractere decimal: ";
-    cin >> nD;
-    //converter decimal para inteiro
-    int nDInt = static_cast<int>(nD); 
-    
-    cout<<"\n O número decimal digitado é: "<<nD;
-    cout<<"\n Seu valor convertido para inteiro é: "<<nDInt<<"\n";
 
-    cout << "\n Digite um caractere do tipo char: ";
-    cin >> nC;
+int main {
+    int x = 0;
+ /*   if ( x >= 0)
+        x = x + 1;
+    else if ( x >= 1)
+        x = x + 2;
+        
+        cout<<"x = "<<x<<"\n" */
 
-    //coverter para ASCII
-    const int nAsscii =(int)nAsscii;  
-    cout<< "\n O valor ASCII do caractere inserido é: "<<(int)nC<<"\n";
-    system("Pause");
+        if ( x >= 0 )
+            x = x + 1;
+        if (x >= 1 )
+            x = x + 2; 
+
+
     return 0;
-} 
-
-
-
-
+}
 //*****************************************************************************
 
 /*#include <iostream>
@@ -1110,3 +1103,29 @@ Em C++, (int)c significa a conversão explícita (cast) do valor da variável c 
          system("Pause");
     return 0;
 }    */
+
+/*#include <iomanip> 
+#include <iostream>
+using namespace std;                            //Compiled successifully
+int main ()
+ {                                           
+    double nD;
+    char nC;
+    cout << "\n Digite um caractere decimal: ";
+    cin >> nD;
+    //converter decimal para inteiro
+    int nDInt = static_cast<int>(nD); 
+    
+    cout<<"\n O número decimal digitado é: "<<nD;
+    cout<<"\n Seu valor convertido para inteiro é: "<<nDInt<<"\n";
+
+    cout << "\n Digite um caractere do tipo char: ";
+    cin >> nC;
+
+    //coverter para ASCII
+    const int nAsscii =(int)nAsscii;  
+    cout<< "\n O valor ASCII do caractere inserido é: "<<(int)nC<<"\n";
+    system("Pause");
+    return 0;
+} 
+*/
