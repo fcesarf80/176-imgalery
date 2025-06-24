@@ -1,15 +1,78 @@
+/*
+Atividade nº 2 - Módulo 4
+
+
+
+4. Elabore um programa que leia a idade de uma pessoa e informe se a pessoa é maior de idade (>=18 anos) ou é menor de idade (< 18 anos).
+
+3. Elabore um programa que leia a idade de uma pessoa e informe se a pessoa é maior de idade (>=18 anos).
+
+2. Elabore um programa que leia um valor numérico a partir do teclado e informe se é maior ou igual a zero || menor que zero.
+
+1. Elabore um programa que leia um valor numérico a partir do teclado e informe se é maior ou igual a zero.*/
+
+#include <iostream>
+#include <tchar.h> // Biblioteca C++ p/ acentuação Pt-Br
+
+int main {
+    setlocale (LC_ALL, "portuguese");
+    int x = 0;
+
+    std::cout << "Digite um número: \n"<<;
+    std::cin >> x;
+    std::cout << "O número digitado é: "<< x <<"\n";
+
+    if ( x >= 0)
+    {    
+        std::cout << "O número " << x << " é maior ou igual a Zero!"\n<<;
+        system ("pause");
+    }
+    // else if ( x <= 0)
+    // {    
+    //     std::cout << "O número " << x << " é menor ou igual a Zero!"\n<<;
+    //     system ("pause");
+    // }
+
+
+
+    // else if ( x >= 1)
+    //     x = x + 2;
+        
+    //     cout<<"x = "<<x<<"\n" */
+
+    //     if ( x >= 0 )
+    //         x = x + 1;
+    //     if (x >= 1 )
+    //         x = x + 2; 
+
+
+    return 0;
+}
+
+    
+
+        
+
+
+
+
+
+
+
+/*
 #include <iostream>
 #include<iomanip>
+#include <tchar.h> // Biblioteca C++ p/ acentuação Pt-Br
 using namespace std;
 
 int main {
     int x = 0;
- /*   if ( x >= 0)
+    if ( x >= 0)
         x = x + 1;
     else if ( x >= 1)
         x = x + 2;
         
-        cout<<"x = "<<x<<"\n" */
+        cout<<"x = "<<x<<"\n" 
 
         if ( x >= 0 )
             x = x + 1;
@@ -19,6 +82,7 @@ int main {
 
     return 0;
 }
+*/
 //*****************************************************************************
 
 /*#include <iostream>
