@@ -1,6 +1,8 @@
-#include <iostream>//1. programa ler/informa se maior de idade.
+#include <iostream>
 #include <tchar.h> // Biblioteca C++ p/ acentuação Pt-Br
-int main() {                               setlocale (LC_ALL, "portuguese");
+int main()
+{
+    setlocale (LC_ALL, "portuguese");
     int age;
 
     std::cout << "\nDigite sua idade: ";
@@ -1206,6 +1208,22 @@ int main() {                               setlocale (LC_ALL, "portuguese");
         std::cout << "\nVocê é Menor de Idade!" << std::endl;        
     }                                               std::cout<<std::endl;
 
+    return 0;
+}
+
+*/
+/*
+#include <iostream>//1. programa ler/informa se maior de idade.
+#include <tchar.h> // Biblioteca C++ p/ acentuação Pt-Br
+int main() {                               setlocale (LC_ALL, "portuguese");
+    int age;
+
+    std::cout << "\nDigite sua idade: ";
+    std::cin >> age;
+
+    if (age >=18) {
+        std::cout << "\nVocê é Maior de Idade!" << std::endl;
+    }                                              
     return 0;
 }
 
