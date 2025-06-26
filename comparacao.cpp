@@ -1,18 +1,143 @@
 #include <iostream>
 #include <tchar.h> // Biblioteca C++ p/ acentuação Pt-Br
-int main()
+using namespace std;
+int main() {             setlocale (LC_ALL, "portuguese");
+char dia;     
+    cout<<"\nDigite o número correspondente ao dia d a semana desejasdo 1-Dom, 2-Seg, 3-Ter, 4-Qua, 5-Qui, 6-Sex, 7-Sáb: ";
+    cin>>dia;
+switch (dia)
 {
-    setlocale (LC_ALL, "portuguese");
-    int age;
-
-    std::cout << "\nDigite sua idade: ";
-    std::cin >> age;
-
-    if (age >=18) {
-        std::cout << "\nVocê é Maior de Idade!" << std::endl;
-    }                                              
+    case '7': case '1':
+        cout <<"=== Final de semana! ===";
+        break;
+    case '2': case '3': case '4': case '5': case '6':
+        cout << "\n=== Dia útil! ===\n" << endl;
+        break;
+    default:
+        cout << "\n=== Inválido! ===\n" << endl;
+    }        
     return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// #include <iostream>
+// #include <tchar.h> // Biblioteca C++ p/ acentuação Pt-Br
+// int main() {
+//     setlocale (LC_ALL, "portuguese");
+//     int option = 0;// int &&|| char
+    
+//     std::cout << "\nQual o dia pretendido para o aluguer? ";
+//     std::cin >> option;
+
+//     switch (option)
+//     {
+//          case 'Seg': case '2':
+//  std::cout << "\nO alguer a par é de: 400.00 €" << std::endl;
+//             break;
+//         case 'Ter': case '3': case 'Qua':
+//         case '4'  : case 'Qui': case '5':
+// std::cout << "\nO alguer a par é de: 550.00 €" << std::endl;
+//             break;
+//         case 'Sex': case '6':
+// std::cout << "\nO alguer a par é de: 600.00 €" << std::endl;
+//             break;
+//         case 'Sab': case 'Dom': case 'Fim de semana':
+// std::cout << "\nO alguer a par é de: 500.00 €" << std::endl;
+//             break;
+//         default:
+//         std::cout << option << "\nOpção Inválida!" << std::endl;
+//     }              
+    
+//     return 0;
+// }
+    
+
+
+//     switch (opcao) //ex. 1
+//     {
+//         case 0:
+//             std::cout << "Zero!" << std::endl;
+//             break;
+//         case 1:
+//             std::cout << "Um!" << std::endl;
+//             break;
+//         case 2:
+//             std::cout << "Dois!" << std::endl;
+//             break;
+//         default:
+//             std::cout << "Outro!" << std::endl;     
+//     }                                              
+//     return 0;
+
+// switch (caracter) //ex. 2
+//     {
+//         case 'a' : case 'A' :
+//         case 'e' : case 'E' :
+//         case 'i' : case 'I' :
+//         case 'o' : case 'O' :
+//         case 'u' : case 'U' :
+//             cout << caracter << "É uma vogal" << std::endl;
+//             break;
+//         default:
+//             cout << caracter << "Não é uma vogal" << std::endl;
+//     }                                              
+//     return 0;
+
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1227,4 +1352,33 @@ int main() {                               setlocale (LC_ALL, "portuguese");
     return 0;
 }
 
+*/
+/*
+#include <iostream>
+#include <tchar.h> // Biblioteca C++ p/ acentuação Pt-Br
+using namespace std;
+int main() {             setlocale (LC_ALL, "portuguese");
+char dia;     
+            cout<<"\nDigite o dia da semana pretendido: ";
+            cin>>dia;
+switch (dia)
+{
+    case 'Sab': case '7': case 'D': case '1':
+        cout << "\nO alguer é: 550.00 €\n" << endl;
+        break;
+    case 'Seg': case '2':
+        cout << "\nO alguer é de: 400.00 €\n" << endl;
+        break;
+    case 'Ter': case '3': case 'Qua':
+    case '4'  : case 'Qui': case '5':
+        cout << "\nO alguer é: 550.00 €\n" << endl;
+        break;
+    case 'Sex': case '6':
+        cout << "\nO alguer é: 600.00 €\n" << endl;
+        break;
+    default:
+        cout << "\nOpção Inválida!" << endl;
+    }        
+    return 0;
+}
 */
