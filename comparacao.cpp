@@ -1,41 +1,15 @@
-// #include <iostream>//1. programa ler/informa número se é >= 0
-// #include <tchar.h> // Biblioteca C++ p/ acentuação Pt-Br
-// int main() {                               setlocale (LC_ALL, "portuguese");
-//     int num;
+#include <iostream>//1. programa ler/informa se maior de idade.
+#include <tchar.h> // Biblioteca C++ p/ acentuação Pt-Br
+int main() {                               setlocale (LC_ALL, "portuguese");
+    int age;
 
-//     std::cout << "\nDigite um número: ";
-//     std::cin >> num;
+    std::cout << "\nDigite sua idade: ";
+    std::cin >> age;
 
-//     if (num >= 0) {
-//         std::cout << "\nO número é maior ou igual a zero." << std::endl;
-//     } else {
-//         std::cout << "\nO número é menor que zero." << std::endl;        
-//     }                                               std::cout<<std::endl;
-
-//     return 0;
-// }
-
-
-
-
-
-
-/***************************************************************************/
-#include <iostream>      //2. programa ler/informa número se é >= 0 || <= 0
-#include <tchar.h> 
-int main() {                             setlocale (LC_ALL, "portuguese");
-    int num;
-
-    std::cout << "\nDigite um número: ";
-    std::cin >> num;
-    
-    if (num >= 0) {
-        std::cout<<"\nO número é maior que zero. "<<std::endl;
-    } else {
-        std::cout<<"\nO número é menor que zero!"<<std::endl;
-    }                                               std::cout<<std::endl;
-
-    return 0;        
+    if (age >=18) {
+        std::cout << "\nVocê é Maior de Idade!" << std::endl;
+    }                                              
+    return 0;
 }
 
 
@@ -46,18 +20,6 @@ int main() {                             setlocale (LC_ALL, "portuguese");
 
 
 
-
-
-
-
-
-
-/*
-Atividade nº 2 - Módulo 4
-
-4. Elabore um programa que leia a idade de uma pessoa e informe se a pessoa é maior de idade (>=18 anos) ou é menor de idade (< 18 anos).
-
-3. Elabore um programa que leia a idade de uma pessoa e informe se a pessoa é maior de idade (>=18 anos).
 
 
 
@@ -1195,4 +1157,56 @@ int main ()
     system("Pause");
     return 0;
 } 
+*/
+// #include <iostream>//1. programa ler/informa número se é >= 0
+// #include <tchar.h> // Biblioteca C++ p/ acentuação Pt-Br
+// int main() {                               setlocale (LC_ALL, "portuguese");
+//     int num;
+
+//     std::cout << "\nDigite um número: ";
+//     std::cin >> num;
+
+//     if (num >= 0) {
+//         std::cout << "\nO número é maior ou igual a zero." << std::endl;
+//     } else {
+//         std::cout << "\nO número é menor que zero." << std::endl;        
+//     }                                               std::cout<<std::endl;
+
+//     return 0;
+// }
+/***************************************************************************/
+// #include <iostream>      //2. programa ler/informa número se é >= 0 || <= 0
+// #include <tchar.h> 
+// int main() {                             setlocale (LC_ALL, "portuguese");
+//     int num;
+
+//     std::cout << "\nDigite um número: ";
+//     std::cin >> num;
+    
+//     if (num >= 0) {
+//         std::cout<<"\nO número é maior que zero. "<<std::endl;
+//     } else {
+//         std::cout<<"\nO número é menor que zero!"<<std::endl;
+//     }                                               std::cout<<std::endl;
+
+//     return 0;        
+// }
+/*
+#include <iostream>//1. programa ler/informa se maior de idade.
+#include <tchar.h> // Biblioteca C++ p/ acentuação Pt-Br
+int main() {                               setlocale (LC_ALL, "portuguese");
+    int age;
+
+    std::cout << "\nDigite sua idade: ";
+    std::cin >> age;
+
+    if (age >=18) {
+        std::cout << "\nVocê é Maior de Idade!" << std::endl;
+    } else {
+        std::cout << "\nVocê é Menor de Idade!" << std::endl;        
+    }                                               std::cout<<std::endl;
+
+    return 0;
+}
+
 */
