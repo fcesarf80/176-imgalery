@@ -1,15 +1,24 @@
-
-#include <iostream>//números 3/100 de 3 em 3
+///a) instrução que atribui aos elementos do   arrayDados: 101;102;103;104.
+#include <iostream>
 using namespace std;
 
-int main() {            
-    for (int i = 3; i <= 100; i += 3)
-    {
-        cout << i << ", ";
-    }
-    cout << endl;        
+int main() {
+    int arrayDados [4];
+        arrayDados[0] = 101;
+        arrayDados[1] = 102;
+        arrayDados[2] = 103;
+        arrayDados[3] = 104;
+//b)Iimprimi o valor da posição 2
+cout << endl;    
+cout<<arrayDados[2];   
+    cout << endl;
+    cout << endl;
     return 0;
 }
+
+
+
+
 
 
 
@@ -1407,3 +1416,56 @@ int main() {
     return 0;
 }
 */
+/*
+//M5-ex3_a) Programa números inteiros 1/100 ordem crescente
+#include <iostream>
+using namespace std;
+
+int main() {
+    int j = 1;
+    
+    do {
+        cout << j << " ";
+        j++;
+    } while (j <= 100);
+    cout<<endl;        
+    return 0;
+}
+
+
+
+
+//b) Programa números inteiros 1/100 ordem Decrescente
+#include <iostream>
+using namespace std;
+
+int main() {
+    int k = 100;
+    
+    do {
+        cout << k << " ";
+        k--;
+    } while (k >= 1);
+    cout<<endl;        
+    return 0;
+}
+
+
+
+
+//c) Programa números inteiros 3/100, de 3 em 3
+#include <iostream>
+using namespace std;
+
+int main() {
+    int L = 0;
+    
+    do {
+        cout << L << " ";
+        L +=3;
+    } while (L <= 100);
+    cout<<endl;        
+    return 0;
+}
+*/
+
