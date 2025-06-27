@@ -1,26 +1,15 @@
-#include <iostream>
-#include <tchar.h> // Biblioteca C++ p/ acentuação Pt-Br
+
+#include <iostream>//números 3/100 de 3 em 3
 using namespace std;
-int main() {             setlocale (LC_ALL, "portuguese");
-char dia;     
-    cout<<"\nDigite o número correspondente ao dia d a semana desejasdo 1-Dom, 2-Seg, 3-Ter, 4-Qua, 5-Qui, 6-Sex, 7-Sáb: ";
-    cin>>dia;
-switch (dia)
-{
-    case '7': case '1':
-        cout <<"=== Final de semana! ===";
-        break;
-    case '2': case '3': case '4': case '5': case '6':
-        cout << "\n=== Dia útil! ===\n" << endl;
-        break;
-    default:
-        cout << "\n=== Inválido! ===\n" << endl;
-    }        
+
+int main() {            
+    for (int i = 3; i <= 100; i += 3)
+    {
+        cout << i << ", ";
+    }
+    cout << endl;        
     return 0;
 }
-
-
-
 
 
 
@@ -1379,6 +1368,42 @@ switch (dia)
     default:
         cout << "\nOpção Inválida!" << endl;
     }        
+    return 0;
+}
+*/
+
+/*
+#include <iostream>
+#include <tchar.h> // Biblioteca C++ p/ acentuação Pt-Br
+using namespace std;
+int main() {             setlocale (LC_ALL, "portuguese");
+char dia;     
+    cout<<"\nDigite o número correspondente ao dia d a semana desejasdo 1-Dom, 2-Seg, 3-Ter, 4-Qua, 5-Qui, 6-Sex, 7-Sáb: ";
+    cin>>dia;
+switch (dia)
+{
+    case '7': case '1':
+        cout <<"=== Final de semana! ===";
+        break;
+    case '2': case '3': case '4': case '5': case '6':
+        cout << "\n=== Dia útil! ===\n" << endl;
+        break;
+    default:
+        cout << "\n=== Inválido! ===\n" << endl;
+    }        
+    return 0;
+}
+*/
+/*
+#include <iostream>//números 1/100 crescente
+using namespace std;
+
+int main() {            
+    for (int i = 1; i <= 100; i++)
+    {
+        cout << i << ", ";
+    }
+    cout << endl;        
     return 0;
 }
 */
