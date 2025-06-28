@@ -1,19 +1,45 @@
-///a) instrução que atribui aos elementos do   arrayDados: 101;102;103;104.
-#include <iostream>
+#include <tchar.h> // Biblioteca C++ p/
+#include <iostream> //M5 Ex4
 using namespace std;
 
-int main() {
-    int arrayDados [4];
-        arrayDados[0] = 101;
-        arrayDados[1] = 102;
-        arrayDados[2] = 103;
-        arrayDados[3] = 104;
-//b)Iimprimi o valor da posição 2
-cout << endl;    
-cout<<arrayDados[2];   
-    cout << endl;
-    cout << endl;
-    return 0;
+int main() {                    setlocale (LC_ALL, "portuguese");
+    int nota, soma = 0, somaInf10 = 0, somaSup10 = 0;
+    int i = 0, nAlunos = 0, count1 = 0, count2 =0;
+    int media, medInf, medSup;
+
+    cout << "Digite o número de alunos? ";
+    cin >> nAlunos;
+
+    while (i < nAlunos)
+    {
+        cout <<"Digite a nota do aluno " << i + 1 << ": ";
+        cin >> nota;
+        soma += nota;
+
+        if (nota < 10) {
+            somaInf10 += nota;
+            count1++;
+        } else {
+            somaSup10 += nota;
+            count2++;
+        }
+        i++;
+
+        media = soma / nAlunos;
+        cout << "A média aritmética final é: " << media << endl;
+        
+        medInf = somaInf10 / count1;
+        cout <<"A média das notas inferiores a 10 é: " << medInf << endl;
+        medSup = somaSup10 / count2;
+        cout << "A médoa das notas superiores a 10 é: " << medSup << endl;
+              
+        return 0;
+
+
+    }
+
+
+
 }
 
 
@@ -28,7 +54,34 @@ cout<<arrayDados[2];
 
 
 
+/*#include <iostream>
+using namespace std;
 
+int main() {
+    // int x = 0;
+
+    // while (x <= 10)
+    //     x = x + 1;
+    //     x = x+ 2;
+
+    //     cout << "x: "<<x;
+
+    // while (x<=10)
+    // {
+    //     x = x + 1;
+    //     x = x+ 2;
+
+    //     cout << " x:"<<x<< ", ";
+
+    // }
+
+    int soma = 0;
+
+    while(soma < 100)
+    soma = soma + 5;
+    cout << soma << endl;
+    return 0;
+}*/
 
 
 
