@@ -1,50 +1,44 @@
-#include <tchar.h> // Biblioteca C++ p/
-#include <iostream> //M5 Ex4
+    //M5 Ex4 Program p/notas(0/20)d N alunos e printa média
+#include <iostream>//aritmética e média das notas >, < e >= 10.
 using namespace std;
+int main() {
+    float nota = 0, soma = 0, somaInf10 = 0, somaSup10 = 0;
+    float media, medInf, medSup;
+    int i = 0, nAlunos=0, countInf10=0, countSup10=0;
 
-int main() {                    setlocale (LC_ALL, "portuguese");
-    int nota, soma = 0, somaInf10 = 0, somaSup10 = 0;
-    int i = 0, nAlunos = 0, count1 = 0, count2 =0;
-    int media, medInf, medSup;
-
-    cout << "Digite o número de alunos? ";
+    cout << "\nDigite o número de alunos? ";
     cin >> nAlunos;
+    cout<<endl;
 
-    while (i < nAlunos)
-    {
-        cout <<"Digite a nota do aluno " << i + 1 << ": ";
+    while (i < nAlunos) {
+        cout <<"Intriduza a nota do " << i + 1 << "° aluno: ";
         cin >> nota;
-        soma += nota;
 
-        if (nota < 10) {
-            somaInf10 += nota;
-            count1++;
-        } else {
-            somaSup10 += nota;
-            count2++;
+        // Validação da nota
+        while (nota < 0 || nota > 20) {
+            cout << "\nNota inválida! Digite novamente: ";
+            cin >> nota;
         }
-        i++;
-
-        media = soma / nAlunos;
-        cout << "A média aritmética final é: " << media << endl;
+    soma += nota;
         
-        medInf = somaInf10 / count1;
-        cout <<"A média das notas inferiores a 10 é: " << medInf << endl;
-        medSup = somaSup10 / count2;
-        cout << "A médoa das notas superiores a 10 é: " << medSup << endl;
-              
-        return 0;
+    if (nota < 10) {
+        somaInf10 += nota;
+        countInf10++;
+    } else ( nota >= 10);
+        somaSup10 += nota;
+        countSup10++;    
+    i++;
+  }
+    media = soma / nAlunos;
+    medInf = somaInf10 / countInf10;
+    medSup = somaSup10 / countSup10;
+    cout << "\nA média aritmética final é: " << media << endl;
+    cout<<"A média das notas inferiores a 10 é: " << medInf<<endl;
+    cout<<"A média das notas Superiores a 10 é: " << medSup<<endl;
+    cout<<endl;
 
-
-    }
-
-
-
+    return 0;
 }
-
-
-
-
 
 
 
