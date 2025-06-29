@@ -1,44 +1,54 @@
-    //M5 Ex4 Program p/notas(0/20)d N alunos e printa média
-#include <iostream>//aritmética e média das notas >, < e >= 10.
+#include <iostream>         //M5-EX5 - apresente a percentagem  
+#include<iomanip>          //de números pares/ímpares
 using namespace std;
+
 int main() {
-    float nota = 0, soma = 0, somaInf10 = 0, somaSup10 = 0;
-    float media, medInf, medSup;
-    int i = 0, nAlunos=0, countInf10=0, countSup10=0;
+    int n, valor;
+    float percPar, percImpar, par = 0, impar = 0;
 
-    cout << "\nDigite o número de alunos? ";
-    cin >> nAlunos;
-    cout<<endl;
-
-    while (i < nAlunos) {
-        cout <<"Intriduza a nota do " << i + 1 << "° aluno: ";
-        cin >> nota;
-
-        // Validação da nota
-        while (nota < 0 || nota > 20) {
-            cout << "\nNota inválida! Digite novamente: ";
-            cin >> nota;
-        }
-    soma += nota;
+    cout << "\nQuantos valores vai ler (n)?  ";
+    cin >> n;
+    
+    for (int i = 1; i <= n; i++) {
+        cout << "Introduza o "<< i <<"° valor positivo: ";
+        cin >> valor;
         
-    if (nota < 10) {
-        somaInf10 += nota;
-        countInf10++;
-    } else ( nota >= 10);
-        somaSup10 += nota;
-        countSup10++;    
-    i++;
-  }
-    media = soma / nAlunos;
-    medInf = somaInf10 / countInf10;
-    medSup = somaSup10 / countSup10;
-    cout << "\nA média aritmética final é: " << media << endl;
-    cout<<"A média das notas inferiores a 10 é: " << medInf<<endl;
-    cout<<"A média das notas Superiores a 10 é: " << medSup<<endl;
-    cout<<endl;
+        if (valor < 0) {
+           cout << "\nSão permitidos, somente números inteiros positivos! Tente novamente." << endl;
+           i--;
+           continue;
+        }
 
+        if (valor % 2 == 0)
+            par++;
+        else
+            impar++;
+    }
+
+    percPar = (par * 100 ) / n;
+    percImpar = (par * 100 ) / n;
+
+    cout << "\nA percentagem dos números pares inseridos  é de: "       << fixed <<setprecision(2) << percPar <<endl;
+    cout << "A percentagem dos números impares inseridos é de: "       << fixed <<setprecision(2) << percImpar <<endl;
+        
     return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -194,7 +204,27 @@ int main() {
 
 
 
+/*
+#include <iostream>
+using namespace std;
+int main() {
+    int x = 12;
+    int y = 0;
 
+    cout<< "Olá!"<<endl;
+
+    for (int i = x; i >= 0; i = i-2)
+    {
+        y = y + i;
+        cout << i << ", ";
+    }
+    cout << " y:" << y;
+
+    
+    
+    return 0;
+}
+*/
 
 /*
 #include <iostream>
@@ -1515,4 +1545,86 @@ int main() {
     return 0;
 }
 */
+/*
+//M5 Ex4 Program p/notas(0/20)d N alunos e printa média
+#include <iostream>//aritmética e média das notas >, < e >= 10.
+using namespace std;
+int main() {
+    float nota = 0, soma = 0, somaInf10 = 0, somaSup10 = 0;
+    float media, medInf, medSup;
+    int i = 0, nAlunos=0, countInf10=0, countSup10=0;
 
+    cout << "\nDigite o número de alunos? ";
+    cin >> nAlunos;
+    cout<<endl;
+
+    while (i < nAlunos) {
+        cout <<"Intriduza a nota do " << i + 1 << "° aluno: ";
+        cin >> nota;
+
+        // Validação da nota
+        while (nota < 0 || nota > 20) {
+            cout << "\nNota inválida! Digite novamente: ";
+            cin >> nota;
+        }
+    soma += nota;
+        
+    if (nota < 10) {
+        somaInf10 += nota;
+        countInf10++;
+    } else ( nota >= 10);
+        somaSup10 += nota;
+        countSup10++;    
+    i++;
+  }
+    media = soma / nAlunos;
+    medInf = somaInf10 / countInf10;
+    medSup = somaSup10 / countSup10;
+    cout << "\nA média aritmética final é: " << media << endl;
+    cout<<"A média das notas inferiores a 10 é: " << medInf<<endl;
+    cout<<"A média das notas Superiores a 10 é: " << medSup<<endl;
+    cout<<endl;
+
+    return 0;
+}
+*/
+/*
+//M5-EX5 - apresente a percentagem de números pares/ímpares
+#include <iostream>
+#include<iomanip>
+using namespace std;
+int main() {
+    int n, valor;
+    float percPar, percImpar, par = 0, impar = 0;
+
+    cout << "\nQuantos valores vai ler (n)?  ";
+    cin >> n;
+    cout << endl;
+
+    for (int i = 1; i <= n; i++)
+    {
+        cout << "Introduza o "<< i <<"° valor positivo: ";
+        cin >> valor;
+        
+        if (valor < 0) {
+           cout << "\nSão permitidos, somente números inteiros positivos! Tente novamente." << endl;
+           i--;
+           continue;
+        }
+
+        if (valor % 2 == 0)
+            par++;
+        else
+            impar++;
+    }
+
+    percPar = (par * 100 ) / n;
+    percImpar = (par * 100 ) / n;
+
+    cout << "\nA percentagem dos números pares inseridos  é de: " << fixed <<setprecision(2) << percPar <<endl;
+    cout << "A percentagem dos números impares inseridos é de: " << fixed <<setprecision(2) << percImpar <<endl;
+       cout << endl;
+    
+    return 0;
+}
+*/
