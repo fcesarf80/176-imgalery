@@ -1,40 +1,13 @@
-#include <iostream>         //M5-EX5 - apresente a percentagem  
-#include<iomanip>          //de números pares/ímpares
+#include <iostream>         //M5-EX6 - apresente a os números   
+#include<iomanip>           //múltiplos de uma valor
 using namespace std;
 
 int main() {
-    int n, valor;
-    float percPar, percImpar, par = 0, impar = 0;
-
-    cout << "\nQuantos valores vai ler (n)?  ";
-    cin >> n;
     
-    for (int i = 1; i <= n; i++) {
-        cout << "Introduza o "<< i <<"° valor positivo: ";
-        cin >> valor;
-        
-        if (valor < 0) {
-           cout << "\nSão permitidos, somente números inteiros positivos! Tente novamente." << endl;
-           i--;
-           continue;
-        }
-
-        if (valor % 2 == 0)
-            par++;
-        else
-            impar++;
-    }
-
-    percPar = (par * 100 ) / n;
-    percImpar = (par * 100 ) / n;
-
-    cout << "\nA percentagem dos números pares inseridos  é de: "       << fixed <<setprecision(2) << percPar <<endl;
-    cout << "A percentagem dos números impares inseridos é de: "       << fixed <<setprecision(2) << percImpar <<endl;
-        
     return 0;
 }
 
-
+Intruduza valor 
 
 
 
