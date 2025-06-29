@@ -1,13 +1,97 @@
-#include <iostream>         //M5-EX6 - apresente a os números   
-#include<iomanip>           //múltiplos de uma valor
+#include<iostream>
 using namespace std;
 
-int main() {
-    
+void minhaFuncao() {
+    cout << "\nAcabei de ser executado!";
+}
+
+int main () {
+    minhaFuncao();
+
     return 0;
 }
 
-Intruduza valor 
+
+
+
+
+
+
+/*#include <iostream>             //M5-EX6 - apresente a os números   
+#include<iomanip>               //múltiplos de uma valor
+using namespace std;
+int main() {
+int n, mult;
+char reply;c
+do {
+    cout << "\nIntruduza valor inteiro positivo (N): ";
+    cin >> n;
+
+    while (n < 0) {             //Validação do número
+    cout << "\nSão permitidos, somente números positivos! \nPor favor ente novamente: ";
+        cin >> n;
+    }            
+        cout << "\nIntroduza o valor do múltiplo: ";
+        cin >> mult;
+    int i = 1;
+    do {
+        if (i % mult == 0)
+        cout << i << " ";
+        i++;            
+    } while (i <= n);
+    cout << "\n" <<"\nGostaria de verificar outro valor? (S) ou (N): "; 
+	cin >> reply;        
+} while (reply == 'S' || reply == 's');
+    cout << "\n" << "Fim da verificação..."<< endl;
+    system("Pause");
+
+    return 0;
+}*/
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+// int main() {
+//     int n, valor;
+//     float percPar, percImpar, par = 0, impar = 0;
+
+//        for (int i = 1; i <= n; i++)
+//     {
+//         cout << "Introduza o "<< i <<"° valor positivo: ";
+//         cin >> valor;
+        
+//         if (n < 0) {
+//            cout << "\nSão permitidos, somente números positivos! Tente novamente." << endl;
+//            i--;
+//            continue;
+//         }
+
+//         if (valor % 2 == 0)
+//             par++;
+//         else
+//             impar++;
+//     }
+
+//     percPar = (par * 100 ) / n;
+//     percImpar = (par * 100 ) / n;
+
+//     cout << "\nA percentagem dos números pares inseridos  é de: " << fixed <<setprecision(2) << percPar <<endl;
+//     cout << "A percentagem dos números impares inseridos é de: " << fixed <<setprecision(2) << percImpar <<endl;
+//        cout << endl;
+    
+//     return 0;
+// }
 
 
 
@@ -1349,23 +1433,7 @@ int main ()
 
 //     return 0;
 // }
-/***************************************************************************/
-// #include <iostream>      //2. programa ler/informa número se é >= 0 || <= 0
-// #include <tchar.h> 
-// int main() {                             setlocale (LC_ALL, "portuguese");
-//     int num;
-
-//     std::cout << "\nDigite um número: ";
-//     std::cin >> num;
-    
-//     if (num >= 0) {
-//         std::cout<<"\nO número é maior que zero. "<<std::endl;
-//     } else {
-//         std::cout<<"\nO número é menor que zero!"<<std::endl;
-//     }                                               std::cout<<std::endl;
-
-//     return 0;        
-// }
+/***************************************************************************
 /*
 #include <iostream>//1. programa ler/informa se maior de idade.
 #include <tchar.h> // Biblioteca C++ p/ acentuação Pt-Br
@@ -1385,22 +1453,7 @@ int main() {                               setlocale (LC_ALL, "portuguese");
 }
 
 */
-/*
-#include <iostream>//1. programa ler/informa se maior de idade.
-#include <tchar.h> // Biblioteca C++ p/ acentuação Pt-Br
-int main() {                               setlocale (LC_ALL, "portuguese");
-    int age;
 
-    std::cout << "\nDigite sua idade: ";
-    std::cin >> age;
-
-    if (age >=18) {
-        std::cout << "\nVocê é Maior de Idade!" << std::endl;
-    }                                              
-    return 0;
-}
-
-*/
 /*
 #include <iostream>
 #include <tchar.h> // Biblioteca C++ p/ acentuação Pt-Br
@@ -1600,4 +1653,38 @@ int main() {
     
     return 0;
 }
+*/
+
+/*
+#include <iostream>             //M5-EX6 - apresente a os números   
+#include<iomanip>               //múltiplos de uma valor
+using namespace std;
+int main() {
+int n, mult;
+char reply;
+do {
+    cout << "\nIntruduza valor inteiro positivo (N): ";
+    cin >> n;
+
+    while (n < 0) {             //Validação do número
+    cout << "\nSão permitidos, somente números positivos! \nPor favor ente novamente: ";
+        cin >> n;
+    }            
+        cout << "\nIntroduza o valor do múltiplo: ";
+        cin >> mult;
+    int i = 1;
+    do {
+        if (i % mult == 0)
+        cout << i << " ";
+        i++;            
+    } while (i <= n);
+    cout << "\n" <<"\nGostaria de verificar outro valor? (S) ou (N): "; 
+	cin >> reply;        
+} while (reply == 'S' || reply == 's');
+    cout << "\n" << "Fim da verificação..."<< endl;
+    system("Pause");
+
+    return 0;
+}
+
 */
