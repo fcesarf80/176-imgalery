@@ -3,26 +3,28 @@ using namespace std;
 
 int main () {
     int arrayDados[4];
+        arrayDados[0] = 101;
+        arrayDados[1] = 102;
+        arrayDados[2] = 103;
+        arrayDados[3] = 104;
 
-    int arrayDados[0] = 101;
-    int arrayDados[1] = 102;
-    int arrayDados[2] = 103;
-    int arrayDados[3] = 104;
-
-    cout << "Valores do array: " << endl;
+    cout << "\nOs valores atuais dos arrays são: ";
     for (int i = 0; i < 4; i++) {
-        cout << arrayDados[i] << endl;
+        cout << arrayDados[i] << "  ";
     }
-
-    cout << "Introduza outros valores para o array: " << endl;
+    
+    cout << "\nIntroduza agora novos valores para os arrays: " << endl;
     for (int i = 0; i < 4; i++) {
         cin >> arrayDados[i];
-    }
-
-    cout << "Os novos valores do array são: " << endl;
+    }    
+    
+    cout << "Os novos valores dos arrays são: ";
     for (int i = 0; i < 4; i++) {
-        cout << arrayDados[i] << endl;
+        cout << arrayDados[i] << "  ";
+         
     }
+    cout << endl;
+    
     return 0;
 }
         
