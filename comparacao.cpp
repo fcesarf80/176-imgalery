@@ -1,42 +1,49 @@
-//6-EX5-ResolveProblema: (valor1 + valor2 * valor3) / valor1
-#include <iostream>         
-using namespace std;        
+#include <iostream>          //6-Ex6 Função Calcula área         
+using namespace std;
 
-float resolveProblema(float valor1, float valor2, float valor3) {
-float result = (valor1 + valor2 * valor3) / valor1;
-       return result;
+// Declaração da constante PI
+   const float PI = 3.1416;
+// Função: calcula a área do círculo
+   float calcularArea(float raio) {
+       return PI * raio * raio;      
 }
+// Função: calcula a área do retângulo
+   float calcularArea(float base, float altura) {
+       return base * altura;  
+}
+//  Função: calcula a área do quadrado
+    float calcularArea(int lado) {
+       return lado * lado;  
+}
+    int main () {
+        float raio, base, altura;
+        int lado;
 
-int main () {
-    float v1, v2, v3;
-    char reply;
-    do {
-        cout << "\nIntruduza o 1° valor: ";
-        cin >> v1;
+// Cálculo da área do círculo
+   cout << "\nIntruduza o raio do círculo: ";
+   cin >> raio;
+   cout << "A área do círculo é: "<< calcularArea(raio)<< endl;
 
-        while (v1 == 0) {
-            cout << "Erro: Divisáo por zero. Tente novamente! " <<"\n" ;
-            cout << "\nIntruduza o 1° valor: ";
-        cin >> v1;
-        } 
-        cout << "Inroduza o 2° valor: ";
-        cin >> v2;
-        cout << "Inroduza o 3° valor: ";
-        cin >> v3;
-        
-        float result = resolveProblema(v1, v2, v3);
-        cout << "Resultado do problema é: " << result << endl;
-        cout <<"\nGostaria de verificar outro valor? (S) ou (N): "; 
-	    cin >> reply;        
-    
-    } while (reply == 'S' || reply == 's');
-        cout << "\n" << "Fim da verificação..."<< endl;
-        system("Pause");
+// Cálculo da área do retângulo
+   cout << "\nIntroduza a base do retângulo: ";
+   cin >> base;
+   cout << "Introduza a altura do retângulo: ";
+   cin >> altura;
+   cout << "A área do retângulo é: " <<calcularArea(base, altura) << endl;
 
-    return 0;
+// Cálculo da área do quadrado
+   cout << "\nIntroduza o lado do quadrado: ";
+   cin >> lado;
+   cout << "A área do quadrado é: " << calcularArea(lado) << endl;
+   cout << endl;
+
+   return 0;
 }
         
             
+
+
+
 
 
 
