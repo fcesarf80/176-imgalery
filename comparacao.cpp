@@ -1,4 +1,30 @@
+#include <iostream>
+using namespace std;
 
+int main () {
+    int arrayDados[4];
+
+    int arrayDados[0] = 101;
+    int arrayDados[1] = 102;
+    int arrayDados[2] = 103;
+    int arrayDados[3] = 104;
+
+    cout << "Valores do array: " << endl;
+    for (int i = 0; i < 4; i++) {
+        cout << arrayDados[i] << endl;
+    }
+
+    cout << "Introduza outros valores para o array: " << endl;
+    for (int i = 0; i < 4; i++) {
+        cin >> arrayDados[i];
+    }
+
+    cout << "Os novos valores do array são: " << endl;
+    for (int i = 0; i < 4; i++) {
+        cout << arrayDados[i] << endl;
+    }
+    return 0;
+}
         
             
 
