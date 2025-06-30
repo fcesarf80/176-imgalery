@@ -1,15 +1,56 @@
-#include<iostream>
-using namespace std;
+//6-EX5-ResolveProblema: (valor1 + valor2 * valor3) / valor1
+#include <iostream>         
+using namespace std;        
 
-void minhaFuncao() {
-    cout << "\nAcabei de ser executado!";
+float resolveProblema(float valor1, float valor2, float valor3) {
+float result = (valor1 + valor2 * valor3) / valor1;
+       return result;
 }
 
 int main () {
-    minhaFuncao();
+    float v1, v2, v3;
+    char reply;
+    do {
+        cout << "\nIntruduza o 1° valor: ";
+        cin >> v1;
+
+        while (v1 == 0) {
+            cout << "Erro: Divisáo por zero. Tente novamente! " <<"\n" ;
+            cout << "\nIntruduza o 1° valor: ";
+        cin >> v1;
+        } 
+        cout << "Inroduza o 2° valor: ";
+        cin >> v2;
+        cout << "Inroduza o 3° valor: ";
+        cin >> v3;
+        
+        float result = resolveProblema(v1, v2, v3);
+        cout << "Resultado do problema é: " << result << endl;
+        cout <<"\nGostaria de verificar outro valor? (S) ou (N): "; 
+	    cin >> reply;        
+    
+    } while (reply == 'S' || reply == 's');
+        cout << "\n" << "Fim da verificação..."<< endl;
+        system("Pause");
 
     return 0;
 }
+        
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1687,4 +1728,60 @@ do {
     return 0;
 }
 
+*/
+
+/*
+#include<iostream>
+using namespace std;
+
+void minhaFuncao() {
+    cout << "\nAcabei de ser executado!";
+}
+
+int main () {
+    minhaFuncao();
+
+    return 0;
+}
+*/
+
+/*
+//6-EX5-ResolveProblema: (valor1 + valor2 * valor3) / valor1
+#include <iostream>         
+using namespace std;        
+
+float resolveProblema(float valor1, float valor2, float valor3) {
+float result = (valor1 + valor2 * valor3) / valor1;
+       return result;
+}
+
+int main () {
+    float v1, v2, v3;
+    char reply;
+    do {
+        cout << "\nIntruduza o 1° valor: ";
+        cin >> v1;
+
+        while (v1 == 0) {
+            cout << "Erro: Divisáo por zero. Tente novamente! " <<"\n" ;
+            cout << "\nIntruduza o 1° valor: ";
+        cin >> v1;
+        } 
+        cout << "Inroduza o 2° valor: ";
+        cin >> v2;
+        cout << "Inroduza o 3° valor: ";
+        cin >> v3;
+        
+        float result = resolveProblema(v1, v2, v3);
+        cout << "Resultado do problema é: " << result << endl;
+        cout <<"\nGostaria de verificar outro valor? (S) ou (N): "; 
+	    cin >> reply;        
+    
+    } while (reply == 'S' || reply == 's');
+        cout << "\n" << "Fim da verificação..."<< endl;
+        system("Pause");
+
+    return 0;
+}
+      
 */
