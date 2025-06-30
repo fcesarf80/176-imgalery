@@ -1,44 +1,4 @@
-#include <iostream>          //6-Ex6 Função Calcula área         
-using namespace std;
 
-// Declaração da constante PI
-   const float PI = 3.1416;
-// Função: calcula a área do círculo
-   float calcularArea(float raio) {
-       return PI * raio * raio;      
-}
-// Função: calcula a área do retângulo
-   float calcularArea(float base, float altura) {
-       return base * altura;  
-}
-//  Função: calcula a área do quadrado
-    float calcularArea(int lado) {
-       return lado * lado;  
-}
-    int main () {
-        float raio, base, altura;
-        int lado;
-
-// Cálculo da área do círculo
-   cout << "\nIntruduza o raio do círculo: ";
-   cin >> raio;
-   cout << "A área do círculo é: "<< calcularArea(raio)<< endl;
-
-// Cálculo da área do retângulo
-   cout << "\nIntroduza a base do retângulo: ";
-   cin >> base;
-   cout << "Introduza a altura do retângulo: ";
-   cin >> altura;
-   cout << "A área do retângulo é: " <<calcularArea(base, altura) << endl;
-
-// Cálculo da área do quadrado
-   cout << "\nIntroduza o lado do quadrado: ";
-   cin >> lado;
-   cout << "A área do quadrado é: " << calcularArea(lado) << endl;
-   cout << endl;
-
-   return 0;
-}
         
             
 
@@ -1792,3 +1752,47 @@ int main () {
 }
       
 */
+
+/*
+
+#include <iostream>          //6-Ex6 Função Calcula área         
+using namespace std;
+
+// Declaração da constante PI
+   const float PI = 3.1416;
+// Função: calcula a área do círculo
+   float calcularArea(float raio) {
+       return PI * raio * raio;      
+}
+// Função: calcula a área do retângulo
+   float calcularArea(float base, float altura) {
+       return base * altura;  
+}
+//  Função: calcula a área do quadrado
+    float calcularArea(int lado) {
+       return lado * lado;  
+}
+    int main () {
+        float raio, base, altura;
+        int lado;
+
+// Cálculo da área do círculo
+   cout << "\nIntruduza o raio do círculo: ";
+   cin >> raio;
+   cout << "A área do círculo é: "<< calcularArea(raio)<< endl;
+
+// Cálculo da área do retângulo
+   cout << "\nIntroduza a base do retângulo: ";
+   cin >> base;
+   cout << "Introduza a altura do retângulo: ";
+   cin >> altura;
+   cout << "A área do retângulo é: " <<calcularArea(base, altura) << endl;
+
+// Cálculo da área do quadrado
+   cout << "\nIntroduza o lado do quadrado: ";
+   cin >> lado;
+   cout << "A área do quadrado é: " << calcularArea(lado) << endl;
+   cout << endl;
+
+   return 0;
+}*/
