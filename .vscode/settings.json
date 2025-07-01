@@ -49,7 +49,9 @@
         "xstring": "cpp",
         "xtr1common": "cpp",
         "xutility": "cpp",
-        "iomanip": "cpp"
+        "iomanip": "cpp",
+        "sstream": "cpp",
+        "vector": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }

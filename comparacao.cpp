@@ -1,32 +1,216 @@
-#include <iostream>
+#include <iostream>          //M7-ex5
 using namespace std;
+int main() {
+    float temperatura[6];
+    float maxTemp, minTemp, amplitude;
 
-int main () {
-    int arrayDados[4];
-        arrayDados[0] = 101;
-        arrayDados[1] = 102;
-        arrayDados[2] = 103;
-        arrayDados[3] = 104;
+//  Solicita valores iniciais
+    cout << "\nIntroduza 6 valores de temperatura:\n";
+    for (int i = 0; i < 6; i++) {
+        cout << "Temperatura " << i +1 << ": ";
+        cin >> temperatura[i];
+    }
+    maxTemp = temperatura[0];
+    minTemp = temperatura[0];
 
-    cout << "\nOs valores atuais dos arrays são: ";
-    for (int i = 0; i < 4; i++) {
-        cout << arrayDados[i] << "  ";
+//  Definição das temperaturas: máxima e minima 
+    for (int i = 1; i < 6; i++) {
+        if (temperatura[i] > maxTemp) maxTemp = temperatura[i];
+        if (temperatura[i] < minTemp) minTemp = temperatura[i];
     }
-    
-    cout << "\nIntroduza agora novos valores para os arrays: " << endl;
-    for (int i = 0; i < 4; i++) {
-        cin >> arrayDados[i];
-    }    
-    
-    cout << "Os novos valores dos arrays são: ";
-    for (int i = 0; i < 4; i++) {
-        cout << arrayDados[i] << "  ";
-         
-    }
+    amplitude = maxTemp - minTemp;
+// Print
+    cout << "\nTemperatura mais elevada: " << maxTemp << "°C\n";
+    cout << "Temperatura mais baixa: " << minTemp << "°\nC";
+    cout << "Temperatura mais térmica: " << amplitude << "°C\n";
     cout << endl;
-    
     return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+
+// int main() {
+//     //a xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+//     int matriz[3][3] = {
+//         {12, 18,  9},
+//         {15, 11, 16},
+//         { 9,  7,  8}
+//     };
+//      //  b) Apresentar os valores do array
+//     cout << "\nOs valores atuais dos arrays são: \n";
+//     for (int i = 0; i < 3; ++i) {       //Itera sobre as linhas
+//         for (int j = 0; j < 3; ++j) {   //Itera sobre as linhas
+//             cout << matriz[i][j] << "  ";
+//         }
+//         cout << endl;        
+//     }
+//     //c) Pedir ao utilizador novos valores para o array
+// cout<<"\nPor favor, introduza novos valores para os arrays:"<< endl;
+// for (int i = 0; i < 3; i++) {
+//   for (int j = 0; j < 3; j++) {
+    
+//     cout<<"Os valores digitados foram: ["<<i<< "]["<<j<<"]: ";
+//             cin >> matriz[i][j];
+//         }
+        
+//      }    
+//     //Mostrar os novos valores
+//     cout << "Os novos valores dos arrays são: ";
+//     for (int i = 0; i < 3; i++) {
+//         for (int j = 0; j < 3; j++) {
+//             // cout << matriz[i][j] << "  ";
+//              cout <<"Posição [" <<i<<"]["<<j<<"]: ";
+//              cin >> matriz[i][j];
+//         }    
+//     }
+//     cout << endl;
+   
+    
+
+//     return 0;
+// }
+     
+
+
+
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+
+// int main() {
+//     // Declaração e inicialização do array bidimensional
+//    // std::vector<std::vector<int>> matriz(3, std::vector<int>(3));
+
+//     // // Preenchimento inicial do array com valores
+//     // int valor_inicial = 1;
+//     // for (int i = 0; i < 3; ++i) {
+//     //     for (int j = 0; j < 3; ++j) {
+//     //         matriz[i][j] = valor_inicial++;
+//     //     }
+//     // }
+
+//     // // Impressão do array original
+//     // std::cout << "Array original:" << std::endl;
+//     // for (int i = 0; i < 3; ++i) {
+//     //     for (int j = 0; j < 3; ++j) {
+//     //         std::cout << matriz[i][j] << " ";
+//     //     }
+//     //     std::cout << std::endl;
+//     // }
+
+// int matriz[3][3] = {
+//         {12, 18,  9},
+//         {15, 11, 16},
+//         { 9,  7,  8}
+//     };
+//      //  b) Apresentar os valores do array
+//     cout << "\nOs valores atuais dos arrays são: \n";
+//     for (int i = 0; i < 3; ++i) {       //Itera sobre as linhas
+//         for (int j = 0; j < 3; ++j) {   //Itera sobre as linhas
+//             cout << matriz[i][j] << "  ";
+//         }
+//         cout << endl;        
+//     }
+
+
+
+//     // Solicitação de novos valores ao usuário
+//     std::cout << "\nDigite novos valores para o array:" << std::endl;
+//     for (int i = 0; i < 3; ++i) {
+//         for (int j = 0; j < 3; ++j) {
+//             std::cout << "Elemento [" << i << "][" << j << "]: ";
+//             std::cin >> matriz[i][j];
+//         }
+//     }
+
+//     // Impressão do array com os novos valores
+//     std::cout << "\nArray com novos valores:" << std::endl;
+//     for (int i = 0; i < 3; ++i) {
+//         for (int j = 0; j < 3; ++j) {
+//             std::cout << matriz[i][j] << " ";
+//         }
+//         std::cout << std::endl;
+//     }
+// std::cout << std::endl;
+//     return 0;
+// }
+
+// #include <iostream>  //M7-Ex3 - array bidimensional
+// using namespace std;
+
+// int main () {
+//     //Declaração de inicialização do array bidimensional
+//     int matriz[3][3] = {
+//         {12, 18,  9},
+//         {15, 11, 16},
+//         { 9,  7,  8}
+//     };                       ****************************
+//     //b) Apresentar os valores do array
+//     cout << "\nOs valores atuais dos arrays são: \n";
+//     for (int i = 0; i < 3; ++i) {       //Itera sobre as linhas
+//         for (int j = 0; j < 3; ++j) {   //Itera sobre as linhas
+//             cout << matriz[i][j] << "  ";
+//         }
+//         cout << endl;        
+//     }
+    
+
+// //c) Pedir ao utilizador novos valores para o array
+// cout<<"\nPor favor, introduza novos valores para os arrays:"<< endl;
+// for (int i = 0; i < 3; i++) {
+//   for (int j = 0; j < 3; j++) {
+    
+//     cout<<"Os valores digitados foram: ["<<i<< "]["<<j<<"]: "<<endl;
+//             cin >> matriz[i][j];
+//         }
+        
+//      }    
+//     //Mostrar os novos valores
+//     cout << "Os novos valores dos arrays são: ";
+//     for (int i = 0; i < 3; i++) {
+//         for (int j = 0; j < 3; j++) {
+//             // cout << matriz[i][j] << "  ";
+//              cout <<"Posição [" <<i<<"]["<<j<<"]: ";
+//              cin >> matriz[i][j];
+//         }    
+//     }
+//     cout << endl;
+   
+    
+
+//     return 0;
+// }
+
+
+
+
+    
+
         
             
 
@@ -1824,3 +2008,79 @@ using namespace std;
 
    return 0;
 }*/
+/*
+#include <iostream>          //M7-ex3
+using namespace std;
+int main() {
+// a) Declarar e inicializa a matriz
+    int matriz[3][3] = {    
+        {12, 18,  9},
+        {15, 11, 16},
+        { 9,  7,  8}
+    };
+// b) Imprime os valores iniciais
+    cout << "\nOs valores atuais dos arrays são: \n";
+    for (int i = 0; i < 3; ++i) {       //Itera sobre as linhas
+        for (int j = 0; j < 3; ++j) {   
+            cout << matriz[i][j] << "  ";
+        }
+        cout << endl;        
+    }
+// c) Solicitação de novos valores    
+    cout << "\nDigite novos valores para o array:" << endl;
+    for (int i = 0; i < 3; ++i) {
+        for (int j = 0; j < 3; ++j) {
+            cout << "Elemento [" << i << "][" << j << "]: ";
+            cin >> matriz[i][j];
+        }
+    }
+// Impressão os novos valores
+    cout << "\nArray com novos valores:" << endl;
+    for (int i = 0; i < 3; ++i) {
+        for (int j = 0; j < 3; ++j) {
+            cout << matriz[i][j] << " ";
+        }
+        cout << endl;
+    }
+    cout << endl;
+    return 0;
+}
+*/
+
+/*
+#include <iostream>          //M7-ex4
+using namespace std;
+int main() {
+// a) Declarar e inicializa a matriz
+    int matriz[2][3] = {    
+        {101, 102, 103},
+        {104, 105, 106},        
+    };
+// b) Imprime os valores iniciais
+    cout << "\nOs valores atuais dos arrays são: \n";
+    for (int i = 0; i < 2; ++i) {       //Itera sobre as linhas
+        for (int j = 0; j <= 2; ++j) {   
+            cout << matriz[i][j] << "  ";
+        }
+        cout << endl;        
+    }
+// c) Solicitação de novos valores    
+    cout << "\nDigite novos valores para o array:" << endl;
+    for (int i = 0; i < 2; ++i) {
+        for (int j = 0; j <= 2; ++j) {
+            cout << "Elemento [" << i << "][" << j << "]: ";
+            cin >> matriz[i][j];
+        }
+    }
+// Impressão os novos valores
+    cout << "\nArray com novos valores:" << endl;
+    for (int i = 0; i < 2; ++i) {
+        for (int j = 0; j <= 2; ++j) {
+            cout << matriz[i][j] << " ";
+        }
+        cout << endl;
+    }
+    cout << endl;
+    return 0;
+}
+*/
