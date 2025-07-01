@@ -1,436 +1,21 @@
-#include <iostream>          //M7-ex5
-using namespace std;
-int main() {
-    float temperatura[6];
-    float maxTemp, minTemp, amplitude;
-
-//  Solicita valores iniciais
-    cout << "\nIntroduza 6 valores de temperatura:\n";
-    for (int i = 0; i < 6; i++) {
-        cout << "Temperatura " << i +1 << ": ";
-        cin >> temperatura[i];
-    }
-    maxTemp = temperatura[0];
-    minTemp = temperatura[0];
-
-//  Definição das temperaturas: máxima e minima 
-    for (int i = 1; i < 6; i++) {
-        if (temperatura[i] > maxTemp) maxTemp = temperatura[i];
-        if (temperatura[i] < minTemp) minTemp = temperatura[i];
-    }
-    amplitude = maxTemp - minTemp;
-// Print
-    cout << "\nTemperatura mais elevada: " << maxTemp << "°C\n";
-    cout << "Temperatura mais baixa: " << minTemp << "°\nC";
-    cout << "Temperatura mais térmica: " << amplitude << "°C\n";
-    cout << endl;
-    return 0;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// #include <iostream>
-// #include <vector>
-// using namespace std;
-
-// int main() {
-//     //a xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-//     int matriz[3][3] = {
-//         {12, 18,  9},
-//         {15, 11, 16},
-//         { 9,  7,  8}
-//     };
-//      //  b) Apresentar os valores do array
-//     cout << "\nOs valores atuais dos arrays são: \n";
-//     for (int i = 0; i < 3; ++i) {       //Itera sobre as linhas
-//         for (int j = 0; j < 3; ++j) {   //Itera sobre as linhas
-//             cout << matriz[i][j] << "  ";
-//         }
-//         cout << endl;        
-//     }
-//     //c) Pedir ao utilizador novos valores para o array
-// cout<<"\nPor favor, introduza novos valores para os arrays:"<< endl;
-// for (int i = 0; i < 3; i++) {
-//   for (int j = 0; j < 3; j++) {
-    
-//     cout<<"Os valores digitados foram: ["<<i<< "]["<<j<<"]: ";
-//             cin >> matriz[i][j];
-//         }
-        
-//      }    
-//     //Mostrar os novos valores
-//     cout << "Os novos valores dos arrays são: ";
-//     for (int i = 0; i < 3; i++) {
-//         for (int j = 0; j < 3; j++) {
-//             // cout << matriz[i][j] << "  ";
-//              cout <<"Posição [" <<i<<"]["<<j<<"]: ";
-//              cin >> matriz[i][j];
-//         }    
-//     }
-//     cout << endl;
-   
-    
-
-//     return 0;
-// }
-     
-
-
-
-// #include <iostream>
-// #include <vector>
-// using namespace std;
-
-// int main() {
-//     // Declaração e inicialização do array bidimensional
-//    // std::vector<std::vector<int>> matriz(3, std::vector<int>(3));
-
-//     // // Preenchimento inicial do array com valores
-//     // int valor_inicial = 1;
-//     // for (int i = 0; i < 3; ++i) {
-//     //     for (int j = 0; j < 3; ++j) {
-//     //         matriz[i][j] = valor_inicial++;
-//     //     }
-//     // }
-
-//     // // Impressão do array original
-//     // std::cout << "Array original:" << std::endl;
-//     // for (int i = 0; i < 3; ++i) {
-//     //     for (int j = 0; j < 3; ++j) {
-//     //         std::cout << matriz[i][j] << " ";
-//     //     }
-//     //     std::cout << std::endl;
-//     // }
-
-// int matriz[3][3] = {
-//         {12, 18,  9},
-//         {15, 11, 16},
-//         { 9,  7,  8}
-//     };
-//      //  b) Apresentar os valores do array
-//     cout << "\nOs valores atuais dos arrays são: \n";
-//     for (int i = 0; i < 3; ++i) {       //Itera sobre as linhas
-//         for (int j = 0; j < 3; ++j) {   //Itera sobre as linhas
-//             cout << matriz[i][j] << "  ";
-//         }
-//         cout << endl;        
-//     }
-
-
-
-//     // Solicitação de novos valores ao usuário
-//     std::cout << "\nDigite novos valores para o array:" << std::endl;
-//     for (int i = 0; i < 3; ++i) {
-//         for (int j = 0; j < 3; ++j) {
-//             std::cout << "Elemento [" << i << "][" << j << "]: ";
-//             std::cin >> matriz[i][j];
-//         }
-//     }
-
-//     // Impressão do array com os novos valores
-//     std::cout << "\nArray com novos valores:" << std::endl;
-//     for (int i = 0; i < 3; ++i) {
-//         for (int j = 0; j < 3; ++j) {
-//             std::cout << matriz[i][j] << " ";
-//         }
-//         std::cout << std::endl;
-//     }
-// std::cout << std::endl;
-//     return 0;
-// }
-
-// #include <iostream>  //M7-Ex3 - array bidimensional
-// using namespace std;
-
-// int main () {
-//     //Declaração de inicialização do array bidimensional
-//     int matriz[3][3] = {
-//         {12, 18,  9},
-//         {15, 11, 16},
-//         { 9,  7,  8}
-//     };                       ****************************
-//     //b) Apresentar os valores do array
-//     cout << "\nOs valores atuais dos arrays são: \n";
-//     for (int i = 0; i < 3; ++i) {       //Itera sobre as linhas
-//         for (int j = 0; j < 3; ++j) {   //Itera sobre as linhas
-//             cout << matriz[i][j] << "  ";
-//         }
-//         cout << endl;        
-//     }
-    
-
-// //c) Pedir ao utilizador novos valores para o array
-// cout<<"\nPor favor, introduza novos valores para os arrays:"<< endl;
-// for (int i = 0; i < 3; i++) {
-//   for (int j = 0; j < 3; j++) {
-    
-//     cout<<"Os valores digitados foram: ["<<i<< "]["<<j<<"]: "<<endl;
-//             cin >> matriz[i][j];
-//         }
-        
-//      }    
-//     //Mostrar os novos valores
-//     cout << "Os novos valores dos arrays são: ";
-//     for (int i = 0; i < 3; i++) {
-//         for (int j = 0; j < 3; j++) {
-//             // cout << matriz[i][j] << "  ";
-//              cout <<"Posição [" <<i<<"]["<<j<<"]: ";
-//              cin >> matriz[i][j];
-//         }    
-//     }
-//     cout << endl;
-   
-    
-
-//     return 0;
-// }
-
-
-
-
-    
-
-        
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*#include <iostream>             //M5-EX6 - apresente a os números   
-#include<iomanip>               //múltiplos de uma valor
-using namespace std;
-int main() {
-int n, mult;
-char reply;c
-do {
-    cout << "\nIntruduza valor inteiro positivo (N): ";
-    cin >> n;
-
-    while (n < 0) {             //Validação do número
-    cout << "\nSão permitidos, somente números positivos! \nPor favor ente novamente: ";
-        cin >> n;
-    }            
-        cout << "\nIntroduza o valor do múltiplo: ";
-        cin >> mult;
-    int i = 1;
-    do {
-        if (i % mult == 0)
-        cout << i << " ";
-        i++;            
-    } while (i <= n);
-    cout << "\n" <<"\nGostaria de verificar outro valor? (S) ou (N): "; 
-	cin >> reply;        
-} while (reply == 'S' || reply == 's');
-    cout << "\n" << "Fim da verificação..."<< endl;
-    system("Pause");
-
-    return 0;
-}*/
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-// int main() {
-//     int n, valor;
-//     float percPar, percImpar, par = 0, impar = 0;
-
-//        for (int i = 1; i <= n; i++)
-//     {
-//         cout << "Introduza o "<< i <<"° valor positivo: ";
-//         cin >> valor;
-        
-//         if (n < 0) {
-//            cout << "\nSão permitidos, somente números positivos! Tente novamente." << endl;
-//            i--;
-//            continue;
-//         }
-
-//         if (valor % 2 == 0)
-//             par++;
-//         else
-//             impar++;
-//     }
-
-//     percPar = (par * 100 ) / n;
-//     percImpar = (par * 100 ) / n;
-
-//     cout << "\nA percentagem dos números pares inseridos  é de: " << fixed <<setprecision(2) << percPar <<endl;
-//     cout << "A percentagem dos números impares inseridos é de: " << fixed <<setprecision(2) << percImpar <<endl;
-//        cout << endl;
-    
-//     return 0;
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*#include <iostream>
+#include<iostream>     
 using namespace std;
 
-int main() {
-    // int x = 0;
-
-    // while (x <= 10)
-    //     x = x + 1;
-    //     x = x+ 2;
 
-    //     cout << "x: "<<x;
 
-    // while (x<=10)
-    // {
-    //     x = x + 1;
-    //     x = x+ 2;
 
-    //     cout << " x:"<<x<< ", ";
 
-    // }
 
-    int soma = 0;
 
-    while(soma < 100)
-    soma = soma + 5;
-    cout << soma << endl;
-    return 0;
-}*/
 
 
 
 
-// #include <iostream>
-// #include <tchar.h> // Biblioteca C++ p/ acentuação Pt-Br
-// int main() {
-//     setlocale (LC_ALL, "portuguese");
-//     int option = 0;// int &&|| char
-    
-//     std::cout << "\nQual o dia pretendido para o aluguer? ";
-//     std::cin >> option;
 
-//     switch (option)
-//     {
-//          case 'Seg': case '2':
-//  std::cout << "\nO alguer a par é de: 400.00 €" << std::endl;
-//             break;
-//         case 'Ter': case '3': case 'Qua':
-//         case '4'  : case 'Qui': case '5':
-// std::cout << "\nO alguer a par é de: 550.00 €" << std::endl;
-//             break;
-//         case 'Sex': case '6':
-// std::cout << "\nO alguer a par é de: 600.00 €" << std::endl;
-//             break;
-//         case 'Sab': case 'Dom': case 'Fim de semana':
-// std::cout << "\nO alguer a par é de: 500.00 €" << std::endl;
-//             break;
-//         default:
-//         std::cout << option << "\nOpção Inválida!" << std::endl;
-//     }              
-    
-//     return 0;
-// }
-    
 
 
-//     switch (opcao) //ex. 1
-//     {
-//         case 0:
-//             std::cout << "Zero!" << std::endl;
-//             break;
-//         case 1:
-//             std::cout << "Um!" << std::endl;
-//             break;
-//         case 2:
-//             std::cout << "Dois!" << std::endl;
-//             break;
-//         default:
-//             std::cout << "Outro!" << std::endl;     
-//     }                                              
-//     return 0;
 
-// switch (caracter) //ex. 2
-//     {
-//         case 'a' : case 'A' :
-//         case 'e' : case 'E' :
-//         case 'i' : case 'I' :
-//         case 'o' : case 'O' :
-//         case 'u' : case 'U' :
-//             cout << caracter << "É uma vogal" << std::endl;
-//             break;
-//         default:
-//             cout << caracter << "Não é uma vogal" << std::endl;
-//     }                                              
-//     return 0;
 
-// }
 
 
 
@@ -445,63 +30,6 @@ int main() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-#include <iostream>
-using namespace std;
-int main() {
-    int x = 12;
-    int y = 0;
-
-    cout<< "Olá!"<<endl;
-
-    for (int i = x; i >= 0; i = i-2)
-    {
-        y = y + i;
-        cout << i << ", ";
-    }
-    cout << " y:" << y;
-
-    
-    
-    return 0;
-}
-*/
 
 /*
 #include <iostream>
@@ -526,8 +54,7 @@ int main {
 
     return 0;
 }
-*/
-//*****************************************************************************
+******************************************************************************
 
 /*#include <iostream>
 #include <tchar.h> // Biblioteca C++ p/ acentuação Pt-Br
@@ -2083,4 +1610,66 @@ int main() {
     cout << endl;
     return 0;
 }
+*/
+
+/*
+#include <iostream>          //M7-ex5
+using namespace std;
+int main() {
+    float temperatura[6];
+    float maxTemp, minTemp, amplitude;
+
+//  Solicita valores iniciais
+    cout << "\nIntroduza 6 valores de temperatura:\n";
+    for (int i = 0; i < 6; i++) {
+        cout << "Temperatura " << i +1 << ": ";
+        cin >> temperatura[i];
+    }
+    maxTemp = temperatura[0];
+    minTemp = temperatura[0];
+
+//  Definição das temperaturas: máxima e minima 
+    for (int i = 1; i < 6; i++) {
+        if (temperatura[i] > maxTemp) maxTemp = temperatura[i];
+        if (temperatura[i] < minTemp) minTemp = temperatura[i];
+    }
+    amplitude = maxTemp - minTemp;
+// Print
+    cout << "\nTemperatura mais elevada: " << maxTemp << "°C\n";
+    cout << "Temperatura mais baixa: " << minTemp << "°\nC";
+    cout << "Temperatura mais térmica: " << amplitude << "°C\n";
+    cout << endl;
+    return 0;
+}
+*/
+/*
+#include<iostream>             //M7-ex6
+using namespace std;
+
+int main() {
+//  Declara/inicializa a matriz de custos
+    int matriz[3][3] = { {30, 120, 170}, {100, 180, 70}, {350, 100, 140} };
+//  Declara/inicializa a matriz de quantidades de carga
+    int cargas[3][3] = { {4, 0, 6}, {0, 6, 0}, {0, 3, 5} };
+// Declara/inicializa a 0 para armazenar o custo total
+    int custTotal = 0;
+// Declara Array para armazenar os custospor fábrica
+    int custosFabricas[3] = {0, 0, 0}; // Array para armazenar custos por fábrica
+    for (int i = 0; i < 3; i++) {
+        for(int j = 0; j < 3; j++) {
+            custTotal += matriz[i][j] * cargas[i][j];
+            custosFabricas[i] += matriz[i][j] * cargas[i][j]; // Acumula custo por fábrica
+        }
+    }
+    cout << endl;
+    // Ciclo 'for' externo p/ i de 0 a 2 e interno p/ i de 0 a 2
+    for (int i = 0; i < 3; i++) {
+        cout << "Custo da Fábrica " << i + 1 << " é de: " << custosFabricas[i] << endl;
+    }
+    // Exibe resultado
+cout << "\nO custo total é: " << custTotal << endl;
+cout << endl;
+    return 0;
+}
+
 */
