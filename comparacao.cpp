@@ -1,8 +1,29 @@
-#include<iostream>     
+#include<iostream>
+#include<iomanip>  
 using namespace std;
 
-
-
+int main() {
+    int x = 5;=4=3
+    int y = 0;=5=9
+    while (x= > 2) {
+        cout << y = 0 << " ";
+        y = y59 + x43; =5=9=12
+        x = x=5=4=3 - 1; =4=3=2
+        
+    }
+    cout << endl << "x: " << x;
+    return 0;
+}
+--------
+0 5 9 
+x: 2    
+-------
+G K j
+G J K
+K J G
+K G J
+J G K
+J K G
 
 
 
