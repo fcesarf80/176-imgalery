@@ -3,31 +3,23 @@
 using namespace std;
 
 int main() {
-    int x = 5;=4=3
-    int y = 0;=5=9
-    while (x= > 2) {
-        cout << y = 0 << " ";
-        y = y59 + x43; =5=9=12
-        x = x=5=4=3 - 1; =4=3=2
-        
+    int n;
+    cout << "Digite um número: ";
+    cin >> n;
+
+// Declaração da variavel contadora: i = 1; 
+    int i = 1;
+    while ( i<=n) {
+        if (i%3 !=0)
+    cout << "Contador: " << i << "\n";
+    i++;
+
+//...para que não se torne um cicli infinito, é preciso incrementar a variável i: i++;
+
     }
-    cout << endl << "x: " << x;
-    return 0;
+
+     return 0;
 }
---------
-0 5 9 
-x: 2    
--------
-G K j
-G J K
-K J G
-K G J
-J G K
-J K G
-
-
-
-
 
 
 
