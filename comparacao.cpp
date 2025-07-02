@@ -1,41 +1,41 @@
-//M5-EX5 - apresente a percentagem de números pares/ímpares
+//M6-ex2
+// Progrmam que produz uma saída usando função tipo void, criando linhas com asteriscos
 #include <iostream>
-#include<iomanip>
 using namespace std;
-int main() {
-    int n, valor;
-    float percPar, percImpar, par = 0, impar = 0;
 
-    cout << "\nQuantos valores vai ler (n)?  ";
-    cin >> n;
-    cout << endl;
-
-    for (int i = 1; i <= n; i++)
-    {
-        cout << "Introduza o "<< i <<"° valor positivo: ";
-        cin >> valor;
-        
-        if (valor < 0) {
-           cout << "\nSão permitidos, somente números inteiros positivos! Tente novamente." << endl;
-           i--;
-           continue;
-        }
-
-        if (valor % 2 == 0)
-            par++;
-        else
-            impar++;
+void imprimeAsterisco() {
+    for (int i = 0; i < 17; i++) {
+        cout << "*";
     }
+    cout <<endl;
+}
 
-    percPar = (par * 100 ) / n;
-    percImpar = (impar * 100 ) / n;
+int main () {
+    //M6-ex2
+// Progrmam que produz uma saída usando função tipo void, criando linhas com asteriscos
+#include <iostream>
+using namespace std;
 
-    cout << "\nA percentagem dos números pares inseridos  é de: " << fixed <<setprecision(2) << percPar <<endl;
-    cout << "A percentagem dos números impares inseridos é de: " << fixed <<setprecision(2) << percImpar <<endl;
-       cout << endl;
-    
+void imprimeAsterisco() {
+    for (int i = 0; i < 17; i++) {
+        cout << "*";
+    }
+    cout <<endl;
+}
+
+int main () {
+    imprimeAsterisco();
+    cout << " Programação C++" << endl;
+    imprimeAsterisco();
+    cout << " Funções" << endl;
+    return 0;
+}();
+    cout << " Programação C++" << endl;
+    imprimeAsterisco();
+    cout << " Funções" << endl;
     return 0;
 }
+
 
 
 
@@ -869,7 +869,6 @@ int main()
     return 0;
 }       
         */ 
-//    ******************************
     // {   int a;
     //     float b;
     //     do
@@ -935,10 +934,7 @@ int main()
 //         std::cout << "\nThe decimal number converted to integer is: " << (int)i << std::endl;     
 //   return 0;
 // }
-
   //  ...............................
-
-
 //     CONVENÇÃO EXPLICITA - static_cast.
 // #include <iostream>
 // #include <iomanip>
@@ -1017,7 +1013,7 @@ int main ()
 }
 */
 /*
-//Compiled successfully!
+                        //Compiled successfully!
 #include <iostream>
 #include <tchar.h> // Biblioteca C++ p/ acentuação Pt-Br.
 int main()                               //Compiled successfully! 
@@ -1053,8 +1049,8 @@ int main()
     return 0;
 }
 */
-/*    *******************************************************************
-//Compiled successfully!
+/*    ***************************************************
+                    //Compiled successfully!
   
 //Programa em C++ que permite ao usuário escolher um operador e dois valores, realizando a operação correspondente
 #include <iostream>
@@ -1069,8 +1065,7 @@ int main()                                                      //Compiled succe
     do
     {
       std::cout << "\nDigite o 1° número: ";
-      std::cin >> num1;
-    
+      std::cin >> num1;    
       std::cout << "\nDigite o operador (+, -, *, /): ";
       std::cin >> operador;
       std::cout << "\nDigite o 2° número: ";
@@ -1104,8 +1099,7 @@ int main()                                                      //Compiled succe
   
       std::cout<< "Deseja verificar outras números? (S) ou (N): ";
       std::cin >> reply;
-        
-    } while (reply == 'S' || reply == 's');
+  } while (reply == 'S' || reply == 's');
 
       std::cout << "\n" << "Saindo do programa..."<< std::endl;
       system("Pause");
@@ -1133,10 +1127,9 @@ int main ()                 //Compiled successfully
     cout<< "Resultado float= "<< r <<endl;    
     return 0;
 }*/
-//*********************************************************************]
+//***************************************
 
 /*Program to Find the ASCII value of a character. Programa que solicite ao utilizador que digite um ùnico caractere, depois,converta esse caractere (char) para seu valor numérico na tela ASCII e exibe o valor inteiro correspondente ao caractere digitado*
-
 
 Em C++, (int)c significa a conversão explícita (cast) do valor da variável c para o tipo inteiro (int). Isso força o valor de c a ser tratado como um número inteiro, mesmo que ele originalmente tenha outro tipo. Explicação detalhada: int: Em C++, int é um tipo de dado que representa números inteiros, ou seja, números sem casas decimais. c: Representa uma variável de qualquer tipo. (int): Esta é a notação para "casting" ou conversão de tipo. O termo entre parênteses indica o tipo para o qual você deseja converter o valor.
 #include <iostream>
@@ -1172,13 +1165,10 @@ int main ()
     cin >> nD;
     //converter decimal para inteiro
     int nDInt = static_cast<int>(nD); 
-    
-    cout<<"\n O número decimal digitado é: "<<nD;
+        cout<<"\n O número decimal digitado é: "<<nD;
     cout<<"\n Seu valor convertido para inteiro é: "<<nDInt<<"\n";
-
     cout << "\n Digite um caractere do tipo char: ";
     cin >> nC;
-
     //coverter para ASCII
     const int nAsscii =(int)nAsscii;  
     cout<< "\n O valor ASCII do caractere inserido é: "<<(int)nC<<"\n";
@@ -1190,25 +1180,21 @@ int main ()
 // #include <tchar.h> // Biblioteca C++ p/ acentuação Pt-Br
 // int main() {                               setlocale (LC_ALL, "portuguese");
 //     int num;
-
 //     std::cout << "\nDigite um número: ";
 //     std::cin >> num;
-
 //     if (num >= 0) {
 //         std::cout << "\nO número é maior ou igual a zero." << std::endl;
 //     } else {
 //         std::cout << "\nO número é menor que zero." << std::endl;        
 //     }                                               std::cout<<std::endl;
-
 //     return 0;
 // }
-/***************************************************************************
+/****************************************************
 /*
 #include <iostream>//1. programa ler/informa se maior de idade.
 #include <tchar.h> // Biblioteca C++ p/ acentuação Pt-Br
 int main() {                               setlocale (LC_ALL, "portuguese");
     int age;
-
     std::cout << "\nDigite sua idade: ";
     std::cin >> age;
 
@@ -1220,9 +1206,7 @@ int main() {                               setlocale (LC_ALL, "portuguese");
 
     return 0;
 }
-
 */
-
 /*
 #include <iostream>
 #include <tchar.h> // Biblioteca C++ p/ acentuação Pt-Br
@@ -1289,7 +1273,8 @@ int main() {
 }
 */
 /*
-//M5-ex3_a) Programa números inteiros 1/100 ordem crescente
+//M5-ex3
+_a) Programa números inteiros 1/100 ordem crescente
 #include <iostream>
 using namespace std;
 
@@ -1303,10 +1288,6 @@ int main() {
     cout<<endl;        
     return 0;
 }
-
-
-
-
 //b) Programa números inteiros 1/100 ordem Decrescente
 #include <iostream>
 using namespace std;
@@ -1321,10 +1302,6 @@ int main() {
     cout<<endl;        
     return 0;
 }
-
-
-
-
 //c) Programa números inteiros 3/100, de 3 em 3
 #include <iostream>
 using namespace std;
@@ -1515,7 +1492,7 @@ int main () {
 */
 
 /*
-
+M7-ex3
 #include <iostream>          //6-Ex6 Função Calcula área         
 using namespace std;
 
@@ -1558,6 +1535,7 @@ using namespace std;
    return 0;
 }*/
 /*
+ //M7-ex3
 #include <iostream>          //M7-ex3
 using namespace std;
 int main() {
@@ -1597,6 +1575,8 @@ int main() {
 */
 
 /*
+/M7-ex4
+using namespace std;
 #include <iostream>          //M7-ex4
 using namespace std;
 int main() {
@@ -1635,6 +1615,7 @@ int main() {
 */
 
 /*
+//M7-ex5
 #include <iostream>          //M7-ex5
 using namespace std;
 int main() {
@@ -1694,4 +1675,63 @@ cout << endl;
     return 0;
 }
 
+*/
+
+/*
+
+
+
+
+
+MODULO 6 
+
+
+
+
+
+#include <iostream>
+using namespace std;
+
+void myFuncao(string nome, int idade) {
+    cout << "  → Nome: " << nome << "  → Idade: " << idade << endl;
+}
+
+int soma (int n1, int n2) {
+    int res = n1 + n2;
+    return res;
+}
+int main () {
+    myFuncao("João Peido", 17);
+    myFuncao("Rita Maguinha", 16);
+    myFuncao("Zumba Buldogues", 8);    
+    
+    int resultado = soma(8,9);
+    
+    cout << "\nResultado 1: " << resultado<<endl;
+    resultado = soma(5,5);
+    cout << "Resultado 2: " << resultado<<endl;
+    return 0;
+}
+*/
+
+/*
+//M6-ex2
+// Progrmam que produz uma saída usando função tipo void, criando linhas com asteriscos
+#include <iostream>
+using namespace std;
+
+void imprimeAsterisco() {
+    for (int i = 0; i < 17; i++) {
+        cout << "*";
+    }
+    cout <<endl;
+}
+
+int main () {
+    imprimeAsterisco();
+    cout << " Programação C++" << endl;
+    imprimeAsterisco();
+    cout << " Funções" << endl;
+    return 0;
+}
 */
