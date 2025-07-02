@@ -1,32 +1,41 @@
-#include<iostream>
-#include<iomanip>  
+//M5-EX5 - apresente a percentagem de números pares/ímpares
+#include <iostream>
+#include<iomanip>
 using namespace std;
-
 int main() {
-    int n;
-    cout << "Digite um número: ";
+    int n, valor;
+    float percPar, percImpar, par = 0, impar = 0;
+
+    cout << "\nQuantos valores vai ler (n)?  ";
     cin >> n;
+    cout << endl;
 
-// Declaração da variavel contadora: i = 1; 
-    int i = 1;
-    while ( i<=n) {
-        if (i%3 !=0)
-    cout << "Contador: " << i << "\n";
-    i++;
+    for (int i = 1; i <= n; i++)
+    {
+        cout << "Introduza o "<< i <<"° valor positivo: ";
+        cin >> valor;
+        
+        if (valor < 0) {
+           cout << "\nSão permitidos, somente números inteiros positivos! Tente novamente." << endl;
+           i--;
+           continue;
+        }
 
-//...para que não se torne um cicli infinito, é preciso incrementar a variável i: i++;
-
+        if (valor % 2 == 0)
+            par++;
+        else
+            impar++;
     }
 
-     return 0;
+    percPar = (par * 100 ) / n;
+    percImpar = (impar * 100 ) / n;
+
+    cout << "\nA percentagem dos números pares inseridos  é de: " << fixed <<setprecision(2) << percPar <<endl;
+    cout << "A percentagem dos números impares inseridos é de: " << fixed <<setprecision(2) << percImpar <<endl;
+       cout << endl;
+    
+    return 0;
 }
-
-
-
-
-
-
-
 
 
 
