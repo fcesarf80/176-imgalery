@@ -1,35 +1,40 @@
-//M6-ex3
-/* Identifica as diferenças entre a declaração dos seguintes métodos:     void ABC (char &letra, int CodAsCII)
-             int calcula (int num1, num2)
-a) Indica o funcionamento da passagem de parâmetros por valor.
-b) Indica o funcionamento da passagem de parâmetros por referência*/
+//M6- calcula o fatorial de um número
+#include <tchar.h> // Biblioteca C++ p/ acentuação Pt-Br
+#include<iomanip>
 #include<iostream>
 using namespace std;
-//passagem por valor
-// void cubo (int &x) {
-//     cout << "\nÁrea = " << x*x*x <<endl;
-//     x = 6;
-// }
+int somaRecursiva(int n) {
+    setlocale(LC_ALL, "portuguese");
+    int i, numero = 0;
+    char reply;
+   
+        if (n == 0)//Caso base
+            return 0;
+         return n + somaRecursiva( n - 1 );//chamada recursiva
+}
+int main( ) {
+     do
+    {
+    int numero;
+cout << "\nDigite um número: ";
+cin >> numero;
 
-// int main() {
-//     int lado = 5;
-//     cubo (lado);
-//     cout << "Lado depois de chamr a fução = " << lado << endl;
-//     return 0;
-// }
-void ABC(char &letra, int CodAsCII)
-int calcula(int num1, num2)
-int multiplicar(int &x, int y) {
-        //Modifica o x para 2
-        x = 2;
-        return x*y;
-}
-int main() {
-    int valor = 3;
-    int resultado = multiplicar(valor, 3);
-    cout << "\nValor: " << valor << "\nResultado: " << resultado << endl;
-    cout << endl;
-}
+cout<< "Soma dos primeiros " << numero << " números " << somaRecursiva(numero) << endl;
+return 0;
+        
+    } while (i <= n);
+            cout << "\n Deseja calcular comparar outros valores? (S) ou (N): ";
+			cin >> reply;
+		} while (reply == 'S' || reply == 's');
+	cout << "\n" << "Saindo do programa... " << endl;
+	system ("pause");	
+	
+
+
+
+
+
+
 
 
 
@@ -1724,5 +1729,27 @@ int main () {
     imprimeAsterisco();
     cout << " Funções" << endl;
     return 0;
+}
+*/
+
+/*
+//M6- calcula o fatorial de um número
+#include<iostream>
+using namespace std;
+int fatorial(int n) {
+    if (n <= 1)
+        return 1;
+    else
+        return n * fatorial(n - 1);
+}
+
+int main( ){
+    int numero;
+cout << "\nDigite um número: ";
+cin >> numero;
+
+cout<< "Fatorial de " << numero << " é " << fatorial(numero) << endl;
+
+return 0;
 }
 */
