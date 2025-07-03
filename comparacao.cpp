@@ -1,44 +1,35 @@
-//M6-ex2
-// Progrmam que produz uma saída usando função tipo void, criando linhas com asteriscos
-#include <iostream>
+//M6-ex3
+/* Identifica as diferenças entre a declaração dos seguintes métodos:     void ABC (char &letra, int CodAsCII)
+             int calcula (int num1, num2)
+a) Indica o funcionamento da passagem de parâmetros por valor.
+b) Indica o funcionamento da passagem de parâmetros por referência*/
+#include<iostream>
 using namespace std;
+//passagem por valor
+// void cubo (int &x) {
+//     cout << "\nÁrea = " << x*x*x <<endl;
+//     x = 6;
+// }
 
-void imprimeAsterisco() {
-    for (int i = 0; i < 17; i++) {
-        cout << "*";
-    }
-    cout <<endl;
+// int main() {
+//     int lado = 5;
+//     cubo (lado);
+//     cout << "Lado depois de chamr a fução = " << lado << endl;
+//     return 0;
+// }
+void ABC(char &letra, int CodAsCII)
+int calcula(int num1, num2)
+int multiplicar(int &x, int y) {
+        //Modifica o x para 2
+        x = 2;
+        return x*y;
 }
-
-int main () {
-    //M6-ex2
-// Progrmam que produz uma saída usando função tipo void, criando linhas com asteriscos
-#include <iostream>
-using namespace std;
-
-void imprimeAsterisco() {
-    for (int i = 0; i < 17; i++) {
-        cout << "*";
-    }
-    cout <<endl;
+int main() {
+    int valor = 3;
+    int resultado = multiplicar(valor, 3);
+    cout << "\nValor: " << valor << "\nResultado: " << resultado << endl;
+    cout << endl;
 }
-
-int main () {
-    imprimeAsterisco();
-    cout << " Programação C++" << endl;
-    imprimeAsterisco();
-    cout << " Funções" << endl;
-    return 0;
-}();
-    cout << " Programação C++" << endl;
-    imprimeAsterisco();
-    cout << " Funções" << endl;
-    return 0;
-}
-
-
-
-
 
 
 
