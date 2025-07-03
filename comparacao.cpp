@@ -2,34 +2,17 @@
 #include <tchar.h> // Biblioteca C++ p/ acentuação Pt-Br
 #include<iomanip>
 #include<iostream>
-using namespace std;
-int somaRecursiva(int n) {
-    setlocale(LC_ALL, "portuguese");
-    int i, numero = 0;
-    char reply;
-   
-        if (n == 0)//Caso base
-            return 0;
-         return n + somaRecursiva( n - 1 );//chamada recursiva
+using namespace std;   
+    
+    int main() {
+        setlocale(LC_ALL, "portuguese");
+
+    int vetor[4]= {101, 102, 103, 104};
+
+
+        cout<<vetor[2];
+    return 0;
 }
-int main( ) {
-     do
-    {
-    int numero;
-cout << "\nDigite um número: ";
-cin >> numero;
-
-cout<< "Soma dos primeiros " << numero << " números " << somaRecursiva(numero) << endl;
-return 0;
-        
-    } while (i <= n);
-            cout << "\n Deseja calcular comparar outros valores? (S) ou (N): ";
-			cin >> reply;
-		} while (reply == 'S' || reply == 's');
-	cout << "\n" << "Saindo do programa... " << endl;
-	system ("pause");	
-	
-
 
 
 
