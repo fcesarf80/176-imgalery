@@ -6,11 +6,20 @@ using namespace std;
     
     int main() {
         setlocale(LC_ALL, "portuguese");
+//Declara o array
+    string carros[3];
+    //Leitura de valores do array utilizando o ciclo FOR
+        for (int i = 0; i < 3; i++) {
+            cout << "Elemento " << i << "?";
+            cin >> carros[i];            
+        }
 
-    int vetor[4]= {101, 102, 103, 104};
-
-
-        cout<<vetor[2];
+       // Escrita de valores do array utilizando o ciclo for 
+       for (int i = 0; i<3; i++) { 
+        
+            cout << carros[i]<<endl;
+        }
+    
     return 0;
 }
 
