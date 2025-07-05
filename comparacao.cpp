@@ -1,6 +1,6 @@
 //M6- calcula o fatorial de um número
 #include <tchar.h> // Biblioteca C++ p/ acentuação Pt-Br
-#include<iomanip>
+//#include<iomanip>
 #include<iostream>
 using namespace std;   
     
@@ -10,22 +10,20 @@ using namespace std;
     string carros[3];
     //Leitura de valores do array utilizando o ciclo FOR
         for (int i = 0; i < 3; i++) {
-            cout << "Elemento " << i << "?";
+            cout << "\nDigite a marca do " << i+1 << "° carro: " << i+1 << "?";
             cin >> carros[i];            
         }
 
        // Escrita de valores do array utilizando o ciclo for 
        for (int i = 0; i<3; i++) { 
         
-            cout << carros[i]<<endl;
+            cout << "\nA marca do " << i+1 << "° carro é "<< carros[i]<<endl;
         }
-    
+        
     return 0;
 }
-
-
-
-
+  
+    
 
 
 
@@ -1744,4 +1742,32 @@ cout<< "Fatorial de " << numero << " é " << fatorial(numero) << endl;
 
 return 0;
 }
+*/
+
+/*
+//M6- calcula o fatorial de um número
+#include <tchar.h> // Biblioteca C++ p/ acentuação Pt-Br
+#include<iomanip>
+#include<iostream>
+using namespace std;   
+    
+    int main() {
+        setlocale(LC_ALL, "portuguese");
+//Declara o array
+    string carros[3];
+    //Leitura de valores do array utilizando o ciclo FOR
+        for (int i = 0; i < 3; i++) {
+            cout << "Elemento " << i << "?";
+            cin >> carros[i];            
+        }
+
+       // Escrita de valores do array utilizando o ciclo for 
+       for (int i = 0; i<3; i++) { 
+        
+            cout << carros[i]<<endl;
+        }
+    
+    return 0;
+}
+
 */
