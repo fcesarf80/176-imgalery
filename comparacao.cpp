@@ -1,4 +1,24 @@
-//M6- calcula o fatorial de um número
+#include <tchar.h> // Biblioteca C++ Pt-Br
+#include<iostream>
+using namespace std;
+
+        int somaVetor(int arr[], int tam){
+            int soma = 0;
+            for(int i = 0; i < tam; i++){
+                soma+=arr[i];
+            }
+            return soma;             
+        }
+    int main() {      
+        setlocale(LC_ALL, "portuguese");   
+        int numero[6]= {12, 5, 8, 7, 11, 89};
+        int resultado = somaVetor(numero, 6);
+        cout << "A soma dos valores do vetor é " <<resultado;
+        
+        return 0;
+    }
+
+/*//M6- calcula o fatorial de um número
 #include <tchar.h> // Biblioteca C++ Pt-Br
 #include<iostream>
 using namespace std;    
@@ -27,13 +47,9 @@ using namespace std;
             cout<<arrayDados[i][j]<<" ";
         }
         cout<<endl;
-    }
-
-
-
-
+       }
         return 0;
-}
+}*/
     
     // //Leitura de valores do array utilizando o ciclo FOR
     //     for (int i = 0; i < 3; i++) {
