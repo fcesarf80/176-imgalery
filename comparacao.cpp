@@ -2,7 +2,7 @@
 #include<iostream>
 using namespace std;
 
-int main() {
+/*int main() {
     float vendas[4][3];
             
     for (int i=0; i<4; i++){
@@ -28,6 +28,7 @@ int main() {
     }
     return 0;
 }
+*/
 /*
 #include <tchar.h> // Biblioteca C++ Pt-Br
 #include<iostream>
