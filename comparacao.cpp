@@ -2,6 +2,79 @@
 #include<iostream>
 using namespace std;
 
+int main() {
+    float vendas[4][3];
+            
+    for (int i=0; i<4; i++){
+        for (int j=0; j<3; j++){
+           cout<< "Qual o valor das vendas do funcionário? " <<i<< "? ";
+            cin >> vendas[i][j];
+        }        
+    }
+
+    for (int i=0; i<4; i++){
+        for (int j=0; j<3; j++){
+            cout << vendas[i][j] <<" ";
+        }
+        cout << endl;
+    }
+    
+    int numFuncionario;
+    cout<<"Qual o número do cuncionário para visualizar as vendas (1, 2, 3, 4)?";
+    cin>>numFuncionario;
+
+    for (int i=0; i<3; i++){
+        cout<<vendas[numFuncionario][i]<<" ";
+    }
+    return 0;
+}
+/*
+#include <tchar.h> // Biblioteca C++ Pt-Br
+#include<iostream>
+using namespace std;
+
+        int main() {
+            setlocale(LC_ALL, "portuguese");
+            char matriz[3][3];
+
+            for(int i = 0; i < 3; i++){
+                for(int j = 0; j < 3; j++){
+                    cout << "Intriduza uma letra: ";
+                    cin >> matriz[i][j];
+                }
+            }
+
+            int conta = 0;
+            for (int i = 0; i < 3; i++){
+                for(int j = 0; j < 3; i++){
+                    if (matriz[i][j]== 'a' || matriz[i][j]=='A'){
+                        conta++;
+                    }
+                    if (matriz[i][j]== 'e' || matriz[i][j]=='E'){
+                        conta++;
+                    }
+                    if (matriz[i][j]== 'i' || matriz[i][j]=='I'){
+                        conta++;
+                    }
+                    if (matriz[i][j]== 'o' || matriz[i][j]=='O'){
+                        conta++;
+                    }
+                        if (matriz[i][j]== 'u' || matriz[i][j]=='U'){
+                        conta++;
+                    }
+                }
+            }
+            cout << "O quantidade de vogais da matriz é: " << conta <<endl;
+            return 0;
+
+        }
+        */
+
+/*
+#include <tchar.h> // Biblioteca C++ Pt-Br
+#include<iostream>
+using namespace std;
+
         int somaVetor(int arr[], int tam){
             int soma = 0;
             for(int i = 0; i < tam; i++){
@@ -14,9 +87,10 @@ using namespace std;
         int numero[6]= {12, 5, 8, 7, 11, 89};
         int resultado = somaVetor(numero, 6);
         cout << "A soma dos valores do vetor é " <<resultado;
-        
+
         return 0;
     }
+    */
 
 /*//M6- calcula o fatorial de um número
 #include <tchar.h> // Biblioteca C++ Pt-Br
