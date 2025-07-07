@@ -2,33 +2,66 @@
 #include<iostream>
 using namespace std;
 
-/*int main() {
-    float vendas[4][3];
-            
-    for (int i=0; i<4; i++){
-        for (int j=0; j<3; j++){
-           cout<< "Qual o valor das vendas do funcionário? " <<i<< "? ";
-            cin >> vendas[i][j];
-        }        
-    }
+void eleicao(int matz[4][4], int freguesias, int candidatos){
+    //total de votos
+    int total = 0;
 
-    for (int i=0; i<4; i++){
-        for (int j=0; j<3; j++){
-            cout << vendas[i][j] <<" ";
+    int votosCandidato[4]={0};
+
+    for (int i = 0; i < candidatos; i++) {
+        for  (int j=0; j<freguesias; j++) {
+            total = total + matz [i][j];
+            votosCandidato[j] = votosCandidato [j] +matz[i][j];
         }
-        cout << endl;
     }
-    
-    int numFuncionario;
-    cout<<"Qual o número do cuncionário para visualizar as vendas (1, 2, 3, 4)?";
-    cin>>numFuncionario;
+    cout << "O total de votos é: "<< total << endl;
+    for (int i = 0; i < candidatos; i++) {
+        cout<<votosCandidato[i]<<" ";
+    }
+}
 
-    for (int i=0; i<3; i++){
-        cout<<vendas[numFuncionario][i]<<" ";
-    }
+int main() {
+            setlocale(LC_ALL, "portuguese");
+    int matriz[4][4] = {{19, 21, 15, 25}, {18, 20, 16, 17}, {12, 19, 14, 24}, {15, 27, 24, 32}};
+    eleicao(matriz, 4, 4);
     return 0;
 }
-*/
+
+
+
+
+
+/*
+#include <iostream>
+
+using namespace std;
+
+void func(int arr[], int size) {
+
+    for (int i = 0; i < size; i++) {
+
+        arr[i] = arr[i]+i;
+
+    }
+
+}
+
+int main() {
+
+    int arr[5] = {10, 20, 30, 40, 50};
+
+    func(arr, 5);
+
+        for (int i = 0; i < 5; i++) {
+
+        cout << arr[i] << " ";
+
+    }
+
+    return 0;
+
+}*/
+
 /*
 #include <tchar.h> // Biblioteca C++ Pt-Br
 #include<iostream>
