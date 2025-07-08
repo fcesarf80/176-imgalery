@@ -1,18 +1,25 @@
+//FUNÇÕES
 #include <tchar.h> // Biblioteca C++ Pt-Br
 #include<iostream>
+using namespace std;
 
-int main() {
-            setlocale(LC_ALL, "portuguese");
-    int soma = 0;
-        for (int num = 1; num <= 100; num++) {
-            soma = soma + num;
-        }    
-        std::cout << "A soma dos números de 1 a 100: " <<soma <<"\n";
-        system("pause");
-        return 0;
-
+// O que a função vai retornar?
+// Tipo de retorno da função
+int SomaAUmNumero(int Numero, int NumeroASerSomado)
+{
+    return Numero + NumeroASerSomado;
 }
-
+int main()
+{
+    int Numero, NumeroASerSomado;
+    std:: cout << "\nDigite um número: ";
+    std::cin >> Numero;
+    std::cout << "Digite o número a ser somado: ";
+    std::cin >> NumeroASerSomado;
+    std::cout << "A soma desse número: [ " << Numero << " ] com o núrmero: [ " << NumeroASerSomado << " ] será: [ " << SomaAUmNumero(Numero, NumeroASerSomado) <<" ]\n";
+    system("PAUSE");
+    return 0;
+}
 
 
 
@@ -1994,6 +2001,99 @@ using namespace std;
             cout << "\nA marca do " << i+1 << "° carro é "<< carros[i]<<endl;
         }
         
+    return 0;
+}
+*/
+
+/*//Gerando números aleatórios com rand() e for
+
+#include <tchar.h> // Biblioteca C++ Pt-Br
+#include<iostream>
+#include<ctime>
+using namespace std;
+
+int main() {
+            setlocale(LC_ALL, "portuguese");
+    srand((unsigned)time(0));
+    int randomNumber;
+    for (int index = 0; index < 10; index++) {
+        randomNumber = (rand() % 35) + 1;        
+    cout << randomNumber <<endl;
+        
+
+}
+}
+*/
+/*
+//Como validar a entrada: impedindo que o usuário digite uma letra no terminal!
+
+#include <tchar.h> // Biblioteca C++ Pt-Br
+#include<iostream>
+#include<limits>
+using namespace std;
+
+const auto maxIgnorado = std::numeric_limits<std::streamsize>::max();
+//std::streamize é o número de caracteres transferidos em uma operação de E/S
+//std::numeric_limits Retorna o valor finito máximo representável pelo tipo numérico
+int main() {
+            setlocale(LC_ALL, "portuguese");
+    int num = 0;
+    bool feito = false;
+    
+    std::cout << "\n\n";
+    std::cout << "\nInsira somente digitos inteiros C++";
+    std::cout << "\n\n";
+
+    while (!feito) {
+        std::cout << "\n";
+        std::cout << "\tEntre com um inteiro: ";
+        //Quando  std::cin encontra uma entrada que não pode ler corretamente na váriavel especificada (como inserir um caractere em uma variável inteira), ele entra em estado de erro e deixa a entrada em seu buffer. Aqui temos num do tipo inteiro int num = 0 if (std::cin >> num) irá retornar verdadeiro se for digitado um número inteiro e falso caso cointrário
+
+        if (std::cin >> num) {
+            //se entrou aqui é porque num é um inteiro
+            std::cout << "\n";
+            std::cout << "\nExcelente você entrou com: " << num;
+            feito = true;
+        }
+
+        else {
+            //se entrou aqui é porque num NÃO é um inteiro
+            std::cout << "\n";
+            std::cout << "\tEntrada invalida!\n";
+            //é preciso liberar a memória(buffer) da entrada e isso é feito abaixo
+
+            std::cin.clear();
+            std::cin.ignore(MaxIgnorado; '\n'); 
+               std::cout << "\n\n";
+        }
+    }
+        std::cout << "\n\n";
+        std::cout << "\nFim do Programa";
+            std::cout << "\n\n";
+
+}
+*/
+/*
+//FUNÇÕES
+#include <tchar.h> // Biblioteca C++ Pt-Br
+#include<iostream>
+using namespace std;
+
+// O que a função vai retornar?
+// Tipo de retorno da função
+int SomaAUmNumero(int Numero, int NumeroASerSomado)
+{
+    return Numero + NumeroASerSomado;
+}
+int main()
+{
+    int Numero, NumeroASerSomado;
+    std:: cout << "\nDigite um número: ";
+    std::cin >> Numero;
+    std::cout << "Digite o número a ser somado: ";
+    std::cin >> NumeroASerSomado;
+    std::cout << "A soma desse número: [ " << Numero << " ] com o núrmero: [ " << NumeroASerSomado << " ] será: [ " << SomaAUmNumero(Numero, NumeroASerSomado) <<" ]\n";
+    system("PAUSE");
     return 0;
 }
 */
