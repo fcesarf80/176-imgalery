@@ -3,6 +3,43 @@
 #include<algorithm>
 using namespace std;
 
+int main() {
+            setlocale(LC_ALL, "portuguese");
+int numero = ;
+while (numero <=10)
+std::cout << numero << std::endl;
+numero++;
+
+system("pause");
+return ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*#include <tchar.h> // Biblioteca C++ Pt-Br
+#include<iostream>
+#include<algorithm>
+using namespace std;
+
 void eleicao(int matz[4][4], int freguesias, int candidatos){
     //total de votos
     int total = 0;
@@ -39,6 +76,7 @@ int main() {
     eleicao(matriz, 4, 4);
     return 0;
 }
+*/
 
 
 
