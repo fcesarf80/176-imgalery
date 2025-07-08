@@ -1,5 +1,6 @@
 #include <tchar.h> // Biblioteca C++ Pt-Br
 #include<iostream>
+#include<algorithm>
 using namespace std;
 
 void eleicao(int matz[4][4], int freguesias, int candidatos){
@@ -17,7 +18,19 @@ void eleicao(int matz[4][4], int freguesias, int candidatos){
     cout << "O total de votos é: "<< total << endl;
     for (int i = 0; i < candidatos; i++) {
         cout<<votosCandidato[i]<<" ";
+        if (votosCandidato[i]>(total/2)) {
+            cout<<"O candidato com os votos "<<votosCandidato[i]<<"teve a maior é vencedor"<<endl;
+        }
     }
+    //ordenar o vetor de candidados ordem decrescente
+    sort(votosCandidato, votosCandidato+candidatos, greater<int>());
+    cout<<endl;
+    for(int i= 0; i<candidatos; i++) {
+        cout<<votosCandidato[i]<<" ";
+    }
+    cout<<"\nOs candidatos que vão concorrer no próximo turno são:"<<endl;
+    cout<<votosCandidato[0]<<endl;
+    cout<<votosCandidato[1]<<endl;
 }
 
 int main() {
