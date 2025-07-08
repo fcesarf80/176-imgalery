@@ -1,17 +1,16 @@
 #include <tchar.h> // Biblioteca C++ Pt-Br
 #include<iostream>
-#include<algorithm>
-using namespace std;
 
 int main() {
             setlocale(LC_ALL, "portuguese");
-int numero = ;
-while (numero <=10)
-std::cout << numero << std::endl;
-numero++;
+    int soma = 0;
+        for (int num = 1; num <= 100; num++) {
+            soma = soma + num;
+        }    
+        std::cout << "A soma dos números de 1 a 100: " <<soma <<"\n";
+        system("pause");
+        return 0;
 
-system("pause");
-return ;
 }
 
 
