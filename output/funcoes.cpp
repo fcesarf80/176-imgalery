@@ -11,11 +11,12 @@ int main()
     int Numero;
     std::cout << "\nDigite um número inteiro: ";
     std::cin >> Numero;
-    if (isPar(Numero) == true)
+    // if (isPar(Numero) == true)
+      if (isPar(Numero))// profissionalmente só se usa assim
     {
         std::cout << "O número: " << Numero<<" é PAR.\n";
-    }
-    else if (isPar(Numero) == false)
+    }//se não for PAR já sabemos que é impar, tbm então removemos o if
+    else
     {
         std::cout <<"O número: " << Numero << " é IMPAR.\n";        
     }
@@ -30,3 +31,9 @@ bool isPar(int num)
 //obs que o return faz a saida imediata da função, logo se for par, o código else é desnecessário
         return false; 
 }
+
+
+Consolidando protótipos de funções:
+É como declarar uma função.
+ex.: float soma(float num1, float num2);
+Serve para indicar para a função main() que a função referente ao protótipo que você declarou existe, mas o código dela está em outro lugar.
