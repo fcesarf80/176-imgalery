@@ -1,3 +1,52 @@
+//PROTOTIPO DE FUNÇÕES - calculadora
+#include<iostream>
+float Soma(float num1, float num2);
+float Subtracao(float num1, float num2);
+float Multiplicacao(float num1, float num2);
+float Divisao(float num1, float num2);
+
+int main()
+{
+    float Num1, Num2;
+
+    std::cout << "\nDigite o 1° número: ";
+    std::cin >> Num1;
+    std::cout << "\nDigite o 2° número: ";
+    std::cin >> Num2;
+
+    system("PAUSE");
+
+    std::cout << "\n*** Resultado das operações***\n";
+    std::cout << Num1 << " e " << Num2 << "\n";
+    std::cout << "Soma: " << Soma(Num1, Num2) << "\n";
+    std::cout << "Subtracao: " << Subtracao(Num1, Num2) << "\n";
+    std::cout << "Multiplicacao: " << Multiplicacao(Num1, Num2) << "\n";
+    std::cout << "Divisao: " << Divisao(Num1, Num2) << "\n";
+
+    return 0;
+}
+
+float Soma(float num1, float num2)
+{
+return num1 + num2;
+}
+float Subtracao(float num1, float num2)
+{
+return num1 - num2;
+}
+float Mutiplicacao(float num1, float num2)
+{
+return num1 * num2;
+}
+float Divisao(float num1, float num2)
+{
+return num1 / num2;
+}
+
+
+
+
+/*
 //PROTOTIPO DE FUNÇÕES
 // Crie uma função que indique se um número é par ou impar.
 #include <tchar.h> // Biblioteca C++ Pt-Br
@@ -32,8 +81,4 @@ bool isPar(int num)
         return false; 
 }
 
-
-Consolidando protótipos de funções:
-É como declarar uma função.
-ex.: float soma(float num1, float num2);
-Serve para indicar para a função main() que a função referente ao protótipo que você declarou existe, mas o código dela está em outro lugar.
+*/
