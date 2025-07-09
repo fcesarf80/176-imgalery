@@ -1280,8 +1280,7 @@ int main()                                                      //Compiled succe
             default:
                 std::cout << "\nOperador inválido!" << std::endl;
         }
-  
-      std::cout<< "Deseja verificar outras números? (S) ou (N): ";
+        std::cout<< "Deseja verificar outras números? (S) ou (N): ";
       std::cin >> reply;
   } while (reply == 'S' || reply == 's');
 
@@ -1616,9 +1615,7 @@ do {
 
     return 0;
 }
-
 */
-
 /*
 #include<iostream>
 using namespace std;
@@ -1626,14 +1623,12 @@ using namespace std;
 void minhaFuncao() {
     cout << "\nAcabei de ser executado!";
 }
-
 int main () {
     minhaFuncao();
 
     return 0;
 }
 */
-
 /*
 //6-EX5-ResolveProblema: (valor1 + valor2 * valor3) / valor1
 #include <iostream>         
@@ -1643,7 +1638,6 @@ float resolveProblema(float valor1, float valor2, float valor3) {
 float result = (valor1 + valor2 * valor3) / valor1;
        return result;
 }
-
 int main () {
     float v1, v2, v3;
     char reply;
@@ -1671,10 +1665,8 @@ int main () {
         system("Pause");
 
     return 0;
-}
-      
+}      
 */
-
 /*
 M7-ex3
 #include <iostream>          //6-Ex6 Função Calcula área         
@@ -1858,21 +1850,10 @@ cout << "\nO custo total é: " << custTotal << endl;
 cout << endl;
     return 0;
 }
-
 */
 
 /*
-
-
-
-
-
 MODULO 6 
-
-
-
-
-
 #include <iostream>
 using namespace std;
 
@@ -1903,14 +1884,12 @@ int main () {
 // Progrmam que produz uma saída usando função tipo void, criando linhas com asteriscos
 #include <iostream>
 using namespace std;
-
 void imprimeAsterisco() {
     for (int i = 0; i < 17; i++) {
         cout << "*";
     }
     cout <<endl;
 }
-
 int main () {
     imprimeAsterisco();
     cout << " Programação C++" << endl;

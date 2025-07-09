@@ -51,7 +51,9 @@
         "xutility": "cpp",
         "iomanip": "cpp",
         "sstream": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "algorithm": "cpp",
+        "optional": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
