@@ -14,7 +14,7 @@ int main()
     std::cout << "\nDigite o 2° número: ";
     std::cin >> Num2;
 
-    system("PAUSE");
+   
 
     std::cout << "\n*** Resultado das operações***\n";
     std::cout << Num1 << " e " << Num2 << "\n";
@@ -23,7 +23,8 @@ int main()
     std::cout << "Multiplicacao: " << Multiplicacao(Num1, Num2) << "\n";
     std::cout << "Divisao: " << Divisao(Num1, Num2) << "\n";
 
-    return 0;
+     system("PAUSE");
+     return 0;
 }
 
 float Soma(float num1, float num2)
