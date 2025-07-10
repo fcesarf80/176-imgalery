@@ -35,7 +35,7 @@ int main()
     system("PAUSE");
     return 0;
 }
-*/
+
 /*
 //FUNÇÕES
 #include <tchar.h> // Biblioteca C++ Pt-Br
