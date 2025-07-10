@@ -13,6 +13,66 @@ int main() {
     return 0;
 }
 
+//FUNÇÕES
+#include <tchar.h> // Biblioteca C++ Pt-Br
+#include<iostream>
+using namespace std;
+
+// O que a função vai retornar?
+// Tipo de retorno da função
+int SomaAUmNumero(int Numero, int NumeroASerSomado)
+{
+    return Numero + NumeroASerSomado;
+}
+int main()
+{
+    int Numero, NumeroASerSomado;
+    std:: cout << "\nDigite um número: ";
+    std::cin >> Numero;
+    std::cout << "Digite o número a ser somado: ";
+    std::cin >> NumeroASerSomado;
+    std::cout << "A soma desse número: [ " << Numero << " ] com o núrmero: [ " << NumeroASerSomado << " ] será: [ " << SomaAUmNumero(Numero, NumeroASerSomado) <<" ]\n";
+    system("PAUSE");
+    return 0;
+}
+*/
+/*
+//FUNÇÕES
+#include <tchar.h> // Biblioteca C++ Pt-Br
+#include<iostream>
+using namespace std;
+
+// O que a função vai retornar?
+// Tipo de retorno da função
+int SomaAUmNumero(int Numero, int NumeroASerSomado)
+{
+    return Numero + NumeroASerSomado;
+}
+
+void Mensagem()
+{
+    std::cout<< "\nMensagem de Marte... Chegamos bem...\n";
+}
+
+
+int main()
+{
+    int Numero, NumeroASerSomado, RetornoDaFuncao;
+    Mensagem();
+    std:: cout << "\nDigite um número: ";
+    std::cin >> Numero;
+    std::cout << "Digite o número a ser somado: ";
+    std::cin >> NumeroASerSomado;
+    std::cout << "A soma desse número: [ " << Numero << " ] com o núrmero: [ " << NumeroASerSomado << " ] será: [ " << SomaAUmNumero(Numero, NumeroASerSomado) <<" ]\n";
+    RetornoDaFuncao = SomaAUmNumero(200, -500);
+
+    std::cout << SomaAUmNumero(Numero, SomaAUmNumero(150, 1400));
+
+    std::cout << "Soma de 200 com - 500: " << RetornoDaFuncao;
+    std::cout << std::endl;
+    system("PAUSE");
+    return 0;
+}
 
 
 
