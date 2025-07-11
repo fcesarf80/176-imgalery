@@ -1,3 +1,11 @@
+
+
+
+
+//....................................................
+
+/*
+
 #include<iostream>  
 #include<locale.h>   
 #include"FuncoesMenu.h"
@@ -39,3 +47,5 @@ int ProcessarEscolha(int TipoEscolha)
     }
      return TipoEscolha;
 }
+
+*/
