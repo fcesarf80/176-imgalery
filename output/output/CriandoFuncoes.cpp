@@ -1,3 +1,21 @@
+#include <iostream>
+#include <windows.h>
+ 
+using namespace std;
+ 
+int main()
+{
+	
+	return 0;
+}
+
+
+
+
+
+
+
+
 // #include<iostream>
 // #include<tchar.h>  // PT-BR
 // #include<iomanip> // para formatar casas décimais
@@ -121,33 +139,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*
 
 #include<iostream>
 #include<tchar.h>
@@ -276,7 +268,7 @@ void MostrarCarrinho(float Total, float MeiaEntrada, float InteiraEntrada)
 	return 0;
 }
 
-
+*/
 //**********************************************************
 
 
