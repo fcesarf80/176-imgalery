@@ -1,6 +1,7 @@
 #include<iostream>
 #include "Matematica.h"
 
+int NumeroGlobal = 5;
 int main()
 {
     int Numero1, Numero2;
