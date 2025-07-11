@@ -1,0 +1,33 @@
+#include<iostream>
+#include "Matematica.h"
+#include<cmath>
+
+int Soma(int num1, int num2)
+{
+    return num1 + num2;
+}
+
+int Subtracao(int num1, int num2)
+{
+    return num1 - num2;
+}
+
+int Multiplicacao(int num1, int num2)
+{
+    return num1 * num2;
+}
+
+float Divisao(int num1, int num2)
+{
+    return num1 / num2;
+}
+
+int Potenciacao(int num1, int num2)
+{
+    return pow(num1 + num2);
+}
+
+float RaizQuadrada(int num1)
+{
+    return sqrt(num);
+}
