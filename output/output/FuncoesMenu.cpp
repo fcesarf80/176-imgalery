@@ -1,11 +1,3 @@
-
-
-
-
-//....................................................
-
-/*
-
 #include<iostream>  
 #include<locale.h>   
 #include"FuncoesMenu.h"
@@ -29,8 +21,14 @@ void ExibirMenu()
         std::cout << "\nEscolha uma das opções acima: ";
         std::cin  >> escolha;
         //Aqui a função chama outra função e passa como argumento pa ara função ProcessarEscolha a vari[avel escolha que contemo que foi digitado pelo usúario como opção de escolha de menu
-    } while (ProcessarEscolha(RetornoEscolha)()!=3);//enquanto escolha for diferente de 3 o menu vai aparecer! Pois você esta solicitando que fique em loop até que escolha seja igual a 3 e resultado seja falso saindo do loop do-while.
+    } while (ProcessarEscolha(RetornoEscolha())!=3);//enquanto escolha for diferente de 3 o menu vai aparecer! Pois você esta solicitando que fique em loop até que escolha seja igual a 3 e resultado seja falso saindo do loop do-while.
 }
+int RetornarEscolha()
+{
+    	int escolha = 0;
+        std::cout << "\nEscolha sua opção: ";
+		std::cin >> escolha;
+        return escolha2;
 //ProcessarEscolha recebe como parâmetro um número inteiro e armazena este argumento passado no parâmetro TipoEscolha que é uma variável local a esta função. Significa que esta variável comente existe na memória quando a função está sendo executada. Quando a função chegar a seu final esta variável deixa de existir na memória.
 //Portanto, funções são fundamentais para otimizar o uso de memória, pois se todas estas variáveis estivessem na função main elas somente seriam destruidas quando o rograma fosse fechado.
 int ProcessarEscolha(int TipoEscolha)
@@ -43,9 +41,8 @@ int ProcessarEscolha(int TipoEscolha)
                 break;
             case 3: std::cout << "\nSaindo Menu Tickets...\n\n";
                 break;
-            default: std::cout << "\nOpção Inválida!!!\n";           
-    }
-     return TipoEscolha;
+            default: std::cout << "\nOpção Inválida!!!\n";            
+                return TipoEscolha;
+    }     
 }
-
-*/
+}

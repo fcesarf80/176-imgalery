@@ -1,10 +1,6 @@
 #include<iostream>
 #include <locale.h>
 #include"FuncoesMenu.h"
-//Prototipo das funções
-void ExibirMenu();
-int RetornarEscolha();
-void ProcessarEscolha(int TipoEscolha);
 
 int main()
 {
@@ -31,13 +27,7 @@ int main()
 	} while (escolha != 3);//enquanto escolha for diferente de 3 o menu vai aparecer! pois você está solicitando que fique em loop até que escolha seja igual a 3 e resultado seja falso saindo do loop do-while
 }
 
-int RetornarEscolha()
-{
-    	int escolha = 0;
-        std::cout << "\nEscolha sua opção: ";
-		std::cin >> escolha;
-        return = escolha;
-}
+
 
 
    //Processar escolha recebe como parametro um número inteiro e armazena este argumento passado no parâmetro tipo escolha que é uma variável local a esta função. Significa que esta variável somente existe na menmória quando a função esta sendo executada. Quando a função chega a seu final esta variável deixa de existir na memória.
@@ -54,4 +44,5 @@ void ProcessarEscolha(int TipoEscolha)
 				break;
 		default: std::cout << "\nOpção Inválida!!!\n";
 		}
+        return TipoEscolha;
 }
