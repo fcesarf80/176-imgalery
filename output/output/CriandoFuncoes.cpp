@@ -1,12 +1,18 @@
-#include <iostream>
-#include <windows.h>
+#include <iostream>		//Variáveis de memória
+#include <tchar.h>
  
 using namespace std;
  
 int main()
 {
-	
+	setlocale(LC_ALL, "portuguese");
+	int Numero = 10;
+	double Salario = 4567.90;
+	std::cout << "\nTamanho variável número: " << sizeof(Numero)<< "\n";
+	std::cout << "\nTamanho variável salário: " << sizeof(Salario) << "\n";
+	system("pause");
 	return 0;
+
 }
 
 
