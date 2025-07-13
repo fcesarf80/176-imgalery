@@ -9,7 +9,7 @@ int main()
 	int *ptr;
 	//Obs.: A posição do asterisco neste caso não importa
 	//int* ptr; //dá no mesmo!
-	
+
 	int Numero = 101;
 	//Aqui vamos colocar na tela o endereço de mémoria da variável número, ou seja onde ela está carregada na memória RAM
 	//Lembre-se que o que vai para tela é o primeiro endereço da variável número pois ela ocupa 4 endereços, pois tem 4 bytes de tamanho
@@ -23,11 +23,9 @@ int main()
 	system("pause");
 	
 	return 0;
-	
-
 }
 
-
+Armazenando com & e = endereços de outras variáveis dentro de variáveis ponteiro
 
 //**********************************************************
 /*#
