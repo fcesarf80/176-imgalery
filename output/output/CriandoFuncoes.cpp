@@ -1,4 +1,4 @@
-#include <iostream>		
+#include <iostream>				//  118 Ponteiros  //
 #include <tchar.h> 
 using namespace std;
 int main()
@@ -25,29 +25,61 @@ int main()
 	//Primeiro você faz o cast e depois coloca o sinal de desreferenciamento
 	//*(cast para tipo desejado)NomePonteiroGenerico
 	//*(char*)ptrG
-	//agora o compilador sabe que deverá ler 1(byte) para colocar um char na tela!
+	//agora o compilador sabe que deverá ler 1(byte) para colocar um char na tela!	
+	ptrG = &Numero;
+	std::cout << "Valor de Número via ptrG: " << *(int*)ptrG << "\n";
+	std::cout << endl;
 	system("PAUSE");
 	return 0;
-	// ptrG = &Numero;
-	
-	// std::cout << "Valor de Número via ptrG: " << *(int*)ptrG << "\n";
-	// std::cout << endl;
-	
-	// return 0;
 }
+//**********************************************************
+/*
+#include <iostream>				//  117 Ponteiros  //
+#include <tchar.h> 
+using namespace std;
+int main()
+{	setlocale(LC_ALL, "portuguese");	
+	int Numero{ 4890 };
+	char Letra {'E'};
+	//Declarei ponteiro genérico ou vazio (void)...
+	//Isso significa que ele não tem ainda um tipo que possa apontar.
+	//O que é útil quando você por exemplo, retorna algo de alguma função e atribui, de antemão, que tipo de dado você vai retornar sendo assim, depois você pode especificar qual tipo de dado o ponteiro void* passará a apontar 
+	void *ptrG;
+	//Agora ptrG passa a apontar para a variavel Letra, pois ele recebeu o endereço de memória desta variável 
+	ptrG = &Letra;
+	//Por que deu ERRO?
+	//Lembre-se que o endereço de uma variável é apenas o 1° byte desta variável, o que elea esta carregada.
+	//Assim... como o compilador vao saber como LER a variável
+	//ex.: a partir do endereço 105 eu devo percorrer quantos bytes?
+	//Ele só saberá isso quando você indicar o tipo do ponteiro ptrG
+	//Por enquanto ele é void!
+	//Logo, já que Letra é do tipo char você deve indicar que o ponteiro ptrG está apontando para um char.
+	//Isso é feito via cast
+	//Porque ptrG não sabe
+	std::cout << "\nValor de Letra via ptrG: " << *(char*)ptrG << "\n";
+	std::cout << "endl";
+	//Primeiro você faz o cast e depois coloca o sinal de desreferenciamento
+	//*(cast para tipo desejado)NomePonteiroGenerico
+	//*(char*)ptrG
+	//agora o compilador sabe que deverá ler 1(byte) para colocar um char na tela!	
+	ptrG = &Numero;
+	std::cout << "Valor de Número via ptrG: " << *(int*)ptrG << "\n";
+	std::cout << endl;
+	system("PAUSE");
+	return 0;
+}
+*/
 //**********************************************************
 /*
 #include <iostream>		//Variáveis de memória
 #include <tchar.h> 
 using namespace std; 
 int main()
-{
-	setlocale(LC_ALL, "portuguese");
+{	setlocale(LC_ALL, "portuguese");
 	//Então, para declarar uma variável que seja considerada um ponteiro basta colocar <tipo a ser apontado> *<nome da variável>
 	int *ptr;
 	//Obs.: A posição do asterisco neste caso não importa
 	//int* ptr; //dá no mesmo!
-
 	int Numero = 101;
 	//Aqui vamos colocar na tela o endereço de mémoria da variável número, ou seja onde ela está carregada na memória RAM
 	//Lembre-se que o que vai para tela é o primeiro endereço da variável número pois ela ocupa 4 endereços, pois tem 4 bytes de tamanho
@@ -68,8 +100,7 @@ include <iostream>		//Variáveis de memória
 #include <tchar.h> 
 using namespace std; 
 int main()
-{
-	setlocale(LC_ALL, "portuguese");
+{	setlocale(LC_ALL, "portuguese");
 	int Numero = 10;
 	double Salario = 4567.90;
 	std::cout << "\nTamanho variável número: " << sizeof(Numero)<< "bytes";
@@ -182,7 +213,7 @@ int main()
                     break;
             }
     } while (Choice != '7');
-      return 0;    
+      return 0;
 }
 */
 //**********************************************************
