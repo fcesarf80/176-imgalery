@@ -5,14 +5,25 @@ using namespace std;
 int main()
 {
 	setlocale(LC_ALL, "portuguese");
-	int Numero = 10;
-	double Salario = 4567.90;
-	std::cout << "\nTamanho variável número: " << sizeof(Numero)<< "bytes";
-	std::cout << "\nTamanho variável salário: " << sizeof(Salario) << "bytes\n";
-	std::cout << "\nEndereço de memória da variável número: " << &Numero;
-	std::cout << "\nEndereço de memória da variável sálario: " << &Salario << "\n\n";
+	//Então, para declarar uma variável que seja considerada um ponteiro basta colocar <tipo a ser apontado> *<nome da variável>
+	int *ptr;
+	//Obs.: A posição do asterisco neste caso não importa
+	//int* ptr; //dá no mesmo!
+	
+	int Numero = 101;
+	//Aqui vamos colocar na tela o endereço de mémoria da variável número, ou seja onde ela está carregada na memória RAM
+	//Lembre-se que o que vai para tela é o primeiro endereço da variável número pois ela ocupa 4 endereços, pois tem 4 bytes de tamanho
+	std::cout << "\nEndereço de número: " << &Numero;
+	//Obs.: &ptr vai colocar na tela o endereço de memória alocado para variável ponteiro, ou seja, qual lugar da RAM ele está alocado?
+	//Veja nós ainda não estamos colocando na tela nada que esteja dentro das variáveis. Pois para colocar o que esta dentro das variáveis, ns usamos apenas o nome da variável!
+	//ex.: std::cout << Numero
+	//std::cout << ptr
+	std::cout << "\nEndereço de ptr: " << &ptr <<"\n";
+	std::cout << endl;
 	system("pause");
+	
 	return 0;
+	
 
 }
 
@@ -41,7 +52,6 @@ int main()
 #include<iostream>
 #include<tchar.h>  // PT-BR
 #include<iomanip> // para formatar casas décimais
-
 void MostrarCarrinho(float Total, float MeiaEntrada, float InteiraEntrada) 
 {
     Total = (MeiaEntrada * 10.50) + (InteiraEntrada * 21.0);
@@ -138,7 +148,6 @@ int main()
                     std::cout << "\n[ERRO]: Opção Inválida! Verifique o MENU de opções!\n";
                     break;
             }
-
     } while (Choice != '7');
       return 0;    
 }
@@ -161,7 +170,6 @@ void MostrarCarrinho(float Total, float MeiaEntrada, float InteiraEntrada)
 
  int main ()
  {   _tsetlocale(LC_ALL, "portuguese");
-
     float MeiaEntrada = 0.0;
 	float InteiraEntrada = 0.0;
 	float Total = 0.0;
