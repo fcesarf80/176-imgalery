@@ -1,3 +1,43 @@
+#include<iostream>
+#include <tchar.h> 
+using namespace std;
+int main()
+{	setlocale(LC_ALL, "portuguese");
+	int Numero{ 1024 };
+	char Letra{ 'A' };
+	//O que significa esse 'int &Ref = Numero', ele declara uma referência, significa que foi criado um elias (rotulo, apelido) para a variável número
+	//Neste caso não é criada uma região de memória que vai conter algo dentro e que seria chamada Ref. Ref não tem endereço na RAM.
+	//Não é uma variave, que podemos colocar algo dentro!
+	//É apenas um atalho para Número.
+	int &Ref = Numero;
+	//Para colocar na tela o valor que a referência referencia, basta colocar o nome dela, da referência. Não precisa desreferenciar como nos ponteiros. *ptr 
+	std::cout << "\nValor de Número usando Ref: " << Ref << "\n";
+	std::cout << "Valor Endereço de Número: " << &Numero << "\n";
+	//Observe que &Ref irá retornar o endereço de Número pois uma referência nasce e fica como novo rótulo da váriavel que ela rferencia estando portanto no mesmo endereço de número, neste caso.
+	std::cout << "Valor Endereço de Ref: " << &Ref << "\n";
+	//Já aqui, será criada uma variável, um espaço na memória RAM e dentro deste espaço de nome ptr será colocado o endereço de memória de Numero. É bem diferente de referência pois esta não contem um espaço alocado, ela apenas é mais um nome, um rótulo, um apelido para referenciar a variável.
+	int* ptr = &Numero;
+	std::cout << "Valor Endereço de prt na RAM: " << &ptr << "\n";
+	std::cout << "\nValor de Númeoro usando ptr: " << *ptr << "\n";
+	std::cout << "\nValor Endereço contido dentro de ptr: " << ptr << "\n";
+	std::cout << endl;
+	system("PAUSE");
+	std::cout << endl;
+	return 0;
+}
+
+//**********************************************************
+/*
+//Para alterar o valor de Letra (código abaixo) utilizando ptr voê pode utilizar: ptr = 'C';
+//	1| char* ptr;
+//	2| ptr = &Letra;
+//	3| ptr = 'B';
+
+// R= ERRADO. Está ERRADO a frase pois, ptr ='B' estaria colocando 'B' dentro de ptr e isso daria erro pois podemos colocar somente endereço de memória dentro de ptr. O correto seria com o operador de desreferenciammento *Assim deveria ser: *ptr = 'C'; 
+//
+
+//**********************************************************
+/*
 //  119 Ponteiros  //
 //Crie uma variável de nome Número do Tipo inteiro e valor inicial igual a 234;
 //Crie um ponteiro de nome Ponteiro capaz de apontar para uma variável do tipo inteiro;
@@ -30,7 +70,7 @@ int main()
 	std::cout << endl;
 	return 0;
 }
-
+*/
 //**********************************************************
 /*
 #include <iostream>				//  118 Ponteiros  //
