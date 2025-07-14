@@ -1,3 +1,14 @@
+#include <iostream>				//  119 Ponteiros  //
+#include <tchar.h> 
+using namespace std;
+int main()
+{	setlocale(LC_ALL, "portuguese");	
+	int Numero{ 4890 };
+	char Letra {'E'};
+}
+
+//**********************************************************
+/*
 #include <iostream>				//  118 Ponteiros  //
 #include <tchar.h> 
 using namespace std;
@@ -32,6 +43,7 @@ int main()
 	system("PAUSE");
 	return 0;
 }
+*/
 //**********************************************************
 /*
 #include <iostream>				//  117 Ponteiros  //
