@@ -1,4 +1,85 @@
 #include<iostream>
+#include<tchar.h>
+
+void TrocaNumeros(int Num1, int Num2);
+int main()
+{	setlocale(LC_ALL, "portuguese");
+	int Num1, Num2;
+	std::cout << "\nDigite o 1° Número: ";
+	std::cin >> Num1;
+	std::cout << "Digite o 2° Número: ";
+	std::cin >> Num2;
+	std::cout << "\nValores antes da troca\n";
+	std::cout << "\tNumero1 = " << Num1;
+	std::cout << "\n\tNumero2 = " << Num2 << "\n";
+	std::cout << "\nValores depois da troca\n";
+	//Esta chamada de função, apenas COPIA o valor de Numero1 e Numero2
+	//e coloca estes valores em Num1 e Num2 respectivamente da função
+	//troca Numeros...
+	//Não há relação alguma com essas variáveis...
+	//Numero1 e Numero2 são variáveis locais a função main e
+	//Num1 e Num2 são as variáveis locais a função TrocaNumeros
+	TrocaNumeros(Num1, Num2);
+	//Mesmo sendo o mesmo nome, sçao variáveis diferentes e com endereços de memória diferentes.
+	//A isso chamamos de passagem de argumentos por valor!
+	//Apenas uma copia do valor é enviado para a função
+	std::cout << "\tNum1 = " << &Num1;
+	std::cout << "\n\tNum2 = " << &Num2<< "\n\n";
+	std::cout << "\tNum1 = " << Num1;
+	std::cout << "\n\tNum = " << Num2<< "\n\n";
+
+
+	system("PAUSE");
+	return 0;
+}
+Passagem de argumentos para funções por referência utilizando referência
+void TrocaNumeros(int Num1, int Num2)
+{
+	//Como fazer a troca de valores de dois números?
+	//Para isso, precisamos de um local temporário para armazenar o valor de Num1, antes dele receber o novo valor!
+	//Variável temporária que guarda o valor de Num1
+	//Ex:Se for digitado 10 Temp=10 e se for digitado Num2=20, temos
+	std::cout << "\tNum1 Função = " << &Num1;
+	std::cout << "\n\tNum2 Função = " << &Num2<< "\n\n";
+	int Temp{ Num1 };
+	//Num1 passa a ser 20
+	Num1 = Num2;
+	//Num2 passa a ser 10. Logo foi trocado
+	Num2 = Temp;
+	//Então aqui a troca ocorre apenas nas variáveis locais, Numero1 e Numero2 ficam intactos, sem alteração!
+
+}
+//**********************************************************
+/*
+#include<iostream>
+int main()
+{
+	int Numero{ 1024};
+	int Numero2{ 2024};
+	//Observe que a referência nãopode ficar sem ser atribuida logo que ela é criada
+	int &RefNum{ Numero2 };
+	//Agora está ok. Pois Ref passa a ser uma referência de Numero2
+	RefNum =5644;
+	//Podemos alterar o valor do referenciamento apenas com o nome da referência sem precisar de *
+	int* ptr = &Numero;
+	//Aqui não será permitido pois referência só pode ser atribuir uma única vez
+	int* ptr = { nullptr };
+	//Um ponteiro pode ser declarado sem ser inicializado!
+	//Até mesmo assim é permitido!
+	*ptr = 4048;
+	std::cout << "\nValor de Número: " << *ptr << "\n";
+	//No ciclo de vida de um ponteiro podemos reatribuir, colocar um novo endereço, fazer ele apontar para outra variável.
+	//Isso é permitido!
+	ptr = &Numero2;
+	*ptr = Numero + 2000;
+	std::cout << "\nValor de Numero2: " << *ptr << "\n";
+	system("pause");
+	return 0;
+}
+*/
+//**********************************************************
+/*
+#include<iostream>
 #include <tchar.h> 
 using namespace std;
 int main()
@@ -25,7 +106,7 @@ int main()
 	std::cout << endl;
 	return 0;
 }
-
+*/
 //**********************************************************
 /*
 //Para alterar o valor de Letra (código abaixo) utilizando ptr voê pode utilizar: ptr = 'C';
