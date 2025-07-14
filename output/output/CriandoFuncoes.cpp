@@ -1,4 +1,86 @@
-#include<iostream>
+#include<iostream> 			// class 125   //
+#include<tchar.h>
+//Agora vamos fazer o mesmo. A passagem de argumentos para a função por 
+//referência. SDó que agora utilizando ponteiros.
+//Lembre-se que ponteiros são variáveis que possuem dentro delas um endereço de outras variáveis Alem disse, eles precisão ser desreferenciado para chegar ao valor apontado ou alterá-lo
+//Aqui foi indicado que a função deve receber endereços de memória pois
+//trata-se de dois ponteiros...Então quando enviar para função você deve enviar o endereço de memória das variáveis. E estes endereços serão colocados nessas variáveis do tipo ponteiro
+void TrocaNumeros(int* Num1, int* Num2);
+int main()
+{	setlocale(LC_ALL, "portuguese");
+	int Numero1, Numero2;
+	std::cout << "\nDigite o 1° Número: ";
+	std::cin >> Numero1;
+	std::cout << "Digite o 2° Número: ";
+	std::cin >> Numero2;
+	std::cout << "\nValores antes da troca:\n";
+	std::cout << "\tNumero1 = " << Numero1;
+	std::cout << "\n\tNumero2 = " << Numero2;		
+	TrocaNumeros(&Numero1, &Numero2);
+	std::cout << "\nValores depois da troca:";
+	std::cout << "\n\tNumero1 = " << Numero1;
+	std::cout << "\n\tNumero2 = " << Numero2<< "\n";
+	std::cout << "Endereço de memória de Numero1: " << &Numero1;
+	std::cout << "\nEndereço de memória de Numero2: " << &Numero2 << "\n\n";
+	system("PAUSE");
+	return 0;
+}
+void TrocaNumeros(int* Num1, int* Num2)
+{	
+	std::cout << "\nEndereço de memória de Num1 da função: " << &Num1;
+	std::cout << "\nEndereço de memória de Num2 da função: " << &Num2<< "\n";
+	std::cout << "\nEndereço de memória contido dentro de Num1: " << Num1;
+	std::cout << "\nEndereço de memória contido dentro de Num2: " << Num2<< "\n";
+	int Temp{ *Num1 };
+	*Num1 = *Num2;
+	*Num2 = Temp;	
+}
+//**********************************************************
+/*
+#include<iostream> 			// class 124   //
+#include<tchar.h>
+
+void TrocaNumeros(int& Num1, int& Num2);
+
+int main()
+{	setlocale(LC_ALL, "portuguese");
+	int Numero1, Numero2;
+	std::cout << "\nDigite o 1° Número: ";
+	std::cin >> Numero1;
+	std::cout << "Digite o 2° Número: ";
+	std::cin >> Numero2;
+	std::cout << "\nValores antes da troca:\n";
+	std::cout << "\tNumero1 = " << Numero1;
+	std::cout << "\n\tNumero2 = " << Numero2;	
+	
+	TrocaNumeros(Numero1, Numero2);
+	std::cout << "\nValores depois da troca:";
+	std::cout << "\n\tNumero1 = " << Numero1;
+	std::cout << "\n\tNumero2 = " << Numero2<< "\n";
+	std::cout << "Endereço de memória de Numero1: " << &Numero1;
+	std::cout << "\nEndereço de memória de Numero2: " << &Numero2 << "\n\n";
+	system("PAUSE");
+	return 0;
+}
+//Agora Num1 e Num2 não recebem simplesmente uma cópia do valor de Numero1 e Numero2. Eles passam a ser referenciados de Numero1 e Numero2 respectivamente. Assim, se eles alteram o valor isso irá afetar as variáveis, pois agora eles são referências!
+void TrocaNumeros(int& Num1, int& Num2)
+{	
+	std::cout << "\nEndereço de memória de Num1 da função: " << &Num1;
+	std::cout << "\nEndereço de memória de Num2 da função: " << &Num2<< "\n";
+	int Temp{ Num1 };
+	//aqui está copiando em Numero1 o valor de Numero2 pois são referências. É como se fosse Numero1 = Numero2
+	//Lembre que referências são alias para suas variáveis
+	//Isso aqui (int& Num1 e int& Num2) é o mesmo que
+	// int& Num1 = Bumero1 e int& Num2 = Numero2;
+	//só que isso ocorre na chamada da função. 
+	//A isso damos o nome de passagem de argumentos para função por referência!
+	Num1 = Num2;
+	
+	Num2 = Temp;	
+}
+//**********************************************************
+/*
+#include<iostream> 			//	class 123    //
 #include<tchar.h>
 
 void TrocaNumeros(int Num1, int Num2);
@@ -27,8 +109,6 @@ int main()
 	std::cout << "\n\tNum2 = " << &Num2<< "\n\n";
 	std::cout << "\tNum1 = " << Num1;
 	std::cout << "\n\tNum = " << Num2<< "\n\n";
-
-
 	system("PAUSE");
 	return 0;
 }
@@ -49,6 +129,7 @@ void TrocaNumeros(int Num1, int Num2)
 	//Então aqui a troca ocorre apenas nas variáveis locais, Numero1 e Numero2 ficam intactos, sem alteração!
 
 }
+*/
 //**********************************************************
 /*
 #include<iostream>
