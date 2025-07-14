@@ -1,10 +1,34 @@
+//  119 Ponteiros  //
+//Crie uma variável de nome Número do Tipo inteiro e valor inicial igual a 234;
+//Crie um ponteiro de nome Ponteiro capaz de apontar para uma variável do tipo inteiro;
+//Troque o valor do Número para 1456 usando Ponteiro
+//Coloque o valor de Número na tela usando Ponteiro
+//Mostre o endereço da memória RAM em que estão carregados, alocados as variáveis Ponteiro e Número;
+//Crie um outro ponteiro de nome OutroPtr
+//Faça PutroPtr apontar para a mesma variável que ptr aponta.
+//Usando Ponteiro some 200 ao valor contido em Número
+//Usando OutroPtr coloque na tela o valor de Número 
 #include <iostream>				//  119 Ponteiros  //
 #include <tchar.h> 
 using namespace std;
 int main()
 {	setlocale(LC_ALL, "portuguese");	
-	int Numero{ 4890 };
-	char Letra {'E'};
+	int Numero{ 234 };
+	int* Ponteiro = &Numero; // forma direta
+	// int* Ponteiro;		// forma em 2 parte
+	// Ponteiro = &Numero;
+	int* OutroPtr = Ponteiro;
+	*Ponteiro = 1456;
+	std::cout << "\nValor de Número: " << *Ponteiro << "\n";
+	std::cout << "Endereço de Número: " << &Numero << "\n ";
+	std::cout << "Endereço de Ponteiro: " << &Numero << "\n";
+	std::cout << "Valor contido em DENTRO de Ponteiro: "<< Ponteiro << "\n";
+	*Ponteiro += 200; //ou *Ponteiro += 200;
+	std::cout << "Valor de Númeor: " << *OutroPtr << "\n";
+	std::cout << endl;
+	system("PAUSE");
+	std::cout << endl;
+	return 0;
 }
 
 //**********************************************************
@@ -138,7 +162,6 @@ void MostrarCarrinho(float Total, float MeiaEntrada, float InteiraEntrada)
     std::cout << "[ENTRADA INTEIRA]:\t" << InteiraEntrada << "\t" << "R$ " << InteiraEntrada * 21.0 << "\n";
     std::cout << "[TOTAL]:\t\t" << "\t" << "R$ " << Total << "\n\n\n";    
 }
-
 int main()
 {
     _tsetlocale(LC_ALL, _T("portugue"));
@@ -163,7 +186,6 @@ int main()
         std::cout << std::endl;
         std::cout << "\t -> Entre com um número para realizar as compras: ";
         std::cin >> Choice;
-
             switch (Choice)
             {
                 case '1' :
@@ -243,15 +265,13 @@ void MostrarCarrinho(float Total, float MeiaEntrada, float InteiraEntrada)
     std::cout << "[MEIA ENTRADA]:\t\t" << MeiaEntrada << "\t" << "R$ " << InteiraEntrada * 21.0 << "\n";
     std::cout << "[TOTAL]:\t\t" << "\t" << "R$ " << Total << "\n\n";
  }
-
  int main ()
  {   _tsetlocale(LC_ALL, "portuguese");
     float MeiaEntrada = 0.0;
 	float InteiraEntrada = 0.0;
 	float Total = 0.0;
 	char Escolha;
- 
-	do
+ 	do
 	{
 		std::cout << "\nMENU DE OPÇÕES" << "\n";
 		std::cout << "--------------" << "\n";
@@ -268,8 +288,7 @@ void MostrarCarrinho(float Total, float MeiaEntrada, float InteiraEntrada)
 		std::cout << std::endl; 
 		std::cout << "Entre com o número para realizar as compras: ";
 		std::cin >> Escolha;
- 
-		switch (Escolha)
+ 		switch (Escolha)
 		{ 
 		case '1': 
 			system("CLS");
@@ -329,7 +348,6 @@ void MostrarCarrinho(float Total, float MeiaEntrada, float InteiraEntrada)
 			std::cout << "\n[ERRO]: Opção inválida! Verifique o MENU de opções!" << "\n";
 			break;
 		}
-
 	} while (Escolha != '7'); 
 	return 0;
 }
@@ -345,7 +363,6 @@ void Coordenadas(int x, int y, int z = 8);
 //Você não é obrigado a inserir todos os argumentos padrão. Porém,
 //se deixar algum de fora deve seguir a regra, que precisa colocar
 //valores da esquerda para a direita;
-
 int main()
 {
     //Apesar da função solicitar na chamada o emprego de 3 
@@ -356,7 +373,6 @@ int main()
     system("PAUSE");
     return 0;
 }
-
 void Coordenadas(int x, int y, int z)
 {
     x *= 10; //This is the same as x = x * 10;
