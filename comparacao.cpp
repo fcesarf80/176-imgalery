@@ -73,25 +73,6 @@ int main()
     system("PAUSE");
     return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*#include <tchar.h> // Biblioteca C++ Pt-Br
 #include<iostream>
 #include<algorithm>
