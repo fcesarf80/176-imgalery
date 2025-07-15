@@ -1,4 +1,82 @@
-#include <iostream>     // Soma de 10 Númeos com Array  //
+/*
+Professor Marcos Pacheco (Mestre em Computação)
+Aprenda a programar! Acesse agora: https://www.udemy.com/course/cmaismaisbasico/?referralCode=956A556D144A0F4D36EC
+*/
+
+#include <iostream>
+
+void MostrarVetor(int Array[], int TamVetor);
+
+int main()
+{
+	int Vetor[] = { 1, 2, 3, 4, 5, 6, 7 ,8, 9, 10 };
+	//Para enviar um vetor para uma função basta enviar o nome do vetor
+	MostrarVetor(Vetor, 10);
+	//Porém e o tamanho?
+	//Dá para calcular este tamanho sem ter que enviar?
+
+	system("PAUSE");
+	return 0;
+}
+
+//Para receber um vetor basta colocar o tipo nome do vetor e [ ]
+//ou já com tamanho int Array[10]
+void MostrarVetor(int Array[], int TamVetor)
+{
+	for (int i = 0; i < TamVetor; i++)
+	{
+		std::cout << "- " << Array[i] << " -";
+	}
+}
+
+// //Receba do usuário o número de elementos desejados (máximo 20) armazenar estes dados em um array. Depois mostre na tela qual foi o maior/menor elemento desse array usando loops.
+// #include<iostream>
+// #include<string>
+// #include<tchar.h>
+
+// int main()
+// {   system("color, 02");
+//     setlocale(LC_ALL, "portuguese");
+//     int NumElementos;
+//     int Min, Max;
+//     int Array[20];
+
+//     std::cout << "Digite o número de elementos desejados: ";
+//     std::cin >> NumElementos;
+
+//     for (int i = 0; i < NumElementos; i++);
+//     {
+//         std::cout << "Digite o elemento" << (i + 1) << ":";
+//         std::cin >> Array[i];
+//         syatem("CLS");
+//     }
+//     Min = Array[0];
+//     Max = Array[0];
+
+//     for (int i = 0; i < NumElementos; i++)
+//     {
+//         if(Array[i] > Max)
+//             Max = Array[i];
+//         else if(Array[i] < Min)
+//             Min = Array[i];
+//     }
+
+//     std::cout << "\nO menor Valor digitado foi: " << Min; 
+//     std::cout << "\nO maior Valor digitado foi: " << Max; 
+
+//     system("PAUSE");
+    
+//     return 0;
+
+// }
+
+
+
+
+
+/*****************************************
+/*
+#include <iostream> // Soma de 10 Númeos com Array  //
 #include <string>
 
 int main()
@@ -16,7 +94,7 @@ int main()
 	system("PAUSE");
 	return 0;
 }
-
+*/
 // #include<iostream>
 // #include<string>
 // #include<tchar.h>
@@ -44,7 +122,6 @@ int main()
 //     system("PAUSE");
 //     return 0;
 // }
-
 /*
 #include<iostream>
 #include<string>
